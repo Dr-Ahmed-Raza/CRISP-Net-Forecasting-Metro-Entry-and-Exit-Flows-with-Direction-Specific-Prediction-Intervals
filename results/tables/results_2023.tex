@@ -1,0 +1,129 @@
+\begin{table}[!t]
+\caption{Network-wide prediction performance on the Nanjing 2023 AFC test set (191 stations, 10-min intervals, horizon 6 steps, entry and exit channels jointly). Huber $\delta=1.0$.}
+\label{tab:main_results}
+\centering
+\footnotesize
+\begin{tabular}{lrrrrrrr}
+\toprule
+Model & RMSE & MAE & WMAPE & R2 & EPE & NDE & Params \\
+\midrule
+LSTM & 47.560 & 18.393 & 25.06 & 0.8868 & 19.11 & 29.86 & 201,228 \\
+TCN & 44.222 & 17.707 & 24.13 & 0.9021 & 18.90 & 27.76 & 60,844 \\
+ConvLSTM & 39.808 & 16.585 & 22.60 & 0.9207 & 19.21 & 24.99 & 51,724 \\
+SVR-LSTM & 48.865 & 18.897 & 25.75 & 0.8805 & 19.72 & 30.68 & 69,644 \\
+STGCN & 42.127 & 17.263 & 23.52 & 0.9112 & 18.20 & 26.45 & 38,796 \\
+DCRNN & 41.520 & 16.704 & 22.76 & 0.9137 & 18.20 & 26.07 & 64,140 \\
+Graph WaveNet & 36.731 & 15.609 & 21.27 & 0.9325 & 17.24 & 23.06 & 65,068 \\
+AGCRN & 30.825 & \textbf{13.449} & \textbf{18.33} & 0.9524 & 16.28 & 19.35 & 258,050 \\
+TGALSTM & 35.387 & 15.325 & 20.88 & 0.9373 & 17.33 & 22.22 & 210,527 \\
+TDAG-Net & 32.209 & 14.070 & 19.17 & 0.9481 & 15.96 & 20.22 & 253,825 \\
+TDAG-Net (Input-Splitter) & \textbf{30.627} & 13.561 & 18.48 & \textbf{0.9531} & \textbf{15.31} & \textbf{19.23} & 254,209 \\
+\textbf{CALM-Net} & 33.143 & 14.343 & 19.54 & 0.9450 & 16.66 & 20.81 & 296,187 \\
+CALM-Net w/o CDG & 34.141 & 14.660 & 19.98 & 0.9417 & 16.96 & 21.44 & 296,187 \\
+CALM-Net w/o BFC & 33.607 & 14.560 & 19.84 & 0.9435 & 16.27 & 21.10 & 296,187 \\
+CALM-Net w/o PMC & 33.220 & 14.342 & 19.54 & 0.9448 & 16.76 & 20.86 & 296,187 \\
+CALM-Net w/o ECQ & 33.756 & 14.974 & 20.40 & 0.9430 & 16.63 & 21.19 & 294,639 \\
+CALM-Net delta=0 & 33.541 & 14.449 & 19.69 & 0.9437 & 16.43 & 21.06 & 285,336 \\
+CALM-Net delta<=1 & 34.095 & 14.646 & 19.96 & 0.9418 & 16.60 & 21.41 & 288,953 \\
+CALM-Net delta<=2 & 32.973 & 14.292 & 19.47 & 0.9456 & 16.41 & 20.70 & 292,570 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!t]
+\caption{Accuracy decomposed by flow direction. Paper 3 reported the pooled figure only; the exit channel is forecast explicitly here.}
+\label{tab:per_channel}
+\centering
+\footnotesize
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Model & RMSE (entry) & MAE (entry) & WMAPE (entry) & R2 (entry) & RMSE (exit) & MAE (exit) & WMAPE (exit) & R2 (exit) \\
+\midrule
+LSTM & 48.451314 & 17.668967 & 25.146737 & 0.880513 & 46.652474 & 19.116056 & 24.982858 & 0.892774 \\
+TCN & 46.661190 & 17.047058 & 24.261627 & 0.889179 & 41.640608 & 18.366604 & 24.003396 & 0.914575 \\
+ConvLSTM & 42.467900 & 16.225357 & 23.092170 & 0.908203 & 36.956226 & 16.944930 & 22.145405 & 0.932714 \\
+SVR-LSTM & 48.469148 & 17.855951 & 25.412855 & 0.880425 & 49.257959 & 19.938098 & 26.057188 & 0.880463 \\
+STGCN & 43.952402 & 16.704852 & 23.774593 & 0.901673 & 40.218066 & 17.821245 & 23.290664 & 0.920312 \\
+DCRNN & 42.266604 & 15.958514 & 22.712395 & 0.909071 & 40.759119 & 17.450459 & 22.806083 & 0.918154 \\
+Graph WaveNet & 38.629719 & 15.087292 & 21.472458 & 0.924046 & 34.727588 & 16.130707 & 21.081293 & 0.940585 \\
+AGCRN & 33.735441 & 12.966585 & 18.454237 & 0.942073 & 27.609283 & 13.931597 & 18.207265 & 0.962446 \\
+TGALSTM & 39.334263 & 15.080249 & 21.462435 & 0.921250 & 30.940708 & 15.569888 & 20.348355 & 0.952836 \\
+TDAG-Net & 35.243432 & 13.529687 & 19.255651 & 0.936778 & 28.856914 & 14.610681 & 19.094764 & 0.958975 \\
+TDAG-Net (Input-Splitter) & 33.113981 & 13.013310 & 18.520737 & 0.944188 & 27.920182 & 14.107817 & 18.437568 & 0.961595 \\
+\textbf{CALM-Net} & 36.111600 & 13.895679 & 19.776538 & 0.933625 & 29.880781 & 14.790438 & 19.329689 & 0.956012 \\
+CALM-Net w/o CDG & 37.455123 & 14.307104 & 20.362084 & 0.928595 & 30.468331 & 15.013320 & 19.620974 & 0.954265 \\
+CALM-Net w/o BFC & 36.176940 & 14.001958 & 19.927795 & 0.933385 & 30.823853 & 15.117923 & 19.757681 & 0.953192 \\
+CALM-Net w/o PMC & 36.213402 & 13.921649 & 19.813498 & 0.933251 & 29.929492 & 14.762329 & 19.292954 & 0.955869 \\
+CALM-Net w/o ECQ & 36.456954 & 14.627166 & 20.817600 & 0.932350 & 30.819653 & 15.320473 & 20.022395 & 0.953204 \\
+CALM-Net delta=0 & 36.203286 & 13.920427 & 19.811759 & 0.933288 & 30.648021 & 14.978521 & 19.575495 & 0.953724 \\
+CALM-Net delta<=1 & 36.777909 & 14.102730 & 20.071215 & 0.931153 & 31.181757 & 15.190174 & 19.852106 & 0.952098 \\
+CALM-Net delta<=2 & 35.791521 & 13.718702 & 19.524660 & 0.934797 & 29.889773 & 14.865179 & 19.427369 & 0.955986 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!t]
+\caption{Performance restricted to flagged event days (182 test windows).}
+\label{tab:event_results}
+\centering
+\footnotesize
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & RMSE & MAE & WMAPE & R2 & EPE & NDE \\
+\midrule
+LSTM & 39.373 & 17.112 & 24.49 & 0.9109 & 19.11 & 26.38 \\
+TCN & 39.312 & 16.729 & 23.94 & 0.9111 & 18.90 & 26.34 \\
+ConvLSTM & 38.918 & 16.715 & 23.92 & 0.9129 & 19.21 & 26.08 \\
+SVR-LSTM & 40.764 & 17.688 & 25.31 & 0.9044 & 19.72 & 27.31 \\
+STGCN & 36.745 & 16.170 & 23.14 & 0.9224 & 18.20 & 24.62 \\
+DCRNN & 36.970 & 15.994 & 22.89 & 0.9214 & 18.20 & 24.77 \\
+Graph WaveNet & 34.571 & 15.164 & 21.70 & 0.9313 & 17.24 & 23.16 \\
+AGCRN & 33.463 & 14.290 & 20.45 & 0.9356 & 16.28 & 22.42 \\
+TGALSTM & 35.532 & 15.618 & 22.35 & 0.9274 & 17.33 & 23.81 \\
+TDAG-Net & 32.284 & 14.091 & 20.16 & 0.9401 & 15.96 & 21.63 \\
+TDAG-Net (Input-Splitter) & \textbf{31.189} & \textbf{13.636} & \textbf{19.51} & \textbf{0.9441} & \textbf{15.31} & \textbf{20.90} \\
+\textbf{CALM-Net} & 33.536 & 14.299 & 20.46 & 0.9353 & 16.66 & 22.47 \\
+CALM-Net w/o CDG & 34.903 & 14.790 & 21.17 & 0.9299 & 16.96 & 23.39 \\
+CALM-Net w/o BFC & 33.065 & 14.378 & 20.57 & 0.9371 & 16.27 & 22.15 \\
+CALM-Net w/o PMC & 33.898 & 14.337 & 20.52 & 0.9339 & 16.76 & 22.71 \\
+CALM-Net w/o ECQ & 33.763 & 14.963 & 21.41 & 0.9344 & 16.63 & 22.62 \\
+CALM-Net delta=0 & 33.140 & 14.314 & 20.48 & 0.9368 & 16.43 & 22.21 \\
+CALM-Net delta<=1 & 33.754 & 14.476 & 20.71 & 0.9345 & 16.60 & 22.62 \\
+CALM-Net delta<=2 & 33.277 & 14.207 & 20.33 & 0.9363 & 16.41 & 22.30 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!t]
+\caption{Distribution-free 90\% prediction intervals. PICP closest to nominal is best; MPIW and Winkler lower is better; PCR higher is better.}
+\label{tab:uncertainty}
+\centering
+\footnotesize
+\begin{tabular}{lrrrrrrr}
+\toprule
+Model & PICP & MPIW & Winkler & PCR & PICP_uncal & MPIW_uncal & Coverage gap \\
+\midrule
+\textbf{CALM-Net} & \textbf{90.28} & 66.57 & \textbf{84.28} & \textbf{91.01} & 90.52 & 66.61 & +0.28 \\
+Quantile Reg. & 90.28 & 66.57 & 84.28 & 91.01 & 90.52 & 66.61 & +0.28 \\
+MC-Dropout & 90.92 & 65.02 & 126.21 & 79.28 & 19.58 & 11.19 & +0.92 \\
+Deep Ensemble & 90.84 & \textbf{64.51} & 129.99 & 74.09 & 16.25 & 9.52 & +0.84 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!t]
+\caption{Conditional coverage inside each Mondrian bin. Marginal coverage can hold while a bin fails; this table is the check.}
+\label{tab:conditional_coverage}
+\centering
+\footnotesize
+\begin{tabular}{lrrrr}
+\toprule
+bin & n_windows & PICP & MPIW & Winkler \\
+\midrule
+normal · off-peak & 469 & 90.34 & 54.48 & 69.66 \\
+normal · peak & 168 & 90.33 & 104.91 & 126.49 \\
+event · off-peak & 134 & 90.28 & 58.01 & 76.45 \\
+event · peak & 48 & 89.43 & 74.38 & 101.17 \\
+\bottomrule
+\end{tabular}
+\end{table}

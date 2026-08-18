@@ -1,0 +1,5 @@
+event,peak,bin,n_windows,n_scores,method,q_hat[Entry],q_hat[Exit],q_hat
+False,False,normal · off-peak,134,307128,Mondrian bin (n_win=134),-0.13646316528320312,-0.0040416717529296875,-0.0702524185180664
+False,True,normal · peak,48,110016,Mondrian bin (n_win=48),-0.16498279571533203,-0.3591642379760742,-0.2620735168457031
+True,False,event · off-peak,134,307128,Mondrian bin (n_win=134),-0.14397430419921875,0.21536827087402344,0.035696983337402344
+True,True,event · peak,48,110016,Mondrian bin (n_win=48),0.07759857177734375,0.4504718780517578,0.2640352249145508

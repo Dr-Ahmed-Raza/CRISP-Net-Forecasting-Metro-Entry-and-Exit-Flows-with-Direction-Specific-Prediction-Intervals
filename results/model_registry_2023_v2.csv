@@ -1,0 +1,10 @@
+model,params,n_quant,needs_persona,out_shape
+CRISP-Net,257313,3,yes,"(2, 6, 191, 2, 3)"
+CRISP-Net w/o gates,257313,3,yes,"(2, 6, 191, 2, 3)"
+CRISP-Net w/o PRI,256929,3,no,"(2, 6, 191, 2, 3)"
+Graph WaveNet,65068,1,no,"(2, 6, 191, 2, 1)"
+AGCRN,258050,1,no,"(2, 6, 191, 2, 1)"
+TGALSTM,210527,1,no,"(2, 6, 191, 2, 1)"
+TDAG-Net,253825,1,no,"(2, 6, 191, 2, 1)"
+TDAG-Net (Input-Splitter),254209,1,yes,"(2, 6, 191, 2, 1)"
+MC-Dropout,254217,1,yes,"(2, 6, 191, 2, 1)"

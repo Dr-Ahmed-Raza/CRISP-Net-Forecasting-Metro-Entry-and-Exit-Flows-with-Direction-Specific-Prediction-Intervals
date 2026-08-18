@@ -1,0 +1,143 @@
+\begin{table}[!t]
+\caption{Network-wide prediction performance on the Nanjing 2023 AFC test set (191 stations, 10-min intervals, horizon 6, entry and exit channels jointly). RMSE\_std is the seed standard deviation. Huber $\delta=1.0$.}
+\label{tab:main_results}
+\centering
+\footnotesize
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Model & RMSE & MAE & WMAPE & R2 & EPE & NDE & Params & RMSE_std \\
+\midrule
+Graph WaveNet & 36.740 & 15.618 & 21.28 & 0.9324 & 17.25 & 23.07 & 65,068 & -- \\
+AGCRN & 30.861 & 13.531 & 18.44 & 0.9523 & 16.49 & 19.38 & 258,050 & 0.298 \\
+TGALSTM & 35.338 & 15.321 & 20.88 & 0.9375 & 17.35 & 22.19 & 210,527 & -- \\
+TDAG-Net & 32.210 & 14.108 & 19.22 & 0.9481 & 16.04 & 20.22 & 253,825 & 0.210 \\
+TDAG-Net (Input-Splitter) & 30.991 & 13.794 & 18.80 & 0.9519 & 15.75 & 19.46 & 254,209 & 0.123 \\
+\textbf{CRISP-Net} & 30.896 & 13.645 & 18.59 & 0.9522 & 15.59 & 19.40 & 257,313 & -- \\
+CRISP-Net w/o gates & 30.652 & 13.661 & 18.61 & 0.9530 & 15.50 & 19.24 & 257,313 & -- \\
+CRISP-Net w/o PRI & 32.383 & 14.136 & 19.26 & 0.9475 & 16.16 & 20.33 & 256,929 & -- \\
+CRISP-Net (M=5) & \textbf{30.088} & \textbf{13.412} & \textbf{18.28} & \textbf{0.9547} & \textbf{15.36} & \textbf{18.89} & 1,271,085 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!t]
+\caption{Accuracy decomposed by flow direction. Paper 3 reported the pooled figure only; the exit channel is forecast explicitly here.}
+\label{tab:per_channel}
+\centering
+\footnotesize
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Model & RMSE (entry) & MAE (entry) & WMAPE (entry) & R2 (entry) & RMSE (exit) & MAE (exit) & WMAPE (exit) & R2 (exit) \\
+\midrule
+Graph WaveNet & 38.483722 & 15.067771 & 21.444676 & 0.924619 & 34.909298 & 16.169115 & 21.131488 & 0.939961 \\
+AGCRN & 33.935299 & 13.134091 & 18.692634 & 0.941374 & 27.443263 & 13.928030 & 18.202604 & 0.962895 \\
+TGALSTM & 39.243159 & 15.074897 & 21.454817 & 0.921614 & 30.944818 & 15.566117 & 20.343428 & 0.952824 \\
+TDAG-Net & 35.208166 & 13.609581 & 19.369358 & 0.936898 & 28.901930 & 14.607012 & 19.089968 & 0.958846 \\
+TDAG-Net (Input-Splitter) & 33.667459 & 13.202694 & 18.790270 & 0.942305 & 28.059414 & 14.385774 & 18.800831 & 0.961211 \\
+\textbf{CRISP-Net} & 33.291312 & 12.973083 & 18.463485 & 0.943588 & 28.299313 & 14.316535 & 18.710343 & 0.960545 \\
+CRISP-Net w/o gates & 33.173512 & 12.993033 & 18.491879 & 0.943987 & 27.904033 & 14.329057 & 18.726708 & 0.961640 \\
+CRISP-Net w/o PRI & 35.469677 & 13.677273 & 19.465699 & 0.935964 & 28.968716 & 14.594526 & 19.073651 & 0.958656 \\
+CRISP-Net (M=5) & 32.786108 & 12.797538 & 18.213646 & 0.945287 & 27.121719 & 14.026999 & 18.331947 & 0.963760 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!t]
+\caption{Performance restricted to flagged event days (182 test windows).}
+\label{tab:event_results}
+\centering
+\footnotesize
+\begin{tabular}{lrrrrrrr}
+\toprule
+Model & RMSE & MAE & WMAPE & R2 & EPE & NDE & RMSE_std \\
+\midrule
+Graph WaveNet & 34.576 & 15.174 & 21.71 & 0.9313 & 17.25 & 23.17 & -- \\
+AGCRN & 34.213 & 14.578 & 20.86 & 0.9326 & 16.49 & 22.92 & 1.088 \\
+TGALSTM & 35.564 & 15.634 & 22.37 & 0.9273 & 17.35 & 23.83 & -- \\
+TDAG-Net & 32.482 & 14.168 & 20.28 & 0.9393 & 16.04 & 21.76 & 0.175 \\
+TDAG-Net (Input-Splitter) & 31.483 & 13.859 & 19.83 & 0.9430 & 15.75 & 21.09 & 0.087 \\
+\textbf{CRISP-Net} & 31.217 & 13.715 & 19.63 & 0.9440 & 15.59 & 20.92 & -- \\
+CRISP-Net w/o gates & 30.999 & 13.654 & 19.54 & 0.9447 & 15.50 & 20.77 & -- \\
+CRISP-Net w/o PRI & 32.477 & 14.183 & 20.30 & 0.9393 & 16.16 & 21.76 & -- \\
+CRISP-Net (M=5) & \textbf{30.516} & \textbf{13.464} & \textbf{19.27} & \textbf{0.9465} & \textbf{15.36} & \textbf{20.45} & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!t]
+\caption{Distribution-free 90\% prediction intervals. PICP closest to nominal is best; MPIW and Winkler lower is better; PCR higher is better.}
+\label{tab:uncertainty}
+\centering
+\footnotesize
+\begin{tabular}{lrrrrrrr}
+\toprule
+Model & PICP & MPIW & Winkler & PCR & PICP_uncal & MPIW_uncal & Coverage gap \\
+\midrule
+\textbf{CRISP-Net} & \textbf{90.01} & 61.45 & 80.19 & 90.97 & 89.71 & 61.27 & +0.01 \\
+CRISP-Net w/o gates & 90.08 & 62.87 & \textbf{80.06} & 90.90 & 90.60 & 63.05 & +0.08 \\
+CRISP-Net w/o PRI & 89.94 & 65.54 & 82.98 & \textbf{91.45} & 90.40 & 65.69 & -0.06 \\
+MC-Dropout & 90.97 & 58.20 & 110.92 & 72.05 & 23.79 & 12.35 & +0.97 \\
+Deep Ensemble & 90.33 & \textbf{54.55} & 109.75 & 70.41 & 19.24 & 10.09 & +0.33 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!t]
+\caption{Conditional coverage inside each Mondrian bin. Marginal coverage can hold while a bin fails; this table is the check.}
+\label{tab:conditional_coverage}
+\centering
+\footnotesize
+\begin{tabular}{lrrrr}
+\toprule
+bin & n_windows & PICP & MPIW & Winkler \\
+\midrule
+normal · off-peak & 469 & 90.02 & 49.73 & 66.64 \\
+normal · peak & 168 & 89.98 & 96.52 & 119.42 \\
+event · off-peak & 134 & 90.39 & 55.69 & 74.06 \\
+event · peak & 48 & 88.96 & 69.26 & 92.40 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!t]
+\caption{Conditional coverage under three calibration regimes. Pooled coverage is attainable without conformal correction; the event-conditional bins are where the guarantee is actually needed.}
+\label{tab:decisive}
+\centering
+\footnotesize
+\begin{tabular}{lrrrrr}
+\toprule
+method & bin & n_windows & PICP & MPIW & Winkler \\
+\midrule
+raw quantile heads & normal · off-peak & 469 & 89.47 & 49.43 & 66.64 \\
+raw quantile heads & normal · peak & 168 & 90.66 & 96.85 & 119.44 \\
+raw quantile heads & event · off-peak & 134 & 89.69 & 55.29 & 74.05 \\
+raw quantile heads & event · peak & 48 & 88.85 & 69.14 & 92.41 \\
+pooled conformal & normal · off-peak & 469 & 89.89 & 49.62 & 66.64 \\
+pooled conformal & normal · peak & 168 & 90.91 & 97.04 & 119.45 \\
+pooled conformal & event · off-peak & 134 & 90.09 & 55.48 & 74.05 \\
+pooled conformal & event · peak & 48 & 89.15 & 69.33 & 92.39 \\
+Mondrian ECQ & normal · off-peak & 469 & 90.02 & 49.73 & 66.64 \\
+Mondrian ECQ & normal · peak & 168 & 89.98 & 96.52 & 119.42 \\
+Mondrian ECQ & event · off-peak & 134 & 90.39 & 55.69 & 74.06 \\
+Mondrian ECQ & event · peak & 48 & 88.96 & 69.26 & 92.40 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!t]
+\caption{Absolute-residual event-conditional conformal applied to point forecasters without retraining. The calibration layer is a property of the method, not of one architecture.}
+\label{tab:transfer}
+\centering
+\footnotesize
+\begin{tabular}{lrrrrr}
+\toprule
+Model & PICP & MPIW & Winkler & PCR & retrained \\
+\midrule
+AGCRN + ECQ & 89.59 & \textbf{57.57} & 133.04 & 72.19 & no \\
+Graph WaveNet + ECQ & 89.29 & 65.97 & 158.18 & 72.73 & no \\
+TDAG-Net + ECQ & 89.54 & 60.34 & 139.66 & 72.72 & no \\
+TDAG-Net (Input-Splitter) + ECQ & 89.66 & 59.81 & 135.23 & 69.62 & no \\
+\textbf{CRISP-Net} & \textbf{90.01} & 61.45 & \textbf{80.19} & \textbf{90.97} & — \\
+\bottomrule
+\end{tabular}
+\end{table}

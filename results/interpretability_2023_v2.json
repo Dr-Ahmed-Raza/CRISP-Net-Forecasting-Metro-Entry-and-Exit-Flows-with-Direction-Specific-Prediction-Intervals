@@ -1,0 +1,152 @@
+{
+  "persona_gates": [
+    {
+      "direction": "Entry",
+      "persona": "Commuter",
+      "gate": 1.1079587936401367,
+      "share_of_direction": 0.26373571157455444
+    },
+    {
+      "direction": "Entry",
+      "persona": "Casual",
+      "gate": 1.0585803985595703,
+      "share_of_direction": 0.25198179483413696
+    },
+    {
+      "direction": "Entry",
+      "persona": "Tourist/Visitor",
+      "gate": 1.0050164461135864,
+      "share_of_direction": 0.23923157155513763
+    },
+    {
+      "direction": "Entry",
+      "persona": "Concession/Student",
+      "gate": 1.0294636487960815,
+      "share_of_direction": 0.24505092203617096
+    },
+    {
+      "direction": "Exit",
+      "persona": "Commuter",
+      "gate": 1.0908308029174805,
+      "share_of_direction": 0.2613907754421234
+    },
+    {
+      "direction": "Exit",
+      "persona": "Casual",
+      "gate": 1.0598560571670532,
+      "share_of_direction": 0.2539684474468231
+    },
+    {
+      "direction": "Exit",
+      "persona": "Tourist/Visitor",
+      "gate": 0.9917229413986206,
+      "share_of_direction": 0.23764201998710632
+    },
+    {
+      "direction": "Exit",
+      "persona": "Concession/Student",
+      "gate": 1.0307704210281372,
+      "share_of_direction": 0.24699878692626953
+    }
+  ],
+  "persona_corpus_share": [
+    0.3151446078760805,
+    0.4219989902376827,
+    0.11494265839286621,
+    0.1479137434933705
+  ],
+  "gate_spread": 0.11623585224151611,
+  "gate_vs_share_corr": 0.7417340370478988,
+  "fusion_weights": [
+    0.4331905245780945,
+    0.35012534260749817,
+    0.21668416261672974
+  ],
+  "adjacency_mix": 0.622459352016449,
+  "worst_bin_deviation": {
+    "raw quantile heads": 1.149287376381622,
+    "pooled conformal": 0.9104130308318759,
+    "Mondrian ECQ": 1.0356675392670098
+  },
+  "event_peak_coverage": {
+    "raw quantile heads": 88.85071262361838,
+    "pooled conformal": 89.15339586969168,
+    "Mondrian ECQ": 88.96433246073299
+  },
+  "mondrian_gain_pp": 0.11361983711461221,
+  "conformal_report": [
+    {
+      "event": false,
+      "peak": false,
+      "bin": "normal · off-peak",
+      "n_windows": 134,
+      "n_scores": 307128,
+      "method": "Mondrian bin (n_win=134)",
+      "q_hat[Entry]": 0.05716848373413086,
+      "q_hat[Exit]": 0.23937416076660156,
+      "q_hat": 0.1482713222503662
+    },
+    {
+      "event": false,
+      "peak": true,
+      "bin": "normal · peak",
+      "n_windows": 48,
+      "n_scores": 110016,
+      "method": "Mondrian bin (n_win=48)",
+      "q_hat[Entry]": -0.13203811645507812,
+      "q_hat[Exit]": -0.2030792236328125,
+      "q_hat": -0.1675586700439453
+    },
+    {
+      "event": true,
+      "peak": false,
+      "bin": "event · off-peak",
+      "n_windows": 134,
+      "n_scores": 307128,
+      "method": "Mondrian bin (n_win=134)",
+      "q_hat[Entry]": 0.07755804061889648,
+      "q_hat[Exit]": 0.32906579971313477,
+      "q_hat": 0.20331192016601562
+    },
+    {
+      "event": true,
+      "peak": true,
+      "bin": "event · peak",
+      "n_windows": 48,
+      "n_scores": 110016,
+      "method": "Mondrian bin (n_win=48)",
+      "q_hat[Entry]": -0.04453134536743164,
+      "q_hat[Exit]": 0.16577434539794922,
+      "q_hat": 0.06062150001525879
+    }
+  ],
+  "transfer": {
+    "AGCRN": {
+      "PICP": 89.59171040322873,
+      "MPIW": 57.57289459021947,
+      "Winkler": 133.04252159195025,
+      "PCR": 72.19144058081774
+    },
+    "Graph WaveNet": {
+      "PICP": 89.28970970855788,
+      "MPIW": 65.97344596627373,
+      "Winkler": 158.17710380332875,
+      "PCR": 72.73118074130684
+    },
+    "TDAG-Net": {
+      "PICP": 89.54030262930786,
+      "MPIW": 60.336416994503146,
+      "Winkler": 139.65542681494836,
+      "PCR": 72.71923958731372
+    },
+    "TDAG-Net (Input-Splitter)": {
+      "PICP": 89.65909986852395,
+      "MPIW": 59.813071559631176,
+      "Winkler": 135.22791215886772,
+      "PCR": 69.61692777990065
+    }
+  },
+  "model": "CRISP-Net",
+  "n_seeds": 1,
+  "params": 257313
+}

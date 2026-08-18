@@ -1,0 +1,95 @@
+2026-08-17 07:37:38,606 │ INFO    │ Core infrastructure online — CRISP-Net.
+2026-08-17 07:37:38,609 │ INFO    │ Device: cuda │ Log file: /content/drive/MyDrive/CRISP_Net/logs/crispnet_20260817.log
+2026-08-17 07:37:38,611 │ INFO    │ Startup: RAM 0.78 GB │ GPU 0.00/0.00 GB
+2026-08-17 07:37:38,633 │ INFO    │ AFC reader ready (4 dialects).
+2026-08-17 07:47:10,406 │ INFO    │ Core infrastructure online — CRISP-Net.
+2026-08-17 07:47:10,689 │ INFO    │ Device: cuda │ Log file: /content/drive/MyDrive/CRISP_Net/logs/crispnet_20260817.log
+2026-08-17 07:47:10,691 │ INFO    │ Startup: RAM 0.77 GB │ GPU 0.00/0.00 GB
+2026-08-17 07:47:10,713 │ INFO    │ AFC reader ready (4 dialects).
+2026-08-17 07:47:11,127 │ INFO    │ ✓ cached  [file_manifest] loaded in 0.4s  (file_manifest__2023__7fda0833bf.parquet)
+2026-08-17 07:47:11,224 │ INFO    │ Ingestion [2023] — 17 done, 0 pending (5.08 GB total)  │  cache: reused from Paper 3 cache (17 flow parquet files)
+2026-08-17 07:47:11,225 │ INFO    │ Nothing to ingest. ✓
+2026-08-17 07:47:17,816 │ INFO    │ ✓ cached  [day_source_map] loaded in 0.3s  (day_source_map__2023__9fe854d7ee.parquet)
+2026-08-17 07:47:23,104 │ INFO    │ ✓ cached  [tensors] loaded in 5.1s  (tensors__2023__084ad33c34.pkl)
+2026-08-17 07:47:23,322 │ INFO    │ After tensors: RAM 0.92 GB │ GPU 0.00/0.00 GB
+2026-08-17 07:47:25,196 │ INFO    │ ✓ cached  [card_signatures] loaded in 0.8s  (card_signatures__2023__b08eb4f084.pkl)
+2026-08-17 07:47:25,653 │ INFO    │ ✓ cached  [persona_prior] loaded in 0.3s  (persona_prior__2023__4d0870a6c1.pkl)
+2026-08-17 07:47:26,760 │ INFO    │ ✓ cached  [spatial_probe] loaded in 0.7s  (spatial_probe__2023__ec43276801.pkl)
+2026-08-17 07:47:27,215 │ INFO    │ ✓ cached  [A_topo] loaded in 0.4s  (A_topo__2023__d6587516ea.pkl)
+2026-08-17 07:47:27,725 │ INFO    │ ✓ cached  [graph_mask] loaded in 0.5s  (graph_mask__2023__a797568561.pkl)
+2026-08-17 07:47:28,165 │ INFO    │ ✓ cached  [delay_support] loaded in 0.4s  (delay_support__2023__d224307b6a.pkl)
+2026-08-17 07:47:28,991 │ INFO    │ ✓ cached  [events] loaded in 0.5s  (events__2023__759bb12f03.pkl)
+2026-08-17 07:47:29,431 │ INFO    │ ✓ cached  [C_venue] loaded in 0.4s  (C_venue__2023__c38cca5bff.pkl)
+2026-08-17 07:47:30,032 │ INFO    │ ✓ cached  [exogenous] loaded in 0.6s  (exogenous__2023__c29b8b64eb.pkl)
+2026-08-17 07:47:30,125 │ INFO    │ CRISP design system configured (single 3.5in / double 7.16in · 600 dpi · Type-42 · slate-teal primary, coral accent, greyscale-safe ramps).
+2026-08-17 07:47:30,485 │ INFO    │ ✓ figure  [F01] done — loaded from disk (force=True to redraw)
+2026-08-17 07:47:30,491 │ INFO    │ ✓ figure  [F02] done — loaded from disk (force=True to redraw)
+2026-08-17 07:47:30,495 │ INFO    │ ✓ figure  [F03] done — loaded from disk (force=True to redraw)
+2026-08-17 07:47:30,498 │ INFO    │ ✓ figure  [F04] done — loaded from disk (force=True to redraw)
+2026-08-17 07:47:30,500 │ INFO    │ ✓ figure  [F05] done — loaded from disk (force=True to redraw)
+2026-08-17 07:47:30,502 │ INFO    │ ✓ figure  [F06] done — loaded from disk (force=True to redraw)
+2026-08-17 07:47:30,504 │ INFO    │ ✓ figure  [F07] done — loaded from disk (force=True to redraw)
+2026-08-17 07:47:30,684 │ INFO    │ ✓ figure  [F08] done — loaded from disk (force=True to redraw)
+2026-08-17 07:47:30,689 │ INFO    │ ✓ figure  [F09] done — loaded from disk (force=True to redraw)
+2026-08-17 07:47:30,691 │ INFO    │ ✓ figure  [F10] done — loaded from disk (force=True to redraw)
+2026-08-17 07:47:30,693 │ INFO    │ ✓ figure  [F11] done — loaded from disk (force=True to redraw)
+2026-08-17 07:47:30,695 │ INFO    │ ✓ figure  [F12] done — loaded from disk (force=True to redraw)
+2026-08-17 07:47:30,893 │ INFO    │ ✓ figure  [F13] done — loaded from disk (force=True to redraw)
+2026-08-17 07:47:30,896 │ INFO    │ ✓ figure  [F14] done — loaded from disk (force=True to redraw)
+2026-08-17 07:47:30,898 │ INFO    │ ✓ figure  [F15] done — loaded from disk (force=True to redraw)
+2026-08-17 07:47:30,901 │ INFO    │ ✓ figure  [F16] done — loaded from disk (force=True to redraw)
+2026-08-17 07:47:31,079 │ INFO    │ ✓ figure  [F17] done — loaded from disk (force=True to redraw)
+2026-08-17 07:47:31,082 │ INFO    │ ✓ figure  [F18] done — loaded from disk (force=True to redraw)
+2026-08-17 07:47:31,085 │ INFO    │ ✓ figure  [F19] done — loaded from disk (force=True to redraw)
+2026-08-17 07:47:31,087 │ INFO    │ Descriptive figures done: 19/19
+2026-08-17 07:47:31,523 │ INFO    │ ✓ cached  [windows] loaded in 0.3s  (windows__2023__5b7a3a5529.pkl)
+2026-08-17 07:47:32,285 │ INFO    │ CRISP-Net components defined: TDAG-Net backbone (verbatim) · persona channel gates · tail-pinball quantile heads.
+2026-08-17 07:47:32,304 │ INFO    │ CRISP-Net defined — TDAG-Net encoder + gated persona-resolved input + quantile heads at tau=[0.05, 0.5, 0.95].
+2026-08-17 07:47:32,328 │ INFO    │ Baselines defined (v2): TGALSTM · TDAG-Net · TDAG-Net Input-Splitter. LSTM/TCN/ConvLSTM/SVR-LSTM removed — cited from Paper 3, not rerun.
+2026-08-17 07:47:32,348 │ INFO    │ Baselines defined (v2): Graph WaveNet · AGCRN. STGCN/DCRNN removed — cited from Paper 3, not rerun.
+2026-08-17 07:47:32,363 │ INFO    │ Uncertainty baselines defined — MC-Dropout (30 passes) · Deep Ensemble (M = 5). Raw quantile heads come from CRISP-Net itself, not a duplicate run.
+2026-08-17 07:47:34,193 │ INFO    │ Registry ready — 4 models to train (1 seed) + 5 ensemble members; 5 baselines reused from the v2 cache.
+2026-08-17 07:47:34,323 │ INFO    │ Trainer ready (v2) — resumable to the batch, Huber + tail-pinball objective, real kernel-entropy penalty.
+2026-08-17 07:47:41,183 │ INFO    │ ✓ cached [CRISP-Net] predictions + metrics loaded
+2026-08-17 07:47:45,679 │ INFO    │ ✓ cached [CRISP-Net w/o gates] predictions + metrics loaded
+2026-08-17 07:47:50,225 │ INFO    │ ✓ cached [CRISP-Net w/o PRI] predictions + metrics loaded
+2026-08-17 07:47:51,820 │ INFO    │ ✓ cached [Graph WaveNet] predictions + metrics loaded
+2026-08-17 07:47:53,227 │ INFO    │ ✓ cached [AGCRN] predictions + metrics loaded (3 seeds, from v2)
+2026-08-17 07:47:54,452 │ INFO    │ ✓ cached [TGALSTM] predictions + metrics loaded
+2026-08-17 07:47:55,491 │ INFO    │ ✓ cached [TDAG-Net] predictions + metrics loaded (3 seeds, from v2)
+2026-08-17 07:47:56,460 │ INFO    │ ✓ cached [TDAG-Net (Input-Splitter)] predictions + metrics loaded (3 seeds, from v2)
+2026-08-17 07:48:00,997 │ INFO    │ ✓ cached [MC-Dropout] predictions + metrics loaded
+2026-08-17 07:48:05,221 │ INFO    │ ✓ cached [Deep Ensemble] (M=5)
+2026-08-17 07:48:10,809 │ INFO    │ ✓ cached [Deep Ensemble] (M=5)
+2026-08-17 07:48:44,487 │ INFO    │ ✓ figure  [F20] done — loaded from disk (force=True to redraw)
+2026-08-17 07:48:44,760 │ INFO    │ ✓ figure  [F21] done — loaded from disk (force=True to redraw)
+2026-08-17 07:48:44,767 │ INFO    │ ✓ figure  [F22] done — loaded from disk (force=True to redraw)
+2026-08-17 07:48:44,768 │ INFO    │ ✓ figure  [F23] done — loaded from disk (force=True to redraw)
+2026-08-17 07:48:44,771 │ INFO    │ ✓ figure  [F24] done — loaded from disk (force=True to redraw)
+2026-08-17 07:48:44,774 │ INFO    │ ✓ figure  [F25] done — loaded from disk (force=True to redraw)
+2026-08-17 07:48:44,775 │ INFO    │ ✓ figure  [F26] done — loaded from disk (force=True to redraw)
+2026-08-17 07:48:44,777 │ INFO    │ ✓ figure  [F27] done — loaded from disk (force=True to redraw)
+2026-08-17 07:48:44,779 │ INFO    │ ✓ figure  [F28] done — loaded from disk (force=True to redraw)
+2026-08-17 07:48:45,020 │ INFO    │ ✓ figure  [F29] done — loaded from disk (force=True to redraw)
+2026-08-17 07:48:45,025 │ INFO    │ ✓ figure  [F30] done — loaded from disk (force=True to redraw)
+2026-08-17 07:48:45,028 │ INFO    │ ✓ figure  [F31] done — loaded from disk (force=True to redraw)
+2026-08-17 07:48:45,030 │ INFO    │ ✓ figure  [F32] done — loaded from disk (force=True to redraw)
+2026-08-17 07:48:45,033 │ INFO    │ ✓ figure  [F33] done — loaded from disk (force=True to redraw)
+2026-08-17 07:48:45,035 │ INFO    │ ✓ figure  [F34] done — loaded from disk (force=True to redraw)
+2026-08-17 07:48:45,038 │ INFO    │ Result figures done: 15/15
+2026-08-17 07:48:47,032 │ INFO    │ CRISP-Net restored from 2023__v2__CRISP-Net/best.pt
+2026-08-17 07:48:51,136 │ INFO    │ 🖼  figure  [F34] Persona attribution: the learned input gates → F34_fig_persona_gates.png
+2026-08-17 07:48:51,177 │ INFO    │ CRISP-Net restored from 2023__v2__CRISP-Net/best.pt
+2026-08-17 07:48:51,236 │ INFO    │ CRISP-Net restored from 2023__v2__CRISP-Net/best.pt
+2026-08-17 07:48:51,542 │ INFO    │ Interpretability exported — 14 entries.
+2026-08-17 07:50:32,740 │ INFO    │ PIPELINE COMPLETE — CRISP-Net.
+2026-08-17 08:14:17,468 │ INFO    │ CRISP-Net restored from 2023__v2__CRISP-Net/best.pt
+2026-08-17 08:14:18,166 │ INFO    │ Interpretability exported — 14 entries.
+2026-08-17 08:42:25,028 │ INFO    │ ✓ cached [Deep Ensemble] (M=5)
+2026-08-17 08:42:57,155 │ INFO    │ ✓ cached [Deep Ensemble] (M=5)
+2026-08-17 08:45:04,604 │ INFO    │ CRISP-Net restored from 2023__v2__CRISP-Net/best.pt
+2026-08-17 08:45:06,747 │ INFO    │ 🖼  figure  [F34] Persona attribution: the learned input gates → F34_fig_persona_gates.png
+2026-08-17 08:45:06,788 │ INFO    │ CRISP-Net restored from 2023__v2__CRISP-Net/best.pt
+2026-08-17 08:45:11,955 │ INFO    │ CRISP-Net restored from 2023__v2__CRISP-Net/best.pt
+2026-08-17 08:45:12,243 │ INFO    │ Interpretability exported — 14 entries.
+2026-08-17 08:45:43,779 │ INFO    │ PIPELINE COMPLETE — CRISP-Net.

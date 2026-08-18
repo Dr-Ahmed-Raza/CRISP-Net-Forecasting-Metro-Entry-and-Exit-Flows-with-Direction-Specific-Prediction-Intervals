@@ -1,0 +1,13 @@
+date,venue_id,event_type,start_time,end_time,expected_attendance,source,verified
+2023-03-09,NJOSC,concert,19:00,22:30,45000,ticket_manifest,True
+2023-03-19,NJGYM,sports,18:30,21:00,18000,fixture_list,True
+2023-03-25,NJOSC,concert,19:30,23:00,55000,ticket_manifest,True
+2023-04-29,XINJIEKOU,holiday,10:00,22:00,90000,public_holiday,True
+2023-04-30,XINJIEKOU,holiday,10:00,22:00,95000,public_holiday,True
+2023-05-01,NJSOUTH,holiday,07:00,23:00,100000,public_holiday,True
+2023-05-02,NJOSC,concert,19:00,22:30,60000,ticket_manifest,True
+2023-05-03,NJSOUTH,holiday,12:00,23:00,85000,public_holiday,True
+2023-05-06,NJOSC,concert,18:00,23:00,62000,ticket_manifest,True
+2023-05-14,NJIEC,exhibition,09:00,17:00,28000,expo_calendar,True
+2023-05-27,NJGYM,sports,19:00,21:30,19000,fixture_list,True
+2023-05-28,NJOSC,concert,19:00,22:30,50000,ticket_manifest,True

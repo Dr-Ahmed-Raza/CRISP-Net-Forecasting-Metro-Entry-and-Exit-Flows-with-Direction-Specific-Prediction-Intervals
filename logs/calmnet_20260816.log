@@ -1,0 +1,1256 @@
+2026-08-16 07:25:22,896 │ INFO    │ Core infrastructure online — CALM-Net.
+2026-08-16 07:25:22,899 │ INFO    │ Device: cuda │ Log file: /content/drive/MyDrive/CALM_Net/logs/calmnet_20260816.log
+2026-08-16 07:25:22,900 │ INFO    │ Startup: RAM 0.77 GB │ GPU 0.00/0.00 GB
+2026-08-16 07:25:22,923 │ INFO    │ AFC reader ready (4 dialects).
+2026-08-16 07:25:23,324 │ INFO    │ ✓ cached  [file_manifest] loaded in 0.4s  (file_manifest__2023__7fda0833bf.parquet)
+2026-08-16 07:25:23,425 │ INFO    │ Ingestion [2023] — 17 done, 0 pending (5.08 GB total)  │  cache: reused from TDAG_Net (17 flow parquet files)
+2026-08-16 07:25:23,427 │ INFO    │ Nothing to ingest. ✓
+2026-08-16 07:25:29,180 │ INFO    │ ✓ cached  [day_source_map] loaded in 0.3s  (day_source_map__2023__9fe854d7ee.parquet)
+2026-08-16 07:25:31,919 │ INFO    │ ✓ cached  [tensors] loaded in 2.6s  (tensors__2023__084ad33c34.pkl)
+2026-08-16 07:25:32,483 │ INFO    │ After tensors: RAM 0.92 GB │ GPU 0.00/0.00 GB
+2026-08-16 07:25:33,917 │ INFO    │ ✓ cached  [card_signatures] loaded in 0.5s  (card_signatures__2023__b08eb4f084.pkl)
+2026-08-16 07:25:34,257 │ INFO    │ ✓ cached  [persona_prior] loaded in 0.3s  (persona_prior__2023__4d0870a6c1.pkl)
+2026-08-16 07:25:35,220 │ INFO    │ ✓ cached  [spatial_probe] loaded in 0.5s  (spatial_probe__2023__ec43276801.pkl)
+2026-08-16 07:25:35,713 │ INFO    │ ✓ cached  [A_topo] loaded in 0.4s  (A_topo__2023__d6587516ea.pkl)
+2026-08-16 07:25:35,741 │ INFO    │ ▶ running [graph_mask] …
+2026-08-16 07:25:35,981 │ INFO    │ ✔ done    [graph_mask] in 0.2s → graph_mask__2023__a797568561.pkl
+2026-08-16 07:25:36,045 │ INFO    │ ▶ running [delay_support] …
+2026-08-16 07:25:36,194 │ INFO    │ ✔ done    [delay_support] in 0.1s → delay_support__2023__d224307b6a.pkl
+2026-08-16 07:25:37,084 │ INFO    │ ✓ cached  [events] loaded in 0.7s  (events__2023__759bb12f03.pkl)
+2026-08-16 07:25:37,490 │ INFO    │ ✓ cached  [C_venue] loaded in 0.4s  (C_venue__2023__c38cca5bff.pkl)
+2026-08-16 07:25:38,167 │ INFO    │ ✓ cached  [exogenous] loaded in 0.6s  (exogenous__2023__c29b8b64eb.pkl)
+2026-08-16 07:25:38,231 │ INFO    │ IEEE × M3 plot style configured (single 3.5in / double 7.16in, 600 dpi, Type-42 fonts).
+2026-08-16 07:25:38,590 │ INFO    │ ✓ figure  [F01] exists — skipping (force=True to redraw)
+2026-08-16 07:25:38,596 │ INFO    │ ✓ figure  [F02] exists — skipping (force=True to redraw)
+2026-08-16 07:25:38,599 │ INFO    │ ✓ figure  [F03] exists — skipping (force=True to redraw)
+2026-08-16 07:25:38,601 │ INFO    │ ✓ figure  [F04] exists — skipping (force=True to redraw)
+2026-08-16 07:25:38,603 │ INFO    │ ✓ figure  [F05] exists — skipping (force=True to redraw)
+2026-08-16 07:25:38,605 │ INFO    │ ✓ figure  [F06] exists — skipping (force=True to redraw)
+2026-08-16 07:25:38,607 │ INFO    │ ✓ figure  [F07] exists — skipping (force=True to redraw)
+2026-08-16 07:25:38,749 │ INFO    │ ✓ figure  [F08] exists — skipping (force=True to redraw)
+2026-08-16 07:25:38,753 │ INFO    │ ✓ figure  [F09] exists — skipping (force=True to redraw)
+2026-08-16 07:25:38,755 │ INFO    │ ✓ figure  [F10] exists — skipping (force=True to redraw)
+2026-08-16 07:25:38,757 │ INFO    │ ✓ figure  [F11] exists — skipping (force=True to redraw)
+2026-08-16 07:25:38,759 │ INFO    │ ✓ figure  [F12] exists — skipping (force=True to redraw)
+2026-08-16 07:25:38,902 │ INFO    │ ✓ figure  [F13] exists — skipping (force=True to redraw)
+2026-08-16 07:25:38,906 │ INFO    │ ✓ figure  [F14] exists — skipping (force=True to redraw)
+2026-08-16 07:25:38,909 │ INFO    │ ✓ figure  [F15] exists — skipping (force=True to redraw)
+2026-08-16 07:25:38,911 │ INFO    │ ✓ figure  [F16] exists — skipping (force=True to redraw)
+2026-08-16 07:25:39,038 │ INFO    │ ✓ figure  [F17] exists — skipping (force=True to redraw)
+2026-08-16 07:25:39,042 │ INFO    │ ✓ figure  [F18] exists — skipping (force=True to redraw)
+2026-08-16 07:25:39,045 │ INFO    │ ✓ figure  [F19] exists — skipping (force=True to redraw)
+2026-08-16 07:25:39,048 │ INFO    │ Descriptive figures rendered/verified: 19/19
+2026-08-16 07:25:39,715 │ INFO    │ ✓ cached  [windows] loaded in 0.3s  (windows__2023__5b7a3a5529.pkl)
+2026-08-16 07:25:40,494 │ INFO    │ CALM-Net components defined (v2): per-step CDG · true-bypass BFC · PMC · quantile heads.
+2026-08-16 07:25:40,518 │ INFO    │ CALM-Net assembled (v2).
+2026-08-16 07:25:40,553 │ INFO    │ Baselines defined (v2): TGALSTM · TDAG-Net · TDAG-Net Input-Splitter. LSTM/TCN/ConvLSTM/SVR-LSTM removed — cited from Paper 3, not rerun.
+2026-08-16 07:25:40,587 │ INFO    │ Baselines defined (v2): Graph WaveNet · AGCRN. STGCN/DCRNN removed — cited from Paper 3, not rerun.
+2026-08-16 07:25:40,610 │ INFO    │ Uncertainty baselines defined (MC-Dropout · Deep Ensemble · Quantile Regression).
+2026-08-16 07:25:43,137 │ INFO    │ Trainer ready (v2) — resumable to the batch, Huber + tail-pinball objective, real kernel-entropy penalty.
+2026-08-16 07:25:48,732 │ INFO    │ ▶ training [Graph WaveNet] — 3,640 train / 364 tune windows, 114 batches/epoch, from epoch 0
+2026-08-16 07:25:56,068 │ INFO    │   e  0 train 0.18693 val 0.12600  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:25:58,656 │ INFO    │   e  1 train 0.12984 val 0.11117  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:26:01,178 │ INFO    │   e  2 train 0.12058 val 0.10540  ★ lr 3.00e-04 2s patience 0/15
+2026-08-16 07:26:03,689 │ INFO    │   e  3 train 0.11717 val 0.10527  ★ lr 3.00e-04 2s patience 0/15
+2026-08-16 07:26:06,209 │ INFO    │   e  4 train 0.11521 val 0.10242  ★ lr 3.00e-04 2s patience 0/15
+2026-08-16 07:26:08,788 │ INFO    │   e  5 train 0.11398 val 0.10072  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:26:11,412 │ INFO    │   e  6 train 0.11287 val 0.10005  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:26:13,993 │ INFO    │   e  7 train 0.11208 val 0.09897  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:26:16,559 │ INFO    │   e  8 train 0.11112 val 0.09861  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:26:19,138 │ INFO    │   e  9 train 0.11041 val 0.09717  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:26:21,698 │ INFO    │   e 10 train 0.11001 val 0.09668  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:26:24,368 │ INFO    │   e 11 train 0.10954 val 0.09613  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:26:27,021 │ INFO    │   e 12 train 0.10901 val 0.09643     lr 3.00e-04 3s patience 1/15
+2026-08-16 07:26:29,622 │ INFO    │   e 13 train 0.10867 val 0.09588  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:26:32,228 │ INFO    │   e 14 train 0.10815 val 0.09570  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:26:34,848 │ INFO    │   e 15 train 0.10777 val 0.09480  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:26:37,497 │ INFO    │   e 16 train 0.10759 val 0.09522     lr 3.00e-04 3s patience 1/15
+2026-08-16 07:26:41,502 │ INFO    │   e 17 train 0.10733 val 0.09367  ★ lr 3.00e-04 4s patience 0/15
+2026-08-16 07:26:44,121 │ INFO    │   e 18 train 0.10671 val 0.09379     lr 3.00e-04 3s patience 1/15
+2026-08-16 07:26:46,759 │ INFO    │   e 19 train 0.10670 val 0.09374     lr 3.00e-04 3s patience 2/15
+2026-08-16 07:26:49,463 │ INFO    │   e 20 train 0.10640 val 0.09339  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:26:52,187 │ INFO    │   e 21 train 0.10598 val 0.09300  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:26:54,972 │ INFO    │   e 22 train 0.10576 val 0.09206  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:26:57,650 │ INFO    │   e 23 train 0.10523 val 0.09248     lr 3.00e-04 3s patience 1/15
+2026-08-16 07:27:00,367 │ INFO    │   e 24 train 0.10503 val 0.09271     lr 3.00e-04 3s patience 2/15
+2026-08-16 07:27:03,070 │ INFO    │   e 25 train 0.10466 val 0.09231     lr 3.00e-04 3s patience 3/15
+2026-08-16 07:27:05,856 │ INFO    │   e 26 train 0.10427 val 0.09052  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:27:08,707 │ INFO    │   e 27 train 0.10401 val 0.09029  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:27:11,459 │ INFO    │   e 28 train 0.10382 val 0.09072     lr 3.00e-04 3s patience 1/15
+2026-08-16 07:27:14,278 │ INFO    │   e 29 train 0.10351 val 0.08957  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:27:17,069 │ INFO    │   e 30 train 0.10321 val 0.09204     lr 3.00e-04 3s patience 1/15
+2026-08-16 07:27:19,952 │ INFO    │   e 31 train 0.10331 val 0.08934  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:27:22,884 │ INFO    │   e 32 train 0.10275 val 0.08900  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:27:25,746 │ INFO    │   e 33 train 0.10274 val 0.08882  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:27:28,560 │ INFO    │   e 34 train 0.10242 val 0.09014     lr 3.00e-04 3s patience 1/15
+2026-08-16 07:27:31,362 │ INFO    │   e 35 train 0.10235 val 0.08885     lr 3.00e-04 3s patience 2/15
+2026-08-16 07:27:34,230 │ INFO    │   e 36 train 0.10202 val 0.08861  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:27:37,111 │ INFO    │   e 37 train 0.10203 val 0.08842  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:27:39,890 │ INFO    │   e 38 train 0.10184 val 0.08815  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:27:42,671 │ INFO    │   e 39 train 0.10162 val 0.08786  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:27:45,412 │ INFO    │   e 40 train 0.10139 val 0.08847     lr 3.00e-04 3s patience 1/15
+2026-08-16 07:27:48,215 │ INFO    │   e 41 train 0.10139 val 0.08777  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:27:51,032 │ INFO    │   e 42 train 0.10105 val 0.08710  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:27:53,791 │ INFO    │   e 43 train 0.10075 val 0.08681  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:27:56,513 │ INFO    │   e 44 train 0.10102 val 0.08673  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:27:59,204 │ INFO    │   e 45 train 0.10079 val 0.08708     lr 3.00e-04 3s patience 1/15
+2026-08-16 07:28:01,970 │ INFO    │   e 46 train 0.10063 val 0.08685     lr 3.00e-04 3s patience 2/15
+2026-08-16 07:28:04,791 │ INFO    │   e 47 train 0.10030 val 0.08630  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:28:07,480 │ INFO    │   e 48 train 0.10039 val 0.08701     lr 3.00e-04 3s patience 1/15
+2026-08-16 07:28:10,175 │ INFO    │   e 49 train 0.10012 val 0.08691     lr 3.00e-04 3s patience 2/15
+2026-08-16 07:28:12,907 │ INFO    │   e 50 train 0.10035 val 0.08608  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:28:15,680 │ INFO    │   e 51 train 0.10008 val 0.08596  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:28:18,443 │ INFO    │   e 52 train 0.09994 val 0.08629     lr 3.00e-04 3s patience 1/15
+2026-08-16 07:28:21,207 │ INFO    │   e 53 train 0.09990 val 0.08560  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:28:23,919 │ INFO    │   e 54 train 0.09993 val 0.08565     lr 3.00e-04 3s patience 1/15
+2026-08-16 07:28:27,196 │ INFO    │   e 55 train 0.09991 val 0.08585     lr 3.00e-04 3s patience 2/15
+2026-08-16 07:28:30,267 │ INFO    │   e 56 train 0.09955 val 0.08571     lr 3.00e-04 3s patience 3/15
+2026-08-16 07:28:33,105 │ INFO    │   e 57 train 0.09937 val 0.08515  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:28:35,838 │ INFO    │   e 58 train 0.09936 val 0.08539     lr 3.00e-04 3s patience 1/15
+2026-08-16 07:28:38,570 │ INFO    │   e 59 train 0.09901 val 0.08521     lr 3.00e-04 3s patience 2/15
+2026-08-16 07:28:41,354 │ INFO    │   e 60 train 0.09920 val 0.08507  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:28:44,150 │ INFO    │   e 61 train 0.09903 val 0.08583     lr 3.00e-04 3s patience 1/15
+2026-08-16 07:28:47,008 │ INFO    │   e 62 train 0.09909 val 0.08482  ★ lr 3.00e-04 3s patience 0/15
+2026-08-16 07:28:49,755 │ INFO    │   e 63 train 0.09934 val 0.08556     lr 3.00e-04 3s patience 1/15
+2026-08-16 07:28:52,513 │ INFO    │   e 64 train 0.09888 val 0.08485     lr 3.00e-04 3s patience 2/15
+2026-08-16 07:28:55,246 │ INFO    │   e 65 train 0.09911 val 0.08544     lr 3.00e-04 3s patience 3/15
+2026-08-16 07:28:58,025 │ INFO    │   e 66 train 0.09872 val 0.08510     lr 3.00e-04 3s patience 4/15
+2026-08-16 07:29:00,843 │ INFO    │   e 67 train 0.09904 val 0.08537     lr 3.00e-04 3s patience 5/15
+2026-08-16 07:29:03,572 │ INFO    │   e 68 train 0.09874 val 0.08525     lr 3.00e-04 3s patience 6/15
+2026-08-16 07:29:06,310 │ INFO    │   e 69 train 0.09843 val 0.08496     lr 1.50e-04 3s patience 7/15
+2026-08-16 07:29:09,076 │ INFO    │   e 70 train 0.09809 val 0.08421  ★ lr 1.50e-04 3s patience 0/15
+2026-08-16 07:29:11,875 │ INFO    │   e 71 train 0.09799 val 0.08417  ★ lr 1.50e-04 3s patience 0/15
+2026-08-16 07:29:14,709 │ INFO    │   e 72 train 0.09802 val 0.08409  ★ lr 1.50e-04 3s patience 0/15
+2026-08-16 07:29:17,478 │ INFO    │   e 73 train 0.09810 val 0.08406  ★ lr 1.50e-04 3s patience 0/15
+2026-08-16 07:29:20,202 │ INFO    │   e 74 train 0.09801 val 0.08418     lr 1.50e-04 3s patience 1/15
+2026-08-16 07:29:22,919 │ INFO    │   e 75 train 0.09793 val 0.08451     lr 1.50e-04 3s patience 2/15
+2026-08-16 07:29:25,684 │ INFO    │   e 76 train 0.09787 val 0.08414     lr 1.50e-04 3s patience 3/15
+2026-08-16 07:29:28,490 │ INFO    │   e 77 train 0.09795 val 0.08421     lr 1.50e-04 3s patience 4/15
+2026-08-16 07:29:31,237 │ INFO    │   e 78 train 0.09780 val 0.08386  ★ lr 1.50e-04 3s patience 0/15
+2026-08-16 07:29:33,945 │ INFO    │   e 79 train 0.09782 val 0.08451     lr 1.50e-04 3s patience 1/15
+2026-08-16 07:29:34,074 │ INFO    │ ✔ finished [Graph WaveNet] best_val=0.08386 @ epoch 78
+2026-08-16 07:29:36,308 │ INFO    │ ▶ training [AGCRN [seed 42]] — 3,640 train / 364 tune windows, 114 batches/epoch, from epoch 0
+2026-08-16 07:29:44,946 │ INFO    │   e  0 train 0.27614 val 0.21961  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:29:52,539 │ INFO    │   e  1 train 0.20012 val 0.16605  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:30:00,923 │ INFO    │   e  2 train 0.15414 val 0.13193  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:30:09,855 │ INFO    │   e  3 train 0.13340 val 0.11930  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:30:17,304 │ INFO    │   e  4 train 0.12562 val 0.11232  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:30:25,927 │ INFO    │   e  5 train 0.12095 val 0.10775  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:30:33,339 │ INFO    │   e  6 train 0.11734 val 0.10336  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:30:41,804 │ INFO    │   e  7 train 0.11424 val 0.10099  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:30:49,712 │ INFO    │   e  8 train 0.11159 val 0.09734  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:30:57,751 │ INFO    │   e  9 train 0.10916 val 0.09370  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:31:06,215 │ INFO    │   e 10 train 0.10729 val 0.09114  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:31:13,542 │ INFO    │   e 11 train 0.10547 val 0.08925  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:31:22,226 │ INFO    │   e 12 train 0.10387 val 0.08857  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:31:29,660 │ INFO    │   e 13 train 0.10238 val 0.08713  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:31:38,056 │ INFO    │   e 14 train 0.10125 val 0.08578  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:31:46,217 │ INFO    │   e 15 train 0.10017 val 0.08542  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:31:54,077 │ INFO    │   e 16 train 0.09910 val 0.08275  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:32:02,539 │ INFO    │   e 17 train 0.09821 val 0.08182  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:32:10,009 │ INFO    │   e 18 train 0.09723 val 0.08127  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:32:18,499 │ INFO    │   e 19 train 0.09660 val 0.08100  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:32:26,192 │ INFO    │   e 20 train 0.09590 val 0.07978  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:32:34,268 │ INFO    │   e 21 train 0.09509 val 0.07962  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:32:43,158 │ INFO    │   e 22 train 0.09449 val 0.07701  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:32:50,640 │ INFO    │   e 23 train 0.09387 val 0.07861     lr 3.00e-04 7s patience 1/15
+2026-08-16 07:32:59,265 │ INFO    │   e 24 train 0.09336 val 0.07681  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:33:07,155 │ INFO    │   e 25 train 0.09281 val 0.07633  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:33:15,831 │ INFO    │   e 26 train 0.09219 val 0.07498  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:33:24,706 │ INFO    │   e 27 train 0.09168 val 0.07407  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:33:32,121 │ INFO    │   e 28 train 0.09125 val 0.07483     lr 3.00e-04 7s patience 1/15
+2026-08-16 07:33:40,692 │ INFO    │   e 29 train 0.09074 val 0.07318  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:33:47,994 │ INFO    │   e 30 train 0.09011 val 0.07287  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:33:56,524 │ INFO    │   e 31 train 0.08977 val 0.07221  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:34:04,415 │ INFO    │   e 32 train 0.08924 val 0.07168  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:34:12,369 │ INFO    │   e 33 train 0.08885 val 0.07125  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:34:20,887 │ INFO    │   e 34 train 0.08866 val 0.07214     lr 3.00e-04 8s patience 1/15
+2026-08-16 07:34:28,351 │ INFO    │   e 35 train 0.08824 val 0.07080  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:34:36,958 │ INFO    │   e 36 train 0.08798 val 0.07104     lr 3.00e-04 9s patience 1/15
+2026-08-16 07:34:44,581 │ INFO    │   e 37 train 0.08742 val 0.06979  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:34:53,009 │ INFO    │   e 38 train 0.08716 val 0.07190     lr 3.00e-04 8s patience 1/15
+2026-08-16 07:35:01,297 │ INFO    │   e 39 train 0.08693 val 0.06986     lr 3.00e-04 8s patience 2/15
+2026-08-16 07:35:08,835 │ INFO    │   e 40 train 0.08652 val 0.06924  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:35:17,344 │ INFO    │   e 41 train 0.08656 val 0.06903  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:35:24,730 │ INFO    │   e 42 train 0.08626 val 0.06937     lr 3.00e-04 7s patience 1/15
+2026-08-16 07:35:33,364 │ INFO    │   e 43 train 0.08598 val 0.06965     lr 3.00e-04 9s patience 2/15
+2026-08-16 07:35:41,260 │ INFO    │   e 44 train 0.08580 val 0.06964     lr 3.00e-04 8s patience 3/15
+2026-08-16 07:35:49,186 │ INFO    │   e 45 train 0.08565 val 0.06946     lr 3.00e-04 8s patience 4/15
+2026-08-16 07:35:57,974 │ INFO    │   e 46 train 0.08538 val 0.06887  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:36:05,383 │ INFO    │   e 47 train 0.08534 val 0.06916     lr 3.00e-04 7s patience 1/15
+2026-08-16 07:36:13,765 │ INFO    │   e 48 train 0.08516 val 0.07046     lr 3.00e-04 8s patience 2/15
+2026-08-16 07:36:21,351 │ INFO    │   e 49 train 0.08504 val 0.07021     lr 3.00e-04 8s patience 3/15
+2026-08-16 07:36:29,765 │ INFO    │   e 50 train 0.08509 val 0.06907     lr 3.00e-04 8s patience 4/15
+2026-08-16 07:36:38,090 │ INFO    │   e 51 train 0.08521 val 0.06753  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:36:45,789 │ INFO    │   e 52 train 0.08448 val 0.06787     lr 3.00e-04 8s patience 1/15
+2026-08-16 07:36:54,227 │ INFO    │   e 53 train 0.08444 val 0.07021     lr 3.00e-04 8s patience 2/15
+2026-08-16 07:37:01,558 │ INFO    │   e 54 train 0.08446 val 0.06783     lr 3.00e-04 7s patience 3/15
+2026-08-16 07:37:09,934 │ INFO    │   e 55 train 0.08435 val 0.06792     lr 3.00e-04 8s patience 4/15
+2026-08-16 07:37:17,570 │ INFO    │   e 56 train 0.08425 val 0.06836     lr 3.00e-04 8s patience 5/15
+2026-08-16 07:37:25,741 │ INFO    │   e 57 train 0.08396 val 0.06796     lr 3.00e-04 8s patience 6/15
+2026-08-16 07:37:34,133 │ INFO    │   e 58 train 0.08406 val 0.06937     lr 1.50e-04 8s patience 7/15
+2026-08-16 07:37:41,487 │ INFO    │   e 59 train 0.08353 val 0.06736  ★ lr 1.50e-04 7s patience 0/15
+2026-08-16 07:37:49,936 │ INFO    │   e 60 train 0.08339 val 0.06733  ★ lr 1.50e-04 8s patience 0/15
+2026-08-16 07:37:57,475 │ INFO    │   e 61 train 0.08333 val 0.06892     lr 1.50e-04 7s patience 1/15
+2026-08-16 07:38:06,167 │ INFO    │   e 62 train 0.08343 val 0.06810     lr 1.50e-04 9s patience 2/15
+2026-08-16 07:38:14,176 │ INFO    │   e 63 train 0.08324 val 0.06839     lr 1.50e-04 8s patience 3/15
+2026-08-16 07:38:22,003 │ INFO    │   e 64 train 0.08338 val 0.06800     lr 1.50e-04 8s patience 4/15
+2026-08-16 07:38:30,520 │ INFO    │   e 65 train 0.08314 val 0.06788     lr 1.50e-04 8s patience 5/15
+2026-08-16 07:38:37,976 │ INFO    │   e 66 train 0.08315 val 0.06708  ★ lr 1.50e-04 7s patience 0/15
+2026-08-16 07:38:46,484 │ INFO    │   e 67 train 0.08314 val 0.06744     lr 1.50e-04 8s patience 1/15
+2026-08-16 07:38:54,141 │ INFO    │   e 68 train 0.08299 val 0.06712     lr 1.50e-04 8s patience 2/15
+2026-08-16 07:39:02,384 │ INFO    │   e 69 train 0.08292 val 0.06710     lr 1.50e-04 8s patience 3/15
+2026-08-16 07:39:10,870 │ INFO    │   e 70 train 0.08288 val 0.06788     lr 1.50e-04 8s patience 4/15
+2026-08-16 07:39:18,213 │ INFO    │   e 71 train 0.08288 val 0.06730     lr 1.50e-04 7s patience 5/15
+2026-08-16 07:39:26,855 │ INFO    │   e 72 train 0.08284 val 0.06728     lr 1.50e-04 9s patience 6/15
+2026-08-16 07:39:34,284 │ INFO    │   e 73 train 0.08283 val 0.06763     lr 7.50e-05 7s patience 7/15
+2026-08-16 07:39:42,727 │ INFO    │   e 74 train 0.08256 val 0.06710     lr 7.50e-05 8s patience 8/15
+2026-08-16 07:39:50,688 │ INFO    │   e 75 train 0.08252 val 0.06756     lr 7.50e-05 8s patience 9/15
+2026-08-16 07:39:58,686 │ INFO    │   e 76 train 0.08253 val 0.06707  ★ lr 7.50e-05 8s patience 0/15
+2026-08-16 07:40:07,214 │ INFO    │   e 77 train 0.08249 val 0.06703  ★ lr 7.50e-05 8s patience 0/15
+2026-08-16 07:40:14,562 │ INFO    │   e 78 train 0.08246 val 0.06667  ★ lr 7.50e-05 7s patience 0/15
+2026-08-16 07:40:22,955 │ INFO    │   e 79 train 0.08247 val 0.06690     lr 7.50e-05 8s patience 1/15
+2026-08-16 07:40:23,050 │ INFO    │ ✔ finished [AGCRN [seed 42]] best_val=0.06667 @ epoch 78
+2026-08-16 07:40:24,171 │ INFO    │ ▶ training [AGCRN [seed 1337]] — 3,640 train / 364 tune windows, 114 batches/epoch, from epoch 0
+2026-08-16 07:40:31,982 │ INFO    │   e  0 train 0.27323 val 0.21429  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:40:39,960 │ INFO    │   e  1 train 0.19651 val 0.16438  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:40:48,465 │ INFO    │   e  2 train 0.15444 val 0.13033  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:40:55,972 │ INFO    │   e  3 train 0.13301 val 0.11917  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:41:04,487 │ INFO    │   e  4 train 0.12629 val 0.11313  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:41:12,070 │ INFO    │   e  5 train 0.12205 val 0.10889  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:41:20,472 │ INFO    │   e  6 train 0.11849 val 0.10462  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:41:28,945 │ INFO    │   e  7 train 0.11529 val 0.10199  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:41:36,509 │ INFO    │   e  8 train 0.11249 val 0.09826  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:41:45,237 │ INFO    │   e  9 train 0.10990 val 0.09473  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:41:52,624 │ INFO    │   e 10 train 0.10790 val 0.09222  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:42:01,475 │ INFO    │   e 11 train 0.10602 val 0.09016  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:42:09,576 │ INFO    │   e 12 train 0.10454 val 0.08914  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:42:17,527 │ INFO    │   e 13 train 0.10311 val 0.08802  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:42:26,139 │ INFO    │   e 14 train 0.10203 val 0.08716  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:42:33,879 │ INFO    │   e 15 train 0.10089 val 0.08614  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:42:42,394 │ INFO    │   e 16 train 0.09981 val 0.08351  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:42:50,335 │ INFO    │   e 17 train 0.09882 val 0.08271  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:42:58,438 │ INFO    │   e 18 train 0.09782 val 0.08174  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:43:06,939 │ INFO    │   e 19 train 0.09708 val 0.08176     lr 3.00e-04 8s patience 1/15
+2026-08-16 07:43:14,757 │ INFO    │   e 20 train 0.09633 val 0.08014  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:43:23,231 │ INFO    │   e 21 train 0.09556 val 0.08012  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:43:31,157 │ INFO    │   e 22 train 0.09491 val 0.07697  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:43:39,388 │ INFO    │   e 23 train 0.09431 val 0.07945     lr 3.00e-04 8s patience 1/15
+2026-08-16 07:43:47,836 │ INFO    │   e 24 train 0.09371 val 0.07717     lr 3.00e-04 8s patience 2/15
+2026-08-16 07:43:55,173 │ INFO    │   e 25 train 0.09317 val 0.07676  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:44:03,803 │ INFO    │   e 26 train 0.09259 val 0.07619  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:44:11,274 │ INFO    │   e 27 train 0.09207 val 0.07474  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:44:19,766 │ INFO    │   e 28 train 0.09159 val 0.07501     lr 3.00e-04 8s patience 1/15
+2026-08-16 07:44:27,785 │ INFO    │   e 29 train 0.09112 val 0.07361  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:44:35,736 │ INFO    │   e 30 train 0.09043 val 0.07309  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:44:44,526 │ INFO    │   e 31 train 0.09011 val 0.07255  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:44:51,952 │ INFO    │   e 32 train 0.08953 val 0.07263     lr 3.00e-04 7s patience 1/15
+2026-08-16 07:45:00,651 │ INFO    │   e 33 train 0.08913 val 0.07087  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:45:08,415 │ INFO    │   e 34 train 0.08885 val 0.07138     lr 3.00e-04 8s patience 1/15
+2026-08-16 07:45:16,564 │ INFO    │   e 35 train 0.08843 val 0.07112     lr 3.00e-04 8s patience 2/15
+2026-08-16 07:45:25,054 │ INFO    │   e 36 train 0.08819 val 0.07124     lr 3.00e-04 8s patience 3/15
+2026-08-16 07:45:32,548 │ INFO    │   e 37 train 0.08762 val 0.06964  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:45:41,054 │ INFO    │   e 38 train 0.08723 val 0.07096     lr 3.00e-04 8s patience 1/15
+2026-08-16 07:45:48,442 │ INFO    │   e 39 train 0.08709 val 0.06914  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:45:57,003 │ INFO    │   e 40 train 0.08661 val 0.06889  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:46:05,221 │ INFO    │   e 41 train 0.08658 val 0.06849  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:46:13,000 │ INFO    │   e 42 train 0.08636 val 0.06881     lr 3.00e-04 8s patience 1/15
+2026-08-16 07:46:21,726 │ INFO    │   e 43 train 0.08600 val 0.06966     lr 3.00e-04 9s patience 2/15
+2026-08-16 07:46:29,124 │ INFO    │   e 44 train 0.08587 val 0.07020     lr 3.00e-04 7s patience 3/15
+2026-08-16 07:46:37,740 │ INFO    │   e 45 train 0.08565 val 0.06831  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:46:45,636 │ INFO    │   e 46 train 0.08529 val 0.06798  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:46:54,178 │ INFO    │   e 47 train 0.08526 val 0.06889     lr 3.00e-04 8s patience 1/15
+2026-08-16 07:47:02,995 │ INFO    │   e 48 train 0.08512 val 0.07010     lr 3.00e-04 9s patience 2/15
+2026-08-16 07:47:10,663 │ INFO    │   e 49 train 0.08517 val 0.06990     lr 3.00e-04 8s patience 3/15
+2026-08-16 07:47:19,300 │ INFO    │   e 50 train 0.08506 val 0.06767  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:47:27,066 │ INFO    │   e 51 train 0.08509 val 0.06713  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:47:35,453 │ INFO    │   e 52 train 0.08440 val 0.06738     lr 3.00e-04 8s patience 1/15
+2026-08-16 07:47:44,075 │ INFO    │   e 53 train 0.08446 val 0.06911     lr 3.00e-04 9s patience 2/15
+2026-08-16 07:47:51,373 │ INFO    │   e 54 train 0.08452 val 0.06794     lr 3.00e-04 7s patience 3/15
+2026-08-16 07:47:59,839 │ INFO    │   e 55 train 0.08449 val 0.06820     lr 3.00e-04 8s patience 4/15
+2026-08-16 07:48:07,424 │ INFO    │   e 56 train 0.08426 val 0.06779     lr 3.00e-04 8s patience 5/15
+2026-08-16 07:48:15,816 │ INFO    │   e 57 train 0.08397 val 0.06826     lr 3.00e-04 8s patience 6/15
+2026-08-16 07:48:24,118 │ INFO    │   e 58 train 0.08405 val 0.06766     lr 1.50e-04 8s patience 7/15
+2026-08-16 07:48:31,744 │ INFO    │   e 59 train 0.08355 val 0.06658  ★ lr 1.50e-04 8s patience 0/15
+2026-08-16 07:48:40,242 │ INFO    │   e 60 train 0.08340 val 0.06674     lr 1.50e-04 8s patience 1/15
+2026-08-16 07:48:47,652 │ INFO    │   e 61 train 0.08333 val 0.06830     lr 1.50e-04 7s patience 2/15
+2026-08-16 07:48:56,232 │ INFO    │   e 62 train 0.08345 val 0.06743     lr 1.50e-04 9s patience 3/15
+2026-08-16 07:49:04,329 │ INFO    │   e 63 train 0.08323 val 0.06756     lr 1.50e-04 8s patience 4/15
+2026-08-16 07:49:12,679 │ INFO    │   e 64 train 0.08340 val 0.06723     lr 1.50e-04 8s patience 5/15
+2026-08-16 07:49:21,199 │ INFO    │   e 65 train 0.08321 val 0.06721     lr 1.50e-04 8s patience 6/15
+2026-08-16 07:49:28,733 │ INFO    │   e 66 train 0.08319 val 0.06635  ★ lr 1.50e-04 7s patience 0/15
+2026-08-16 07:49:37,300 │ INFO    │   e 67 train 0.08328 val 0.06684     lr 1.50e-04 8s patience 1/15
+2026-08-16 07:49:45,256 │ INFO    │   e 68 train 0.08302 val 0.06696     lr 1.50e-04 8s patience 2/15
+2026-08-16 07:49:53,439 │ INFO    │   e 69 train 0.08302 val 0.06665     lr 1.50e-04 8s patience 3/15
+2026-08-16 07:50:02,280 │ INFO    │   e 70 train 0.08295 val 0.06708     lr 1.50e-04 9s patience 4/15
+2026-08-16 07:50:09,821 │ INFO    │   e 71 train 0.08288 val 0.06743     lr 1.50e-04 7s patience 5/15
+2026-08-16 07:50:18,247 │ INFO    │   e 72 train 0.08290 val 0.06645     lr 1.50e-04 8s patience 6/15
+2026-08-16 07:50:25,639 │ INFO    │   e 73 train 0.08288 val 0.06688     lr 7.50e-05 7s patience 7/15
+2026-08-16 07:50:34,186 │ INFO    │   e 74 train 0.08262 val 0.06651     lr 7.50e-05 8s patience 8/15
+2026-08-16 07:50:42,315 │ INFO    │   e 75 train 0.08258 val 0.06671     lr 7.50e-05 8s patience 9/15
+2026-08-16 07:50:49,906 │ INFO    │   e 76 train 0.08258 val 0.06658     lr 7.50e-05 8s patience 10/15
+2026-08-16 07:50:58,474 │ INFO    │   e 77 train 0.08255 val 0.06636     lr 7.50e-05 9s patience 11/15
+2026-08-16 07:51:05,933 │ INFO    │   e 78 train 0.08249 val 0.06625  ★ lr 7.50e-05 7s patience 0/15
+2026-08-16 07:51:14,281 │ INFO    │   e 79 train 0.08254 val 0.06612  ★ lr 7.50e-05 8s patience 0/15
+2026-08-16 07:51:14,379 │ INFO    │ ✔ finished [AGCRN [seed 1337]] best_val=0.06612 @ epoch 79
+2026-08-16 07:51:15,499 │ INFO    │ ▶ training [AGCRN [seed 7]] — 3,640 train / 364 tune windows, 114 batches/epoch, from epoch 0
+2026-08-16 07:51:23,301 │ INFO    │   e  0 train 0.27647 val 0.21421  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:51:31,274 │ INFO    │   e  1 train 0.18939 val 0.16120  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:51:39,801 │ INFO    │   e  2 train 0.15089 val 0.13818  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:51:47,149 │ INFO    │   e  3 train 0.13734 val 0.12392  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:51:55,718 │ INFO    │   e  4 train 0.12885 val 0.11553  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:52:03,464 │ INFO    │   e  5 train 0.12327 val 0.11055  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:52:11,697 │ INFO    │   e  6 train 0.11926 val 0.10582  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:52:20,100 │ INFO    │   e  7 train 0.11616 val 0.10322  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:52:27,263 │ INFO    │   e  8 train 0.11361 val 0.10014  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:52:35,874 │ INFO    │   e  9 train 0.11129 val 0.09628  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:52:43,526 │ INFO    │   e 10 train 0.10938 val 0.09375  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:52:52,125 │ INFO    │   e 11 train 0.10740 val 0.09120  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:53:00,148 │ INFO    │   e 12 train 0.10553 val 0.08986  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:53:07,993 │ INFO    │   e 13 train 0.10369 val 0.08809  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:53:16,488 │ INFO    │   e 14 train 0.10222 val 0.08707  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:53:23,801 │ INFO    │   e 15 train 0.10091 val 0.08589  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:53:32,185 │ INFO    │   e 16 train 0.09970 val 0.08368  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:53:39,860 │ INFO    │   e 17 train 0.09864 val 0.08219  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:53:48,065 │ INFO    │   e 18 train 0.09756 val 0.08066  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:53:56,617 │ INFO    │   e 19 train 0.09688 val 0.08057  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:54:04,053 │ INFO    │   e 20 train 0.09618 val 0.07940  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:54:12,705 │ INFO    │   e 21 train 0.09530 val 0.07867  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:54:20,250 │ INFO    │   e 22 train 0.09474 val 0.07679  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:54:28,752 │ INFO    │   e 23 train 0.09407 val 0.07819     lr 3.00e-04 8s patience 1/15
+2026-08-16 07:54:37,132 │ INFO    │   e 24 train 0.09365 val 0.07687     lr 3.00e-04 8s patience 2/15
+2026-08-16 07:54:45,115 │ INFO    │   e 25 train 0.09308 val 0.07642  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:54:53,876 │ INFO    │   e 26 train 0.09250 val 0.07489  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:55:01,337 │ INFO    │   e 27 train 0.09205 val 0.07444  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:55:09,874 │ INFO    │   e 28 train 0.09169 val 0.07474     lr 3.00e-04 8s patience 1/15
+2026-08-16 07:55:17,898 │ INFO    │   e 29 train 0.09120 val 0.07376  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:55:25,707 │ INFO    │   e 30 train 0.09076 val 0.07374  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:55:34,044 │ INFO    │   e 31 train 0.09053 val 0.07397     lr 3.00e-04 8s patience 1/15
+2026-08-16 07:55:41,384 │ INFO    │   e 32 train 0.08990 val 0.07289  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:55:49,877 │ INFO    │   e 33 train 0.08955 val 0.07119  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:55:57,551 │ INFO    │   e 34 train 0.08927 val 0.07244     lr 3.00e-04 8s patience 1/15
+2026-08-16 07:56:05,912 │ INFO    │   e 35 train 0.08893 val 0.07065  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:56:14,554 │ INFO    │   e 36 train 0.08879 val 0.07200     lr 3.00e-04 9s patience 1/15
+2026-08-16 07:56:21,901 │ INFO    │   e 37 train 0.08816 val 0.07046  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:56:30,376 │ INFO    │   e 38 train 0.08786 val 0.07182     lr 3.00e-04 8s patience 1/15
+2026-08-16 07:56:38,360 │ INFO    │   e 39 train 0.08766 val 0.07131     lr 3.00e-04 8s patience 2/15
+2026-08-16 07:56:46,600 │ INFO    │   e 40 train 0.08738 val 0.06976  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:56:55,182 │ INFO    │   e 41 train 0.08713 val 0.06959  ★ lr 3.00e-04 9s patience 0/15
+2026-08-16 07:57:02,784 │ INFO    │   e 42 train 0.08687 val 0.06930  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:57:11,485 │ INFO    │   e 43 train 0.08653 val 0.07010     lr 3.00e-04 9s patience 1/15
+2026-08-16 07:57:19,037 │ INFO    │   e 44 train 0.08639 val 0.06995     lr 3.00e-04 7s patience 2/15
+2026-08-16 07:57:27,708 │ INFO    │   e 45 train 0.08623 val 0.06950     lr 3.00e-04 9s patience 3/15
+2026-08-16 07:57:36,020 │ INFO    │   e 46 train 0.08580 val 0.06880  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:57:44,062 │ INFO    │   e 47 train 0.08567 val 0.06997     lr 3.00e-04 8s patience 1/15
+2026-08-16 07:57:52,575 │ INFO    │   e 48 train 0.08568 val 0.06990     lr 3.00e-04 8s patience 2/15
+2026-08-16 07:58:00,073 │ INFO    │   e 49 train 0.08578 val 0.07251     lr 3.00e-04 7s patience 3/15
+2026-08-16 07:58:08,537 │ INFO    │   e 50 train 0.08531 val 0.06815  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:58:16,616 │ INFO    │   e 51 train 0.08519 val 0.06814  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:58:24,476 │ INFO    │   e 52 train 0.08481 val 0.06802  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:58:32,810 │ INFO    │   e 53 train 0.08483 val 0.07037     lr 3.00e-04 8s patience 1/15
+2026-08-16 07:58:40,125 │ INFO    │   e 54 train 0.08462 val 0.06842     lr 3.00e-04 7s patience 2/15
+2026-08-16 07:58:48,609 │ INFO    │   e 55 train 0.08474 val 0.06744  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 07:58:56,289 │ INFO    │   e 56 train 0.08479 val 0.06863     lr 3.00e-04 8s patience 1/15
+2026-08-16 07:59:04,662 │ INFO    │   e 57 train 0.08418 val 0.06817     lr 3.00e-04 8s patience 2/15
+2026-08-16 07:59:13,276 │ INFO    │   e 58 train 0.08420 val 0.07036     lr 3.00e-04 9s patience 3/15
+2026-08-16 07:59:20,795 │ INFO    │   e 59 train 0.08420 val 0.06737  ★ lr 3.00e-04 7s patience 0/15
+2026-08-16 07:59:29,514 │ INFO    │   e 60 train 0.08398 val 0.06743     lr 3.00e-04 9s patience 1/15
+2026-08-16 07:59:37,041 │ INFO    │   e 61 train 0.08398 val 0.06987     lr 3.00e-04 7s patience 2/15
+2026-08-16 07:59:45,689 │ INFO    │   e 62 train 0.08438 val 0.06751     lr 3.00e-04 9s patience 3/15
+2026-08-16 07:59:53,926 │ INFO    │   e 63 train 0.08363 val 0.06827     lr 3.00e-04 8s patience 4/15
+2026-08-16 08:00:01,589 │ INFO    │   e 64 train 0.08372 val 0.06727  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 08:00:10,219 │ INFO    │   e 65 train 0.08386 val 0.06871     lr 3.00e-04 9s patience 1/15
+2026-08-16 08:00:17,558 │ INFO    │   e 66 train 0.08379 val 0.06873     lr 3.00e-04 7s patience 2/15
+2026-08-16 08:00:26,026 │ INFO    │   e 67 train 0.08359 val 0.06691  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 08:00:33,524 │ INFO    │   e 68 train 0.08345 val 0.06838     lr 3.00e-04 7s patience 1/15
+2026-08-16 08:00:41,760 │ INFO    │   e 69 train 0.08320 val 0.06889     lr 3.00e-04 8s patience 2/15
+2026-08-16 08:00:50,238 │ INFO    │   e 70 train 0.08322 val 0.06680  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 08:00:57,662 │ INFO    │   e 71 train 0.08317 val 0.06950     lr 3.00e-04 7s patience 1/15
+2026-08-16 08:01:06,139 │ INFO    │   e 72 train 0.08303 val 0.06712     lr 3.00e-04 8s patience 2/15
+2026-08-16 08:01:13,529 │ INFO    │   e 73 train 0.08324 val 0.06775     lr 3.00e-04 7s patience 3/15
+2026-08-16 08:01:21,999 │ INFO    │   e 74 train 0.08303 val 0.06851     lr 3.00e-04 8s patience 4/15
+2026-08-16 08:01:29,997 │ INFO    │   e 75 train 0.08335 val 0.06677  ★ lr 3.00e-04 8s patience 0/15
+2026-08-16 08:01:37,813 │ INFO    │   e 76 train 0.08288 val 0.06731     lr 3.00e-04 8s patience 1/15
+2026-08-16 08:01:46,508 │ INFO    │   e 77 train 0.08276 val 0.06816     lr 3.00e-04 9s patience 2/15
+2026-08-16 08:01:53,968 │ INFO    │   e 78 train 0.08284 val 0.06902     lr 3.00e-04 7s patience 3/15
+2026-08-16 08:02:02,463 │ INFO    │   e 79 train 0.08293 val 0.06774     lr 3.00e-04 8s patience 4/15
+2026-08-16 08:02:02,570 │ INFO    │ ✔ finished [AGCRN [seed 7]] best_val=0.06677 @ epoch 75
+2026-08-16 08:02:04,558 │ INFO    │ ▶ training [TGALSTM] — 3,640 train / 364 tune windows, 114 batches/epoch, from epoch 0
+2026-08-16 08:02:09,782 │ INFO    │   e  0 train 0.20200 val 0.13624  ★ lr 3.00e-04 5s patience 0/15
+2026-08-16 08:02:14,433 │ INFO    │   e  1 train 0.13430 val 0.11276  ★ lr 3.00e-04 5s patience 0/15
+2026-08-16 08:02:19,054 │ INFO    │   e  2 train 0.12503 val 0.10670  ★ lr 3.00e-04 5s patience 0/15
+2026-08-16 08:02:23,639 │ INFO    │   e  3 train 0.12199 val 0.10698     lr 3.00e-04 5s patience 1/15
+2026-08-16 08:02:28,278 │ INFO    │   e  4 train 0.11969 val 0.10258  ★ lr 3.00e-04 5s patience 0/15
+2026-08-16 08:02:32,900 │ INFO    │   e  5 train 0.11776 val 0.10006  ★ lr 3.00e-04 5s patience 0/15
+2026-08-16 08:02:37,469 │ INFO    │   e  6 train 0.11693 val 0.10093     lr 3.00e-04 5s patience 1/15
+2026-08-16 08:02:42,057 │ INFO    │   e  7 train 0.11581 val 0.09769  ★ lr 3.00e-04 5s patience 0/15
+2026-08-16 08:02:46,612 │ INFO    │   e  8 train 0.11456 val 0.09635  ★ lr 3.00e-04 4s patience 0/15
+2026-08-16 08:02:51,127 │ INFO    │   e  9 train 0.11376 val 0.09508  ★ lr 3.00e-04 4s patience 0/15
+2026-08-16 08:02:55,649 │ INFO    │   e 10 train 0.11312 val 0.09585     lr 3.00e-04 4s patience 1/15
+2026-08-16 08:03:00,157 │ INFO    │   e 11 train 0.11263 val 0.09405  ★ lr 3.00e-04 4s patience 0/15
+2026-08-16 08:03:04,598 │ INFO    │   e 12 train 0.11207 val 0.09518     lr 3.00e-04 4s patience 1/15
+2026-08-16 08:03:09,082 │ INFO    │   e 13 train 0.11162 val 0.09462     lr 3.00e-04 4s patience 2/15
+2026-08-16 08:03:13,556 │ INFO    │   e 14 train 0.11065 val 0.09293  ★ lr 3.00e-04 4s patience 0/15
+2026-08-16 08:03:18,002 │ INFO    │   e 15 train 0.11116 val 0.09300     lr 3.00e-04 4s patience 1/15
+2026-08-16 08:03:22,582 │ INFO    │   e 16 train 0.10997 val 0.09233  ★ lr 3.00e-04 4s patience 0/15
+2026-08-16 08:03:27,085 │ INFO    │   e 17 train 0.10966 val 0.09219  ★ lr 3.00e-04 4s patience 0/15
+2026-08-16 08:03:31,543 │ INFO    │   e 18 train 0.10941 val 0.09300     lr 3.00e-04 4s patience 1/15
+2026-08-16 08:03:36,050 │ INFO    │   e 19 train 0.10899 val 0.09246     lr 3.00e-04 4s patience 2/15
+2026-08-16 08:03:40,577 │ INFO    │   e 20 train 0.10864 val 0.08970  ★ lr 3.00e-04 4s patience 0/15
+2026-08-16 08:03:45,063 │ INFO    │   e 21 train 0.10797 val 0.09053     lr 3.00e-04 4s patience 1/15
+2026-08-16 08:03:49,586 │ INFO    │   e 22 train 0.10824 val 0.08995     lr 3.00e-04 4s patience 2/15
+2026-08-16 08:03:54,112 │ INFO    │   e 23 train 0.10781 val 0.09028     lr 3.00e-04 4s patience 3/15
+2026-08-16 08:03:58,600 │ INFO    │   e 24 train 0.10739 val 0.09109     lr 3.00e-04 4s patience 4/15
+2026-08-16 08:04:03,118 │ INFO    │   e 25 train 0.10727 val 0.09035     lr 3.00e-04 4s patience 5/15
+2026-08-16 08:04:07,680 │ INFO    │   e 26 train 0.10698 val 0.08845  ★ lr 3.00e-04 5s patience 0/15
+2026-08-16 08:04:12,195 │ INFO    │   e 27 train 0.10657 val 0.08881     lr 3.00e-04 4s patience 1/15
+2026-08-16 08:04:16,745 │ INFO    │   e 28 train 0.10643 val 0.09072     lr 3.00e-04 4s patience 2/15
+2026-08-16 08:04:21,272 │ INFO    │   e 29 train 0.10643 val 0.08941     lr 3.00e-04 4s patience 3/15
+2026-08-16 08:04:25,787 │ INFO    │   e 30 train 0.10619 val 0.09069     lr 3.00e-04 4s patience 4/15
+2026-08-16 08:04:30,347 │ INFO    │   e 31 train 0.10609 val 0.08782  ★ lr 3.00e-04 5s patience 0/15
+2026-08-16 08:04:34,933 │ INFO    │   e 32 train 0.10541 val 0.08716  ★ lr 3.00e-04 5s patience 0/15
+2026-08-16 08:04:39,425 │ INFO    │   e 33 train 0.10553 val 0.08759     lr 3.00e-04 4s patience 1/15
+2026-08-16 08:04:43,933 │ INFO    │   e 34 train 0.10546 val 0.08951     lr 3.00e-04 4s patience 2/15
+2026-08-16 08:04:48,480 │ INFO    │   e 35 train 0.10523 val 0.08830     lr 3.00e-04 4s patience 3/15
+2026-08-16 08:04:53,045 │ INFO    │   e 36 train 0.10490 val 0.08679  ★ lr 3.00e-04 5s patience 0/15
+2026-08-16 08:04:57,562 │ INFO    │   e 37 train 0.10477 val 0.08688     lr 3.00e-04 4s patience 1/15
+2026-08-16 08:05:02,094 │ INFO    │   e 38 train 0.10455 val 0.09017     lr 3.00e-04 4s patience 2/15
+2026-08-16 08:05:06,643 │ INFO    │   e 39 train 0.10478 val 0.08655  ★ lr 3.00e-04 4s patience 0/15
+2026-08-16 08:05:11,220 │ INFO    │   e 40 train 0.10437 val 0.08649  ★ lr 3.00e-04 5s patience 0/15
+2026-08-16 08:05:15,792 │ INFO    │   e 41 train 0.10439 val 0.08630  ★ lr 3.00e-04 5s patience 0/15
+2026-08-16 08:05:20,304 │ INFO    │   e 42 train 0.10419 val 0.08685     lr 3.00e-04 4s patience 1/15
+2026-08-16 08:05:24,832 │ INFO    │   e 43 train 0.10372 val 0.08682     lr 3.00e-04 4s patience 2/15
+2026-08-16 08:05:29,400 │ INFO    │   e 44 train 0.10383 val 0.08670     lr 3.00e-04 4s patience 3/15
+2026-08-16 08:05:33,908 │ INFO    │   e 45 train 0.10344 val 0.08880     lr 3.00e-04 4s patience 4/15
+2026-08-16 08:05:38,420 │ INFO    │   e 46 train 0.10322 val 0.08642     lr 3.00e-04 4s patience 5/15
+2026-08-16 08:05:42,966 │ INFO    │   e 47 train 0.10362 val 0.08659     lr 3.00e-04 4s patience 6/15
+2026-08-16 08:05:47,526 │ INFO    │   e 48 train 0.10307 val 0.08595  ★ lr 3.00e-04 5s patience 0/15
+2026-08-16 08:05:52,020 │ INFO    │   e 49 train 0.10310 val 0.08628     lr 3.00e-04 4s patience 1/15
+2026-08-16 08:05:56,600 │ INFO    │   e 50 train 0.10278 val 0.08549  ★ lr 3.00e-04 5s patience 0/15
+2026-08-16 08:06:01,111 │ INFO    │   e 51 train 0.10321 val 0.08602     lr 3.00e-04 4s patience 1/15
+2026-08-16 08:06:05,673 │ INFO    │   e 52 train 0.10251 val 0.08489  ★ lr 3.00e-04 5s patience 0/15
+2026-08-16 08:06:10,258 │ INFO    │   e 53 train 0.10237 val 0.08488  ★ lr 3.00e-04 5s patience 0/15
+2026-08-16 08:06:14,763 │ INFO    │   e 54 train 0.10244 val 0.08534     lr 3.00e-04 4s patience 1/15
+2026-08-16 08:06:19,287 │ INFO    │   e 55 train 0.10261 val 0.08594     lr 3.00e-04 4s patience 2/15
+2026-08-16 08:06:23,845 │ INFO    │   e 56 train 0.10223 val 0.08677     lr 3.00e-04 4s patience 3/15
+2026-08-16 08:06:28,398 │ INFO    │   e 57 train 0.10198 val 0.08410  ★ lr 3.00e-04 4s patience 0/15
+2026-08-16 08:06:32,885 │ INFO    │   e 58 train 0.10217 val 0.08703     lr 3.00e-04 4s patience 1/15
+2026-08-16 08:06:37,479 │ INFO    │   e 59 train 0.10198 val 0.08332  ★ lr 3.00e-04 5s patience 0/15
+2026-08-16 08:06:42,019 │ INFO    │   e 60 train 0.10192 val 0.08469     lr 3.00e-04 4s patience 1/15
+2026-08-16 08:06:46,518 │ INFO    │   e 61 train 0.10162 val 0.08601     lr 3.00e-04 4s patience 2/15
+2026-08-16 08:06:51,052 │ INFO    │   e 62 train 0.10209 val 0.08503     lr 3.00e-04 4s patience 3/15
+2026-08-16 08:06:55,577 │ INFO    │   e 63 train 0.10140 val 0.08504     lr 3.00e-04 4s patience 4/15
+2026-08-16 08:07:00,070 │ INFO    │   e 64 train 0.10132 val 0.08460     lr 3.00e-04 4s patience 5/15
+2026-08-16 08:07:04,620 │ INFO    │   e 65 train 0.10158 val 0.08425     lr 3.00e-04 4s patience 6/15
+2026-08-16 08:07:09,147 │ INFO    │   e 66 train 0.10146 val 0.08402     lr 1.50e-04 4s patience 7/15
+2026-08-16 08:07:13,657 │ INFO    │   e 67 train 0.10052 val 0.08333     lr 1.50e-04 4s patience 8/15
+2026-08-16 08:07:18,258 │ INFO    │   e 68 train 0.10035 val 0.08284  ★ lr 1.50e-04 5s patience 0/15
+2026-08-16 08:07:22,843 │ INFO    │   e 69 train 0.10028 val 0.08239  ★ lr 1.50e-04 5s patience 0/15
+2026-08-16 08:07:27,344 │ INFO    │   e 70 train 0.10018 val 0.08356     lr 1.50e-04 4s patience 1/15
+2026-08-16 08:07:31,873 │ INFO    │   e 71 train 0.10009 val 0.08257     lr 1.50e-04 4s patience 2/15
+2026-08-16 08:07:36,395 │ INFO    │   e 72 train 0.10024 val 0.08312     lr 1.50e-04 4s patience 3/15
+2026-08-16 08:07:40,905 │ INFO    │   e 73 train 0.10032 val 0.08246     lr 1.50e-04 4s patience 4/15
+2026-08-16 08:07:45,431 │ INFO    │   e 74 train 0.10007 val 0.08345     lr 1.50e-04 4s patience 5/15
+2026-08-16 08:07:49,942 │ INFO    │   e 75 train 0.09992 val 0.08382     lr 1.50e-04 4s patience 6/15
+2026-08-16 08:07:54,440 │ INFO    │   e 76 train 0.10030 val 0.08311     lr 7.50e-05 4s patience 7/15
+2026-08-16 08:07:59,026 │ INFO    │   e 77 train 0.09951 val 0.08230  ★ lr 7.50e-05 5s patience 0/15
+2026-08-16 08:08:03,537 │ INFO    │   e 78 train 0.09947 val 0.08238     lr 7.50e-05 4s patience 1/15
+2026-08-16 08:08:08,043 │ INFO    │   e 79 train 0.09939 val 0.08306     lr 7.50e-05 4s patience 2/15
+2026-08-16 08:08:08,170 │ INFO    │ ✔ finished [TGALSTM] best_val=0.08230 @ epoch 77
+2026-08-16 08:08:10,937 │ INFO    │ ▶ training [TDAG-Net [seed 42]] — 3,640 train / 364 tune windows, 114 batches/epoch, from epoch 0
+2026-08-16 08:08:16,573 │ INFO    │   e  0 train 0.20068 val 0.12893  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:08:22,210 │ INFO    │   e  1 train 0.12801 val 0.10825  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:08:27,886 │ INFO    │   e  2 train 0.11884 val 0.10143  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:08:33,552 │ INFO    │   e  3 train 0.11547 val 0.09907  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:08:39,222 │ INFO    │   e  4 train 0.11291 val 0.09524  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:08:44,904 │ INFO    │   e  5 train 0.11082 val 0.09515  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:08:50,549 │ INFO    │   e  6 train 0.10979 val 0.09408  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:08:56,237 │ INFO    │   e  7 train 0.10848 val 0.09112  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:09:01,900 │ INFO    │   e  8 train 0.10688 val 0.08978  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:09:07,572 │ INFO    │   e  9 train 0.10608 val 0.08919  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:09:13,255 │ INFO    │   e 10 train 0.10520 val 0.08799  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:09:18,902 │ INFO    │   e 11 train 0.10444 val 0.08652  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:09:24,554 │ INFO    │   e 12 train 0.10369 val 0.08781     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:09:30,253 │ INFO    │   e 13 train 0.10324 val 0.08633  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:09:35,919 │ INFO    │   e 14 train 0.10228 val 0.08558  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:09:41,612 │ INFO    │   e 15 train 0.10199 val 0.08478  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:09:47,244 │ INFO    │   e 16 train 0.10153 val 0.08494     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:09:52,955 │ INFO    │   e 17 train 0.10108 val 0.08435  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:09:58,567 │ INFO    │   e 18 train 0.10056 val 0.08504     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:10:04,243 │ INFO    │   e 19 train 0.10025 val 0.08351  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:10:09,951 │ INFO    │   e 20 train 0.09983 val 0.08249  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:10:15,631 │ INFO    │   e 21 train 0.09918 val 0.08221  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:10:21,310 │ INFO    │   e 22 train 0.09919 val 0.08219  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:10:26,935 │ INFO    │   e 23 train 0.09877 val 0.08278     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:10:32,570 │ INFO    │   e 24 train 0.09834 val 0.08278     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:10:38,242 │ INFO    │   e 25 train 0.09820 val 0.08088  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:10:43,916 │ INFO    │   e 26 train 0.09771 val 0.08072  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:10:49,632 │ INFO    │   e 27 train 0.09783 val 0.08034  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:10:55,269 │ INFO    │   e 28 train 0.09772 val 0.08129     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:11:00,930 │ INFO    │   e 29 train 0.09717 val 0.08117     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:11:06,608 │ INFO    │   e 30 train 0.09700 val 0.08059     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:11:12,260 │ INFO    │   e 31 train 0.09685 val 0.08054     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:11:18,290 │ INFO    │   e 32 train 0.09657 val 0.08037     lr 3.00e-04 6s patience 5/15
+2026-08-16 08:11:24,325 │ INFO    │   e 33 train 0.09651 val 0.07938  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:11:30,057 │ INFO    │   e 34 train 0.09627 val 0.07908  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:11:35,727 │ INFO    │   e 35 train 0.09609 val 0.08001     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:11:41,378 │ INFO    │   e 36 train 0.09590 val 0.07932     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:11:47,049 │ INFO    │   e 37 train 0.09580 val 0.07965     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:11:52,714 │ INFO    │   e 38 train 0.09594 val 0.07939     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:11:58,449 │ INFO    │   e 39 train 0.09546 val 0.07860  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:12:04,095 │ INFO    │   e 40 train 0.09526 val 0.07862     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:12:09,791 │ INFO    │   e 41 train 0.09487 val 0.07796  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:12:15,473 │ INFO    │   e 42 train 0.09522 val 0.07908     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:12:21,113 │ INFO    │   e 43 train 0.09501 val 0.07819     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:12:26,762 │ INFO    │   e 44 train 0.09529 val 0.07802     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:12:32,727 │ INFO    │   e 45 train 0.09479 val 0.07862     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:12:38,436 │ INFO    │   e 46 train 0.09452 val 0.07772  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:12:44,133 │ INFO    │   e 47 train 0.09417 val 0.07737  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:12:49,837 │ INFO    │   e 48 train 0.09426 val 0.07731  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:12:55,510 │ INFO    │   e 49 train 0.09438 val 0.07787     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:13:01,219 │ INFO    │   e 50 train 0.09403 val 0.07705  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:13:06,869 │ INFO    │   e 51 train 0.09409 val 0.07721     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:13:12,528 │ INFO    │   e 52 train 0.09371 val 0.07727     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:13:18,193 │ INFO    │   e 53 train 0.09368 val 0.07857     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:13:23,912 │ INFO    │   e 54 train 0.09366 val 0.07663  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:13:29,567 │ INFO    │   e 55 train 0.09373 val 0.07695     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:13:35,234 │ INFO    │   e 56 train 0.09377 val 0.07674     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:13:40,968 │ INFO    │   e 57 train 0.09329 val 0.07641  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:13:46,611 │ INFO    │   e 58 train 0.09336 val 0.07700     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:13:52,371 │ INFO    │   e 59 train 0.09306 val 0.07595  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:13:58,008 │ INFO    │   e 60 train 0.09292 val 0.07665     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:14:03,678 │ INFO    │   e 61 train 0.09309 val 0.07715     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:14:09,343 │ INFO    │   e 62 train 0.09270 val 0.07604     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:14:15,021 │ INFO    │   e 63 train 0.09286 val 0.07619     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:14:20,713 │ INFO    │   e 64 train 0.09253 val 0.07616     lr 3.00e-04 6s patience 5/15
+2026-08-16 08:14:26,372 │ INFO    │   e 65 train 0.09270 val 0.07646     lr 3.00e-04 6s patience 6/15
+2026-08-16 08:14:32,096 │ INFO    │   e 66 train 0.09302 val 0.07593  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:14:37,756 │ INFO    │   e 67 train 0.09257 val 0.07615     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:14:43,416 │ INFO    │   e 68 train 0.09247 val 0.07851     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:14:49,145 │ INFO    │   e 69 train 0.09228 val 0.07559  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:14:54,809 │ INFO    │   e 70 train 0.09224 val 0.07575     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:15:00,560 │ INFO    │   e 71 train 0.09203 val 0.07525  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:15:06,283 │ INFO    │   e 72 train 0.09213 val 0.07508  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:15:11,961 │ INFO    │   e 73 train 0.09222 val 0.07623     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:15:17,652 │ INFO    │   e 74 train 0.09190 val 0.07618     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:15:23,322 │ INFO    │   e 75 train 0.09159 val 0.07510     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:15:29,110 │ INFO    │   e 76 train 0.09187 val 0.07471  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:15:34,773 │ INFO    │   e 77 train 0.09189 val 0.07493     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:15:40,434 │ INFO    │   e 78 train 0.09167 val 0.07483     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:15:46,127 │ INFO    │   e 79 train 0.09153 val 0.07724     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:15:46,277 │ INFO    │ ✔ finished [TDAG-Net [seed 42]] best_val=0.07471 @ epoch 76
+2026-08-16 08:15:48,114 │ INFO    │ ▶ training [TDAG-Net [seed 1337]] — 3,640 train / 364 tune windows, 114 batches/epoch, from epoch 0
+2026-08-16 08:15:53,740 │ INFO    │   e  0 train 0.20890 val 0.14287  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:15:59,453 │ INFO    │   e  1 train 0.13148 val 0.10824  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:16:05,175 │ INFO    │   e  2 train 0.12013 val 0.10227  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:16:10,939 │ INFO    │   e  3 train 0.11645 val 0.09992  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:16:16,635 │ INFO    │   e  4 train 0.11348 val 0.09521  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:16:22,295 │ INFO    │   e  5 train 0.11118 val 0.09595     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:16:27,995 │ INFO    │   e  6 train 0.11042 val 0.09485  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:16:33,694 │ INFO    │   e  7 train 0.10878 val 0.09173  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:16:39,392 │ INFO    │   e  8 train 0.10730 val 0.09065  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:16:45,098 │ INFO    │   e  9 train 0.10635 val 0.09043  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:16:50,793 │ INFO    │   e 10 train 0.10549 val 0.08827  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:16:56,493 │ INFO    │   e 11 train 0.10458 val 0.08686  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:17:02,163 │ INFO    │   e 12 train 0.10386 val 0.08886     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:17:07,931 │ INFO    │   e 13 train 0.10331 val 0.08597  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:17:13,635 │ INFO    │   e 14 train 0.10231 val 0.08482  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:17:19,405 │ INFO    │   e 15 train 0.10228 val 0.08465  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:17:25,092 │ INFO    │   e 16 train 0.10150 val 0.08564     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:17:30,758 │ INFO    │   e 17 train 0.10116 val 0.08489     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:17:36,470 │ INFO    │   e 18 train 0.10083 val 0.08437  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:17:42,180 │ INFO    │   e 19 train 0.10029 val 0.08382  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:17:47,908 │ INFO    │   e 20 train 0.09999 val 0.08288  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:17:53,610 │ INFO    │   e 21 train 0.09944 val 0.08232  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:17:59,289 │ INFO    │   e 22 train 0.09909 val 0.08253     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:18:05,014 │ INFO    │   e 23 train 0.09890 val 0.08180  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:18:10,673 │ INFO    │   e 24 train 0.09855 val 0.08250     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:18:16,458 │ INFO    │   e 25 train 0.09837 val 0.08165  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:18:22,196 │ INFO    │   e 26 train 0.09775 val 0.08094  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:18:27,897 │ INFO    │   e 27 train 0.09778 val 0.08067  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:18:33,612 │ INFO    │   e 28 train 0.09772 val 0.08037  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:18:39,278 │ INFO    │   e 29 train 0.09721 val 0.08068     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:18:44,962 │ INFO    │   e 30 train 0.09713 val 0.08132     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:18:50,674 │ INFO    │   e 31 train 0.09712 val 0.08033  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:18:56,334 │ INFO    │   e 32 train 0.09657 val 0.08109     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:19:02,067 │ INFO    │   e 33 train 0.09689 val 0.07963  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:19:07,761 │ INFO    │   e 34 train 0.09627 val 0.07926  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:19:13,425 │ INFO    │   e 35 train 0.09617 val 0.08039     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:19:19,070 │ INFO    │   e 36 train 0.09608 val 0.08051     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:19:24,723 │ INFO    │   e 37 train 0.09595 val 0.08079     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:19:30,359 │ INFO    │   e 38 train 0.09588 val 0.08043     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:19:35,998 │ INFO    │   e 39 train 0.09563 val 0.07946     lr 3.00e-04 6s patience 5/15
+2026-08-16 08:19:41,651 │ INFO    │   e 40 train 0.09552 val 0.07964     lr 3.00e-04 6s patience 6/15
+2026-08-16 08:19:47,333 │ INFO    │   e 41 train 0.09530 val 0.07832  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:19:52,971 │ INFO    │   e 42 train 0.09515 val 0.07895     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:19:58,659 │ INFO    │   e 43 train 0.09488 val 0.07814  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:20:04,353 │ INFO    │   e 44 train 0.09537 val 0.07805  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:20:10,007 │ INFO    │   e 45 train 0.09478 val 0.07943     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:20:15,682 │ INFO    │   e 46 train 0.09450 val 0.07766  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:20:21,304 │ INFO    │   e 47 train 0.09429 val 0.07785     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:20:26,950 │ INFO    │   e 48 train 0.09422 val 0.07790     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:20:32,585 │ INFO    │   e 49 train 0.09445 val 0.07902     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:20:38,287 │ INFO    │   e 50 train 0.09425 val 0.07703  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:20:43,932 │ INFO    │   e 51 train 0.09404 val 0.07730     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:20:49,610 │ INFO    │   e 52 train 0.09382 val 0.07756     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:20:55,281 │ INFO    │   e 53 train 0.09377 val 0.07944     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:21:00,940 │ INFO    │   e 54 train 0.09375 val 0.07720     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:21:06,611 │ INFO    │   e 55 train 0.09388 val 0.07795     lr 3.00e-04 6s patience 5/15
+2026-08-16 08:21:12,278 │ INFO    │   e 56 train 0.09365 val 0.07725     lr 3.00e-04 6s patience 6/15
+2026-08-16 08:21:18,012 │ INFO    │   e 57 train 0.09342 val 0.07653  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:21:23,660 │ INFO    │   e 58 train 0.09336 val 0.07734     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:21:29,315 │ INFO    │   e 59 train 0.09328 val 0.07723     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:21:35,000 │ INFO    │   e 60 train 0.09305 val 0.07681     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:21:40,653 │ INFO    │   e 61 train 0.09311 val 0.07804     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:21:46,354 │ INFO    │   e 62 train 0.09291 val 0.07639  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:21:52,004 │ INFO    │   e 63 train 0.09274 val 0.07665     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:21:57,672 │ INFO    │   e 64 train 0.09273 val 0.07737     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:22:03,368 │ INFO    │   e 65 train 0.09277 val 0.07696     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:22:09,015 │ INFO    │   e 66 train 0.09266 val 0.07679     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:22:14,731 │ INFO    │   e 67 train 0.09278 val 0.07609  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:22:20,381 │ INFO    │   e 68 train 0.09286 val 0.07922     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:22:26,115 │ INFO    │   e 69 train 0.09235 val 0.07592  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:22:31,819 │ INFO    │   e 70 train 0.09225 val 0.07549  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:22:37,449 │ INFO    │   e 71 train 0.09208 val 0.07562     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:22:43,148 │ INFO    │   e 72 train 0.09222 val 0.07603     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:22:48,799 │ INFO    │   e 73 train 0.09219 val 0.07627     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:22:54,454 │ INFO    │   e 74 train 0.09178 val 0.07623     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:23:00,121 │ INFO    │   e 75 train 0.09178 val 0.07613     lr 3.00e-04 6s patience 5/15
+2026-08-16 08:23:05,778 │ INFO    │   e 76 train 0.09194 val 0.07551     lr 3.00e-04 6s patience 6/15
+2026-08-16 08:23:11,466 │ INFO    │   e 77 train 0.09211 val 0.07635     lr 1.50e-04 6s patience 7/15
+2026-08-16 08:23:17,168 │ INFO    │   e 78 train 0.09107 val 0.07472  ★ lr 1.50e-04 6s patience 0/15
+2026-08-16 08:23:22,844 │ INFO    │   e 79 train 0.09096 val 0.07583     lr 1.50e-04 6s patience 1/15
+2026-08-16 08:23:22,975 │ INFO    │ ✔ finished [TDAG-Net [seed 1337]] best_val=0.07472 @ epoch 78
+2026-08-16 08:23:24,782 │ INFO    │ ▶ training [TDAG-Net [seed 7]] — 3,640 train / 364 tune windows, 114 batches/epoch, from epoch 0
+2026-08-16 08:23:30,413 │ INFO    │   e  0 train 0.20498 val 0.14027  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:23:36,132 │ INFO    │   e  1 train 0.13034 val 0.10911  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:23:41,839 │ INFO    │   e  2 train 0.12037 val 0.10219  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:23:47,530 │ INFO    │   e  3 train 0.11690 val 0.10119  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:23:53,248 │ INFO    │   e  4 train 0.11434 val 0.09615  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:23:58,956 │ INFO    │   e  5 train 0.11222 val 0.09471  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:24:04,616 │ INFO    │   e  6 train 0.11119 val 0.09576     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:24:10,323 │ INFO    │   e  7 train 0.10976 val 0.09150  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:24:15,977 │ INFO    │   e  8 train 0.10822 val 0.09326     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:24:21,718 │ INFO    │   e  9 train 0.10728 val 0.09075  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:24:27,398 │ INFO    │   e 10 train 0.10663 val 0.08930  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:24:33,108 │ INFO    │   e 11 train 0.10563 val 0.08757  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:24:38,733 │ INFO    │   e 12 train 0.10464 val 0.09086     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:24:44,431 │ INFO    │   e 13 train 0.10423 val 0.08705  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:24:50,126 │ INFO    │   e 14 train 0.10304 val 0.08652  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:24:55,809 │ INFO    │   e 15 train 0.10322 val 0.08511  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:25:01,463 │ INFO    │   e 16 train 0.10216 val 0.08557     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:25:07,097 │ INFO    │   e 17 train 0.10193 val 0.08688     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:25:12,753 │ INFO    │   e 18 train 0.10153 val 0.08663     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:25:18,474 │ INFO    │   e 19 train 0.10092 val 0.08473  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:25:24,186 │ INFO    │   e 20 train 0.10042 val 0.08305  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:25:29,898 │ INFO    │   e 21 train 0.10009 val 0.08302  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:25:35,540 │ INFO    │   e 22 train 0.09992 val 0.08304     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:25:41,254 │ INFO    │   e 23 train 0.09954 val 0.08249  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:25:46,903 │ INFO    │   e 24 train 0.09903 val 0.08398     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:25:52,618 │ INFO    │   e 25 train 0.09868 val 0.08183  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:25:58,326 │ INFO    │   e 26 train 0.09830 val 0.08097  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:26:04,039 │ INFO    │   e 27 train 0.09822 val 0.08077  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:26:09,695 │ INFO    │   e 28 train 0.09832 val 0.08151     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:26:15,369 │ INFO    │   e 29 train 0.09774 val 0.08169     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:26:21,009 │ INFO    │   e 30 train 0.09789 val 0.08135     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:26:26,677 │ INFO    │   e 31 train 0.09755 val 0.08122     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:26:32,316 │ INFO    │   e 32 train 0.09716 val 0.08130     lr 3.00e-04 6s patience 5/15
+2026-08-16 08:26:38,023 │ INFO    │   e 33 train 0.09706 val 0.08003  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:26:43,681 │ INFO    │   e 34 train 0.09704 val 0.07969  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:26:49,355 │ INFO    │   e 35 train 0.09679 val 0.08086     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:26:55,006 │ INFO    │   e 36 train 0.09650 val 0.07986     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:27:00,636 │ INFO    │   e 37 train 0.09645 val 0.07987     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:27:06,277 │ INFO    │   e 38 train 0.09651 val 0.07985     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:27:11,907 │ INFO    │   e 39 train 0.09636 val 0.08061     lr 3.00e-04 6s patience 5/15
+2026-08-16 08:27:17,561 │ INFO    │   e 40 train 0.09602 val 0.07917  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:27:23,237 │ INFO    │   e 41 train 0.09577 val 0.07865  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:27:28,852 │ INFO    │   e 42 train 0.09612 val 0.07951     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:27:34,555 │ INFO    │   e 43 train 0.09552 val 0.07852  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:27:40,221 │ INFO    │   e 44 train 0.09547 val 0.07813  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:27:45,836 │ INFO    │   e 45 train 0.09531 val 0.07980     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:27:51,490 │ INFO    │   e 46 train 0.09533 val 0.07836     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:27:57,157 │ INFO    │   e 47 train 0.09487 val 0.07810  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:28:02,848 │ INFO    │   e 48 train 0.09505 val 0.07807  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:28:08,459 │ INFO    │   e 49 train 0.09481 val 0.07852     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:28:14,153 │ INFO    │   e 50 train 0.09472 val 0.07750  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:28:19,771 │ INFO    │   e 51 train 0.09473 val 0.07834     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:28:25,391 │ INFO    │   e 52 train 0.09451 val 0.07803     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:28:31,034 │ INFO    │   e 53 train 0.09442 val 0.07934     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:28:36,699 │ INFO    │   e 54 train 0.09447 val 0.07709  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:28:42,324 │ INFO    │   e 55 train 0.09444 val 0.07711     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:28:47,954 │ INFO    │   e 56 train 0.09422 val 0.07785     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:28:53,679 │ INFO    │   e 57 train 0.09400 val 0.07686  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:28:59,314 │ INFO    │   e 58 train 0.09433 val 0.07828     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:29:04,928 │ INFO    │   e 59 train 0.09400 val 0.07697     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:29:10,624 │ INFO    │   e 60 train 0.09363 val 0.07678  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:29:16,241 │ INFO    │   e 61 train 0.09357 val 0.07860     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:29:21,908 │ INFO    │   e 62 train 0.09354 val 0.07648  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:29:27,519 │ INFO    │   e 63 train 0.09350 val 0.07705     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:29:33,108 │ INFO    │   e 64 train 0.09340 val 0.07685     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:29:38,737 │ INFO    │   e 65 train 0.09342 val 0.07743     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:29:44,344 │ INFO    │   e 66 train 0.09375 val 0.07657     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:29:49,975 │ INFO    │   e 67 train 0.09337 val 0.07740     lr 3.00e-04 6s patience 5/15
+2026-08-16 08:29:55,595 │ INFO    │   e 68 train 0.09373 val 0.07720     lr 3.00e-04 6s patience 6/15
+2026-08-16 08:30:01,256 │ INFO    │   e 69 train 0.09292 val 0.07639  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:30:06,919 │ INFO    │   e 70 train 0.09282 val 0.07570  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:30:12,531 │ INFO    │   e 71 train 0.09268 val 0.07598     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:30:18,143 │ INFO    │   e 72 train 0.09267 val 0.07627     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:30:23,769 │ INFO    │   e 73 train 0.09291 val 0.07666     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:30:29,378 │ INFO    │   e 74 train 0.09263 val 0.07642     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:30:35,017 │ INFO    │   e 75 train 0.09269 val 0.07689     lr 3.00e-04 6s patience 5/15
+2026-08-16 08:30:40,642 │ INFO    │   e 76 train 0.09266 val 0.07576     lr 3.00e-04 6s patience 6/15
+2026-08-16 08:30:46,241 │ INFO    │   e 77 train 0.09249 val 0.07608     lr 1.50e-04 6s patience 7/15
+2026-08-16 08:30:51,961 │ INFO    │   e 78 train 0.09178 val 0.07515  ★ lr 1.50e-04 6s patience 0/15
+2026-08-16 08:30:57,558 │ INFO    │   e 79 train 0.09175 val 0.07574     lr 1.50e-04 6s patience 1/15
+2026-08-16 08:30:57,688 │ INFO    │ ✔ finished [TDAG-Net [seed 7]] best_val=0.07515 @ epoch 78
+2026-08-16 08:31:00,710 │ INFO    │ ▶ training [TDAG-Net (Input-Splitter) [seed 42]] — 3,640 train / 364 tune windows, 114 batches/epoch, from epoch 0
+2026-08-16 08:31:06,279 │ INFO    │   e  0 train 0.20580 val 0.13406  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:31:11,900 │ INFO    │   e  1 train 0.13027 val 0.10387  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:31:17,596 │ INFO    │   e  2 train 0.11735 val 0.09887  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:31:23,257 │ INFO    │   e  3 train 0.11319 val 0.09377  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:31:28,957 │ INFO    │   e  4 train 0.10990 val 0.09012  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:31:34,648 │ INFO    │   e  5 train 0.10735 val 0.08801  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:31:40,283 │ INFO    │   e  6 train 0.10669 val 0.08884     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:31:45,966 │ INFO    │   e  7 train 0.10485 val 0.08577  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:31:51,641 │ INFO    │   e  8 train 0.10327 val 0.08416  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:31:57,349 │ INFO    │   e  9 train 0.10234 val 0.08408  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:32:03,046 │ INFO    │   e 10 train 0.10153 val 0.08308  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:32:08,733 │ INFO    │   e 11 train 0.10103 val 0.08255  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:32:14,389 │ INFO    │   e 12 train 0.10003 val 0.08302     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:32:20,094 │ INFO    │   e 13 train 0.09998 val 0.08148  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:32:25,798 │ INFO    │   e 14 train 0.09892 val 0.08075  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:32:31,491 │ INFO    │   e 15 train 0.09894 val 0.08058  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:32:37,147 │ INFO    │   e 16 train 0.09815 val 0.08097     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:32:42,830 │ INFO    │   e 17 train 0.09768 val 0.07953  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:32:48,489 │ INFO    │   e 18 train 0.09770 val 0.07918  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:32:54,196 │ INFO    │   e 19 train 0.09701 val 0.07892  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:32:59,837 │ INFO    │   e 20 train 0.09655 val 0.07921     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:33:05,505 │ INFO    │   e 21 train 0.09615 val 0.07803  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:33:11,135 │ INFO    │   e 22 train 0.09606 val 0.07833     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:33:16,814 │ INFO    │   e 23 train 0.09563 val 0.07747  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:33:22,451 │ INFO    │   e 24 train 0.09516 val 0.07845     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:33:28,119 │ INFO    │   e 25 train 0.09512 val 0.07718  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:33:33,811 │ INFO    │   e 26 train 0.09469 val 0.07692  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:33:39,485 │ INFO    │   e 27 train 0.09430 val 0.07666  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:33:45,103 │ INFO    │   e 28 train 0.09457 val 0.07773     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:33:50,721 │ INFO    │   e 29 train 0.09402 val 0.07708     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:33:56,331 │ INFO    │   e 30 train 0.09411 val 0.07694     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:34:01,970 │ INFO    │   e 31 train 0.09420 val 0.07720     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:34:07,592 │ INFO    │   e 32 train 0.09337 val 0.07691     lr 3.00e-04 6s patience 5/15
+2026-08-16 08:34:13,228 │ INFO    │   e 33 train 0.09342 val 0.07592  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:34:18,902 │ INFO    │   e 34 train 0.09318 val 0.07500  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:34:24,499 │ INFO    │   e 35 train 0.09289 val 0.07642     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:34:30,144 │ INFO    │   e 36 train 0.09272 val 0.07520     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:34:35,771 │ INFO    │   e 37 train 0.09247 val 0.07564     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:34:41,401 │ INFO    │   e 38 train 0.09236 val 0.07530     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:34:47,062 │ INFO    │   e 39 train 0.09244 val 0.07467  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:34:52,740 │ INFO    │   e 40 train 0.09202 val 0.07411  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:34:58,354 │ INFO    │   e 41 train 0.09199 val 0.07494     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:35:03,999 │ INFO    │   e 42 train 0.09182 val 0.07482     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:35:09,600 │ INFO    │   e 43 train 0.09180 val 0.07452     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:35:15,250 │ INFO    │   e 44 train 0.09252 val 0.07413     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:35:20,870 │ INFO    │   e 45 train 0.09143 val 0.07416     lr 3.00e-04 6s patience 5/15
+2026-08-16 08:35:26,576 │ INFO    │   e 46 train 0.09132 val 0.07384  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:35:32,227 │ INFO    │   e 47 train 0.09095 val 0.07402     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:35:37,871 │ INFO    │   e 48 train 0.09119 val 0.07434     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:35:43,560 │ INFO    │   e 49 train 0.09129 val 0.07441     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:35:49,259 │ INFO    │   e 50 train 0.09147 val 0.07329  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:35:54,958 │ INFO    │   e 51 train 0.09102 val 0.07457     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:36:00,656 │ INFO    │   e 52 train 0.09079 val 0.07372     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:36:06,328 │ INFO    │   e 53 train 0.09068 val 0.07507     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:36:12,046 │ INFO    │   e 54 train 0.09086 val 0.07368     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:36:17,738 │ INFO    │   e 55 train 0.09047 val 0.07405     lr 3.00e-04 6s patience 5/15
+2026-08-16 08:36:23,507 │ INFO    │   e 56 train 0.09039 val 0.07382     lr 3.00e-04 6s patience 6/15
+2026-08-16 08:36:29,240 │ INFO    │   e 57 train 0.09028 val 0.07281  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:36:34,925 │ INFO    │   e 58 train 0.09040 val 0.07333     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:36:40,686 │ INFO    │   e 59 train 0.09015 val 0.07274  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:36:46,342 │ INFO    │   e 60 train 0.09028 val 0.07280     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:36:52,071 │ INFO    │   e 61 train 0.09010 val 0.07264  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:36:57,714 │ INFO    │   e 62 train 0.08995 val 0.07311     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:37:03,375 │ INFO    │   e 63 train 0.09024 val 0.07434     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:37:09,059 │ INFO    │   e 64 train 0.08984 val 0.07289     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:37:14,706 │ INFO    │   e 65 train 0.08968 val 0.07292     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:37:20,356 │ INFO    │   e 66 train 0.08981 val 0.07317     lr 3.00e-04 6s patience 5/15
+2026-08-16 08:37:26,043 │ INFO    │   e 67 train 0.08992 val 0.07236  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:37:31,705 │ INFO    │   e 68 train 0.08961 val 0.07349     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:37:37,404 │ INFO    │   e 69 train 0.08982 val 0.07229  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:37:43,107 │ INFO    │   e 70 train 0.08926 val 0.07210  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:37:48,789 │ INFO    │   e 71 train 0.08930 val 0.07328     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:37:54,427 │ INFO    │   e 72 train 0.08935 val 0.07227     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:38:00,067 │ INFO    │   e 73 train 0.08923 val 0.07257     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:38:05,799 │ INFO    │   e 74 train 0.08918 val 0.07198  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:38:11,459 │ INFO    │   e 75 train 0.08917 val 0.07282     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:38:17,105 │ INFO    │   e 76 train 0.08946 val 0.07249     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:38:22,728 │ INFO    │   e 77 train 0.08908 val 0.07246     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:38:28,381 │ INFO    │   e 78 train 0.08880 val 0.07417     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:38:34,015 │ INFO    │   e 79 train 0.08917 val 0.07469     lr 3.00e-04 6s patience 5/15
+2026-08-16 08:38:34,149 │ INFO    │ ✔ finished [TDAG-Net (Input-Splitter) [seed 42]] best_val=0.07198 @ epoch 74
+2026-08-16 08:38:35,953 │ INFO    │ ▶ training [TDAG-Net (Input-Splitter) [seed 1337]] — 3,640 train / 364 tune windows, 114 batches/epoch, from epoch 0
+2026-08-16 08:38:41,563 │ INFO    │   e  0 train 0.19816 val 0.12445  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:38:47,245 │ INFO    │   e  1 train 0.12614 val 0.10327  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:38:52,932 │ INFO    │   e  2 train 0.11637 val 0.09680  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:38:58,619 │ INFO    │   e  3 train 0.11277 val 0.09401  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:39:04,280 │ INFO    │   e  4 train 0.10973 val 0.09005  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:39:09,976 │ INFO    │   e  5 train 0.10735 val 0.08875  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:39:15,580 │ INFO    │   e  6 train 0.10637 val 0.08889     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:39:21,253 │ INFO    │   e  7 train 0.10469 val 0.08610  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:39:26,936 │ INFO    │   e  8 train 0.10323 val 0.08497  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:39:32,620 │ INFO    │   e  9 train 0.10231 val 0.08489  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:39:38,295 │ INFO    │   e 10 train 0.10147 val 0.08279  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:39:43,968 │ INFO    │   e 11 train 0.10104 val 0.08277  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:39:49,594 │ INFO    │   e 12 train 0.10007 val 0.08335     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:39:55,291 │ INFO    │   e 13 train 0.10006 val 0.08143  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:40:00,966 │ INFO    │   e 14 train 0.09878 val 0.08056  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:40:06,678 │ INFO    │   e 15 train 0.09915 val 0.08051  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:40:12,298 │ INFO    │   e 16 train 0.09817 val 0.08145     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:40:17,976 │ INFO    │   e 17 train 0.09782 val 0.08016  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:40:23,659 │ INFO    │   e 18 train 0.09775 val 0.08081     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:40:29,348 │ INFO    │   e 19 train 0.09702 val 0.07914  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:40:35,014 │ INFO    │   e 20 train 0.09652 val 0.07976     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:40:40,698 │ INFO    │   e 21 train 0.09650 val 0.07867  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:40:46,338 │ INFO    │   e 22 train 0.09630 val 0.07962     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:40:52,029 │ INFO    │   e 23 train 0.09587 val 0.07782  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:40:57,670 │ INFO    │   e 24 train 0.09523 val 0.07863     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:41:03,396 │ INFO    │   e 25 train 0.09509 val 0.07769  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:41:09,085 │ INFO    │   e 26 train 0.09475 val 0.07734  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:41:14,815 │ INFO    │   e 27 train 0.09466 val 0.07685  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:41:20,478 │ INFO    │   e 28 train 0.09457 val 0.07723     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:41:26,124 │ INFO    │   e 29 train 0.09424 val 0.07834     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:41:31,752 │ INFO    │   e 30 train 0.09431 val 0.07734     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:41:37,357 │ INFO    │   e 31 train 0.09409 val 0.07686     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:41:42,976 │ INFO    │   e 32 train 0.09380 val 0.07716     lr 3.00e-04 6s patience 5/15
+2026-08-16 08:41:48,634 │ INFO    │   e 33 train 0.09352 val 0.07587  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:41:54,249 │ INFO    │   e 34 train 0.09347 val 0.07573  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:41:59,848 │ INFO    │   e 35 train 0.09336 val 0.07807     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:42:05,431 │ INFO    │   e 36 train 0.09302 val 0.07597     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:42:11,040 │ INFO    │   e 37 train 0.09280 val 0.07598     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:42:16,627 │ INFO    │   e 38 train 0.09276 val 0.07672     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:42:22,223 │ INFO    │   e 39 train 0.09292 val 0.07594     lr 3.00e-04 6s patience 5/15
+2026-08-16 08:42:27,897 │ INFO    │   e 40 train 0.09254 val 0.07505  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:42:33,536 │ INFO    │   e 41 train 0.09224 val 0.07519     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:42:39,158 │ INFO    │   e 42 train 0.09208 val 0.07512     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:42:44,793 │ INFO    │   e 43 train 0.09225 val 0.07603     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:42:50,477 │ INFO    │   e 44 train 0.09248 val 0.07462  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:42:56,132 │ INFO    │   e 45 train 0.09181 val 0.07557     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:43:01,818 │ INFO    │   e 46 train 0.09177 val 0.07455  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:43:07,457 │ INFO    │   e 47 train 0.09121 val 0.07474     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:43:13,123 │ INFO    │   e 48 train 0.09138 val 0.07461     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:43:18,774 │ INFO    │   e 49 train 0.09157 val 0.07548     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:43:24,476 │ INFO    │   e 50 train 0.09129 val 0.07393  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:43:30,101 │ INFO    │   e 51 train 0.09127 val 0.07503     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:43:35,767 │ INFO    │   e 52 train 0.09119 val 0.07448     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:43:41,398 │ INFO    │   e 53 train 0.09074 val 0.07423     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:43:47,103 │ INFO    │   e 54 train 0.09097 val 0.07353  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:43:52,755 │ INFO    │   e 55 train 0.09083 val 0.07437     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:43:58,412 │ INFO    │   e 56 train 0.09072 val 0.07477     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:44:04,074 │ INFO    │   e 57 train 0.09046 val 0.07387     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:44:09,704 │ INFO    │   e 58 train 0.09072 val 0.07474     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:44:15,440 │ INFO    │   e 59 train 0.09035 val 0.07337  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:44:21,129 │ INFO    │   e 60 train 0.09025 val 0.07329  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:44:26,776 │ INFO    │   e 61 train 0.09030 val 0.07389     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:44:32,457 │ INFO    │   e 62 train 0.09011 val 0.07362     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:44:38,089 │ INFO    │   e 63 train 0.09015 val 0.07473     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:44:43,804 │ INFO    │   e 64 train 0.09038 val 0.07345     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:44:49,519 │ INFO    │   e 65 train 0.08989 val 0.07297  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:44:55,180 │ INFO    │   e 66 train 0.08971 val 0.07320     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:45:00,909 │ INFO    │   e 67 train 0.09026 val 0.07291  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:45:06,563 │ INFO    │   e 68 train 0.08976 val 0.07563     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:45:12,243 │ INFO    │   e 69 train 0.08984 val 0.07332     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:45:17,876 │ INFO    │   e 70 train 0.08949 val 0.07305     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:45:23,510 │ INFO    │   e 71 train 0.08951 val 0.07317     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:45:29,180 │ INFO    │   e 72 train 0.08921 val 0.07279  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:45:34,846 │ INFO    │   e 73 train 0.08929 val 0.07278  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:45:40,487 │ INFO    │   e 74 train 0.08924 val 0.07310     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:45:46,131 │ INFO    │   e 75 train 0.08899 val 0.07338     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:45:51,835 │ INFO    │   e 76 train 0.08951 val 0.07260  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:45:57,560 │ INFO    │   e 77 train 0.08923 val 0.07231  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:46:03,218 │ INFO    │   e 78 train 0.08882 val 0.07314     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:46:08,879 │ INFO    │   e 79 train 0.08892 val 0.07399     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:46:09,003 │ INFO    │ ✔ finished [TDAG-Net (Input-Splitter) [seed 1337]] best_val=0.07231 @ epoch 77
+2026-08-16 08:46:10,833 │ INFO    │ ▶ training [TDAG-Net (Input-Splitter) [seed 7]] — 3,640 train / 364 tune windows, 114 batches/epoch, from epoch 0
+2026-08-16 08:46:16,458 │ INFO    │   e  0 train 0.20489 val 0.12802  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:46:22,169 │ INFO    │   e  1 train 0.12820 val 0.10437  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:46:27,852 │ INFO    │   e  2 train 0.11719 val 0.09941  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:46:33,553 │ INFO    │   e  3 train 0.11347 val 0.09463  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:46:39,266 │ INFO    │   e  4 train 0.10999 val 0.09038  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:46:44,965 │ INFO    │   e  5 train 0.10738 val 0.08851  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:46:50,619 │ INFO    │   e  6 train 0.10698 val 0.08908     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:46:56,339 │ INFO    │   e  7 train 0.10494 val 0.08630  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:47:02,038 │ INFO    │   e  8 train 0.10343 val 0.08490  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:47:07,705 │ INFO    │   e  9 train 0.10250 val 0.08560     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:47:13,417 │ INFO    │   e 10 train 0.10171 val 0.08284  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:47:19,104 │ INFO    │   e 11 train 0.10095 val 0.08330     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:47:24,808 │ INFO    │   e 12 train 0.10034 val 0.08276  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:47:30,542 │ INFO    │   e 13 train 0.10001 val 0.08117  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:47:36,271 │ INFO    │   e 14 train 0.09899 val 0.08078  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:47:41,984 │ INFO    │   e 15 train 0.09911 val 0.08037  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:47:47,644 │ INFO    │   e 16 train 0.09836 val 0.08152     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:47:53,329 │ INFO    │   e 17 train 0.09794 val 0.07960  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:47:59,003 │ INFO    │   e 18 train 0.09758 val 0.07995     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:48:04,660 │ INFO    │   e 19 train 0.09731 val 0.07968     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:48:10,332 │ INFO    │   e 20 train 0.09668 val 0.07969     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:48:16,067 │ INFO    │   e 21 train 0.09623 val 0.07840  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:48:21,712 │ INFO    │   e 22 train 0.09617 val 0.07912     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:48:27,447 │ INFO    │   e 23 train 0.09592 val 0.07825  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:48:33,085 │ INFO    │   e 24 train 0.09537 val 0.07835     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:48:38,794 │ INFO    │   e 25 train 0.09531 val 0.07757  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:48:44,466 │ INFO    │   e 26 train 0.09487 val 0.07685  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:48:50,148 │ INFO    │   e 27 train 0.09459 val 0.07682  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:48:55,821 │ INFO    │   e 28 train 0.09451 val 0.07729     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:49:01,466 │ INFO    │   e 29 train 0.09427 val 0.07759     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:49:07,117 │ INFO    │   e 30 train 0.09428 val 0.07841     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:49:12,770 │ INFO    │   e 31 train 0.09435 val 0.07713     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:49:18,437 │ INFO    │   e 32 train 0.09393 val 0.07706     lr 3.00e-04 6s patience 5/15
+2026-08-16 08:49:24,136 │ INFO    │   e 33 train 0.09376 val 0.07639  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:49:29,828 │ INFO    │   e 34 train 0.09341 val 0.07577  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:49:35,510 │ INFO    │   e 35 train 0.09327 val 0.07606     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:49:41,272 │ INFO    │   e 36 train 0.09308 val 0.07520  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:49:46,925 │ INFO    │   e 37 train 0.09317 val 0.07681     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:49:52,627 │ INFO    │   e 38 train 0.09288 val 0.07511  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:49:58,292 │ INFO    │   e 39 train 0.09276 val 0.07524     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:50:04,014 │ INFO    │   e 40 train 0.09269 val 0.07503  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:50:09,687 │ INFO    │   e 41 train 0.09254 val 0.07522     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:50:15,349 │ INFO    │   e 42 train 0.09240 val 0.07537     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:50:21,033 │ INFO    │   e 43 train 0.09226 val 0.07503     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:50:26,724 │ INFO    │   e 44 train 0.09216 val 0.07436  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:50:32,384 │ INFO    │   e 45 train 0.09193 val 0.07458     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:50:38,066 │ INFO    │   e 46 train 0.09194 val 0.07421  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:50:43,785 │ INFO    │   e 47 train 0.09170 val 0.07419  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:50:49,433 │ INFO    │   e 48 train 0.09153 val 0.07434     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:50:55,055 │ INFO    │   e 49 train 0.09160 val 0.07479     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:51:00,764 │ INFO    │   e 50 train 0.09128 val 0.07369  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:51:06,404 │ INFO    │   e 51 train 0.09151 val 0.07471     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:51:12,042 │ INFO    │   e 52 train 0.09118 val 0.07409     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:51:17,690 │ INFO    │   e 53 train 0.09096 val 0.07495     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:51:23,377 │ INFO    │   e 54 train 0.09106 val 0.07354  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:51:29,027 │ INFO    │   e 55 train 0.09103 val 0.07444     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:51:34,676 │ INFO    │   e 56 train 0.09093 val 0.07434     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:51:40,310 │ INFO    │   e 57 train 0.09076 val 0.07356     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:51:45,950 │ INFO    │   e 58 train 0.09056 val 0.07410     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:51:51,621 │ INFO    │   e 59 train 0.09050 val 0.07288  ★ lr 3.00e-04 6s patience 0/15
+2026-08-16 08:51:57,258 │ INFO    │   e 60 train 0.09021 val 0.07358     lr 3.00e-04 6s patience 1/15
+2026-08-16 08:52:02,894 │ INFO    │   e 61 train 0.09069 val 0.07348     lr 3.00e-04 6s patience 2/15
+2026-08-16 08:52:08,551 │ INFO    │   e 62 train 0.09023 val 0.07401     lr 3.00e-04 6s patience 3/15
+2026-08-16 08:52:14,186 │ INFO    │   e 63 train 0.09051 val 0.07323     lr 3.00e-04 6s patience 4/15
+2026-08-16 08:52:19,823 │ INFO    │   e 64 train 0.09017 val 0.07318     lr 3.00e-04 6s patience 5/15
+2026-08-16 08:52:25,471 │ INFO    │   e 65 train 0.09019 val 0.07298     lr 3.00e-04 6s patience 6/15
+2026-08-16 08:52:31,107 │ INFO    │   e 66 train 0.08996 val 0.07331     lr 1.50e-04 6s patience 7/15
+2026-08-16 08:52:36,817 │ INFO    │   e 67 train 0.08934 val 0.07216  ★ lr 1.50e-04 6s patience 0/15
+2026-08-16 08:52:42,526 │ INFO    │   e 68 train 0.08919 val 0.07204  ★ lr 1.50e-04 6s patience 0/15
+2026-08-16 08:52:48,162 │ INFO    │   e 69 train 0.08915 val 0.07216     lr 1.50e-04 6s patience 1/15
+2026-08-16 08:52:53,809 │ INFO    │   e 70 train 0.08913 val 0.07287     lr 1.50e-04 6s patience 2/15
+2026-08-16 08:52:59,496 │ INFO    │   e 71 train 0.08907 val 0.07191  ★ lr 1.50e-04 6s patience 0/15
+2026-08-16 08:53:05,164 │ INFO    │   e 72 train 0.08892 val 0.07248     lr 1.50e-04 6s patience 1/15
+2026-08-16 08:53:10,826 │ INFO    │   e 73 train 0.08903 val 0.07235     lr 1.50e-04 6s patience 2/15
+2026-08-16 08:53:16,482 │ INFO    │   e 74 train 0.08901 val 0.07241     lr 1.50e-04 6s patience 3/15
+2026-08-16 08:53:22,133 │ INFO    │   e 75 train 0.08908 val 0.07224     lr 1.50e-04 6s patience 4/15
+2026-08-16 08:53:27,751 │ INFO    │   e 76 train 0.08900 val 0.07202     lr 1.50e-04 6s patience 5/15
+2026-08-16 08:53:33,496 │ INFO    │   e 77 train 0.08887 val 0.07177  ★ lr 1.50e-04 6s patience 0/15
+2026-08-16 08:53:39,116 │ INFO    │   e 78 train 0.08879 val 0.07185     lr 1.50e-04 6s patience 1/15
+2026-08-16 08:53:44,745 │ INFO    │   e 79 train 0.08889 val 0.07277     lr 1.50e-04 6s patience 2/15
+2026-08-16 08:53:44,890 │ INFO    │ ✔ finished [TDAG-Net (Input-Splitter) [seed 7]] best_val=0.07177 @ epoch 77
+2026-08-16 08:53:47,728 │ INFO    │ ▶ training [CALM-Net [seed 42]] — 3,640 train / 364 tune windows, 114 batches/epoch, from epoch 0
+2026-08-16 08:54:12,923 │ INFO    │   e  0 train 0.25049 val 0.15559  ★ lr 3.00e-04 25s patience 0/15
+2026-08-16 08:54:38,042 │ INFO    │   e  1 train 0.15423 val 0.12268  ★ lr 3.00e-04 25s patience 0/15
+2026-08-16 08:55:03,125 │ INFO    │   e  2 train 0.13771 val 0.11675  ★ lr 3.00e-04 25s patience 0/15
+2026-08-16 08:55:28,179 │ INFO    │   e  3 train 0.13109 val 0.10980  ★ lr 3.00e-04 25s patience 0/15
+2026-08-16 08:55:53,230 │ INFO    │   e  4 train 0.12766 val 0.10927  ★ lr 3.00e-04 25s patience 0/15
+2026-08-16 08:56:18,309 │ INFO    │   e  5 train 0.12477 val 0.10349  ★ lr 3.00e-04 25s patience 0/15
+2026-08-16 08:56:43,410 │ INFO    │   e  6 train 0.12341 val 0.10234  ★ lr 3.00e-04 25s patience 0/15
+2026-08-16 08:57:08,422 │ INFO    │   e  7 train 0.12200 val 0.10475     lr 3.00e-04 25s patience 1/15
+2026-08-16 08:57:33,476 │ INFO    │   e  8 train 0.12029 val 0.10003  ★ lr 3.00e-04 25s patience 0/15
+2026-08-16 08:57:58,563 │ INFO    │   e  9 train 0.11923 val 0.09726  ★ lr 3.00e-04 25s patience 0/15
+2026-08-16 08:58:23,566 │ INFO    │   e 10 train 0.11880 val 0.09896     lr 3.00e-04 25s patience 1/15
+2026-08-16 08:58:48,630 │ INFO    │   e 11 train 0.11800 val 0.09703  ★ lr 3.00e-04 25s patience 0/15
+2026-08-16 08:59:13,635 │ INFO    │   e 12 train 0.11750 val 0.10123     lr 3.00e-04 25s patience 1/15
+2026-08-16 08:59:38,667 │ INFO    │   e 13 train 0.11725 val 0.09943     lr 3.00e-04 25s patience 2/15
+2026-08-16 09:00:03,794 │ INFO    │   e 14 train 0.11506 val 0.09575  ★ lr 3.00e-04 25s patience 0/15
+2026-08-16 09:00:28,793 │ INFO    │   e 15 train 0.11605 val 0.09635     lr 3.00e-04 25s patience 1/15
+2026-08-16 09:00:53,760 │ INFO    │   e 16 train 0.11439 val 0.09759     lr 3.00e-04 25s patience 2/15
+2026-08-16 09:01:18,803 │ INFO    │   e 17 train 0.11393 val 0.09702     lr 3.00e-04 25s patience 3/15
+2026-08-16 09:01:43,854 │ INFO    │   e 18 train 0.11417 val 0.09667     lr 3.00e-04 25s patience 4/15
+2026-08-16 09:02:09,005 │ INFO    │   e 19 train 0.11408 val 0.09394  ★ lr 3.00e-04 25s patience 0/15
+2026-08-16 09:02:33,991 │ INFO    │   e 20 train 0.11300 val 0.09762     lr 3.00e-04 25s patience 1/15
+2026-08-16 09:02:59,085 │ INFO    │   e 21 train 0.11238 val 0.09317  ★ lr 3.00e-04 25s patience 0/15
+2026-08-16 09:03:24,192 │ INFO    │   e 22 train 0.11281 val 0.09183  ★ lr 3.00e-04 25s patience 0/15
+2026-08-16 09:03:49,220 │ INFO    │   e 23 train 0.11192 val 0.09421     lr 3.00e-04 25s patience 1/15
+2026-08-16 09:04:14,250 │ INFO    │   e 24 train 0.11142 val 0.09226     lr 3.00e-04 25s patience 2/15
+2026-08-16 09:04:39,319 │ INFO    │   e 25 train 0.11138 val 0.09328     lr 3.00e-04 25s patience 3/15
+2026-08-16 09:05:04,441 │ INFO    │   e 26 train 0.11080 val 0.09069  ★ lr 3.00e-04 25s patience 0/15
+2026-08-16 09:05:29,491 │ INFO    │   e 27 train 0.11084 val 0.09161     lr 3.00e-04 25s patience 1/15
+2026-08-16 09:05:54,525 │ INFO    │   e 28 train 0.11108 val 0.09193     lr 3.00e-04 25s patience 2/15
+2026-08-16 09:06:19,619 │ INFO    │   e 29 train 0.11006 val 0.08915  ★ lr 3.00e-04 25s patience 0/15
+2026-08-16 09:06:44,603 │ INFO    │   e 30 train 0.11055 val 0.09737     lr 3.00e-04 25s patience 1/15
+2026-08-16 09:07:09,645 │ INFO    │   e 31 train 0.10980 val 0.09103     lr 3.00e-04 25s patience 2/15
+2026-08-16 09:07:34,690 │ INFO    │   e 32 train 0.10952 val 0.09114     lr 3.00e-04 25s patience 3/15
+2026-08-16 09:07:59,811 │ INFO    │   e 33 train 0.10926 val 0.08870  ★ lr 3.00e-04 25s patience 0/15
+2026-08-16 09:08:24,878 │ INFO    │   e 34 train 0.10933 val 0.09126     lr 3.00e-04 25s patience 1/15
+2026-08-16 09:08:49,934 │ INFO    │   e 35 train 0.10935 val 0.09083     lr 3.00e-04 25s patience 2/15
+2026-08-16 09:09:14,979 │ INFO    │   e 36 train 0.10917 val 0.08966     lr 3.00e-04 25s patience 3/15
+2026-08-16 09:09:40,017 │ INFO    │   e 37 train 0.10853 val 0.08949     lr 3.00e-04 25s patience 4/15
+2026-08-16 09:10:05,044 │ INFO    │   e 38 train 0.10850 val 0.09517     lr 3.00e-04 25s patience 5/15
+2026-08-16 09:10:30,038 │ INFO    │   e 39 train 0.10879 val 0.08874     lr 3.00e-04 25s patience 6/15
+2026-08-16 09:10:55,010 │ INFO    │   e 40 train 0.10799 val 0.09136     lr 1.50e-04 25s patience 7/15
+2026-08-16 09:11:20,034 │ INFO    │   e 41 train 0.10693 val 0.08772  ★ lr 1.50e-04 25s patience 0/15
+2026-08-16 09:11:45,016 │ INFO    │   e 42 train 0.10745 val 0.08803     lr 1.50e-04 25s patience 1/15
+2026-08-16 09:12:09,996 │ INFO    │   e 43 train 0.10674 val 0.08799     lr 1.50e-04 25s patience 2/15
+2026-08-16 09:12:35,002 │ INFO    │   e 44 train 0.10679 val 0.08946     lr 1.50e-04 25s patience 3/15
+2026-08-16 09:13:00,079 │ INFO    │   e 45 train 0.10674 val 0.08736  ★ lr 1.50e-04 25s patience 0/15
+2026-08-16 09:13:25,172 │ INFO    │   e 46 train 0.10643 val 0.08721  ★ lr 1.50e-04 25s patience 0/15
+2026-08-16 09:13:50,281 │ INFO    │   e 47 train 0.10654 val 0.08719  ★ lr 1.50e-04 25s patience 0/15
+2026-08-16 09:14:15,430 │ INFO    │   e 48 train 0.10641 val 0.08648  ★ lr 1.50e-04 25s patience 0/15
+2026-08-16 09:14:40,524 │ INFO    │   e 49 train 0.10658 val 0.08877     lr 1.50e-04 25s patience 1/15
+2026-08-16 09:15:05,605 │ INFO    │   e 50 train 0.10629 val 0.08710     lr 1.50e-04 25s patience 2/15
+2026-08-16 09:15:30,648 │ INFO    │   e 51 train 0.10648 val 0.08770     lr 1.50e-04 25s patience 3/15
+2026-08-16 09:15:55,607 │ INFO    │   e 52 train 0.10624 val 0.08689     lr 1.50e-04 25s patience 4/15
+2026-08-16 09:16:20,513 │ INFO    │   e 53 train 0.10609 val 0.08669     lr 1.50e-04 25s patience 5/15
+2026-08-16 09:16:45,417 │ INFO    │   e 54 train 0.10629 val 0.08921     lr 1.50e-04 25s patience 6/15
+2026-08-16 09:17:10,379 │ INFO    │   e 55 train 0.10630 val 0.08614  ★ lr 1.50e-04 25s patience 0/15
+2026-08-16 09:17:35,261 │ INFO    │   e 56 train 0.10632 val 0.08772     lr 1.50e-04 25s patience 1/15
+2026-08-16 09:18:00,132 │ INFO    │   e 57 train 0.10556 val 0.08695     lr 1.50e-04 25s patience 2/15
+2026-08-16 09:18:25,005 │ INFO    │   e 58 train 0.10571 val 0.08846     lr 1.50e-04 25s patience 3/15
+2026-08-16 09:18:49,990 │ INFO    │   e 59 train 0.10565 val 0.08582  ★ lr 1.50e-04 25s patience 0/15
+2026-08-16 09:19:15,033 │ INFO    │   e 60 train 0.10574 val 0.08555  ★ lr 1.50e-04 25s patience 0/15
+2026-08-16 09:19:40,011 │ INFO    │   e 61 train 0.10542 val 0.08612     lr 1.50e-04 25s patience 1/15
+2026-08-16 09:20:05,015 │ INFO    │   e 62 train 0.10594 val 0.08601     lr 1.50e-04 25s patience 2/15
+2026-08-16 09:20:30,074 │ INFO    │   e 63 train 0.10530 val 0.08781     lr 1.50e-04 25s patience 3/15
+2026-08-16 09:20:55,120 │ INFO    │   e 64 train 0.10544 val 0.08642     lr 1.50e-04 25s patience 4/15
+2026-08-16 09:21:20,185 │ INFO    │   e 65 train 0.10532 val 0.08603     lr 1.50e-04 25s patience 5/15
+2026-08-16 09:21:45,275 │ INFO    │   e 66 train 0.10530 val 0.08584     lr 1.50e-04 25s patience 6/15
+2026-08-16 09:22:10,364 │ INFO    │   e 67 train 0.10499 val 0.08823     lr 7.50e-05 25s patience 7/15
+2026-08-16 09:22:35,497 │ INFO    │   e 68 train 0.10442 val 0.08501  ★ lr 7.50e-05 25s patience 0/15
+2026-08-16 09:23:00,557 │ INFO    │   e 69 train 0.10441 val 0.08545     lr 7.50e-05 25s patience 1/15
+2026-08-16 09:23:25,642 │ INFO    │   e 70 train 0.10438 val 0.08554     lr 7.50e-05 25s patience 2/15
+2026-08-16 09:23:50,720 │ INFO    │   e 71 train 0.10436 val 0.08582     lr 7.50e-05 25s patience 3/15
+2026-08-16 09:24:15,832 │ INFO    │   e 72 train 0.10422 val 0.08499  ★ lr 7.50e-05 25s patience 0/15
+2026-08-16 09:24:40,845 │ INFO    │   e 73 train 0.10441 val 0.08501     lr 7.50e-05 25s patience 1/15
+2026-08-16 09:25:05,851 │ INFO    │   e 74 train 0.10422 val 0.08569     lr 7.50e-05 25s patience 2/15
+2026-08-16 09:25:30,831 │ INFO    │   e 75 train 0.10403 val 0.08574     lr 7.50e-05 25s patience 3/15
+2026-08-16 09:25:55,768 │ INFO    │   e 76 train 0.10438 val 0.08630     lr 7.50e-05 25s patience 4/15
+2026-08-16 09:26:20,702 │ INFO    │   e 77 train 0.10430 val 0.08519     lr 7.50e-05 25s patience 5/15
+2026-08-16 09:26:45,614 │ INFO    │   e 78 train 0.10401 val 0.08511     lr 7.50e-05 25s patience 6/15
+2026-08-16 09:27:10,458 │ INFO    │   e 79 train 0.10411 val 0.08670     lr 3.75e-05 25s patience 7/15
+2026-08-16 09:27:10,628 │ INFO    │ ✔ finished [CALM-Net [seed 42]] best_val=0.08499 @ epoch 72
+2026-08-16 09:27:15,580 │ INFO    │  ⚠ under-sized Mondrian bin for [CALM-Net] — invoking 5-fold cross-conformal
+2026-08-16 09:27:15,815 │ INFO    │   ▶ cross-conformal fold 1/5 — fit 2,912 / held-out 728 windows
+2026-08-16 09:27:15,851 │ INFO    │ ▶ training [CALM-Net [xconf fold 0]] — 2,912 train / 364 tune windows, 91 batches/epoch, from epoch 0
+2026-08-16 09:27:35,900 │ INFO    │   e  0 train 0.26671 val 0.17428  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:27:56,077 │ INFO    │   e  1 train 0.16456 val 0.12754  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:28:16,285 │ INFO    │   e  2 train 0.14330 val 0.11595  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:28:36,476 │ INFO    │   e  3 train 0.13548 val 0.11783     lr 3.00e-04 20s patience 1/15
+2026-08-16 09:28:56,719 │ INFO    │   e  4 train 0.13217 val 0.10989  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:29:16,948 │ INFO    │   e  5 train 0.12809 val 0.11180     lr 3.00e-04 20s patience 1/15
+2026-08-16 09:29:37,248 │ INFO    │   e  6 train 0.12696 val 0.10847  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:29:57,490 │ INFO    │   e  7 train 0.12456 val 0.11106     lr 3.00e-04 20s patience 1/15
+2026-08-16 09:30:17,808 │ INFO    │   e  8 train 0.12329 val 0.10256  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:30:38,125 │ INFO    │   e  9 train 0.12207 val 0.10110  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:30:58,354 │ INFO    │   e 10 train 0.12058 val 0.12127     lr 3.00e-04 20s patience 1/15
+2026-08-16 09:31:18,529 │ INFO    │   e 11 train 0.12036 val 0.10110     lr 3.00e-04 20s patience 2/15
+2026-08-16 09:31:38,716 │ INFO    │   e 12 train 0.11927 val 0.10509     lr 3.00e-04 20s patience 3/15
+2026-08-16 09:31:58,929 │ INFO    │   e 13 train 0.11855 val 0.09719  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:32:19,047 │ INFO    │   e 14 train 0.11779 val 0.09797     lr 3.00e-04 20s patience 1/15
+2026-08-16 09:32:39,150 │ INFO    │   e 15 train 0.11807 val 0.09809     lr 3.00e-04 20s patience 2/15
+2026-08-16 09:32:59,248 │ INFO    │   e 16 train 0.11690 val 0.09914     lr 3.00e-04 20s patience 3/15
+2026-08-16 09:33:19,381 │ INFO    │   e 17 train 0.11579 val 0.10057     lr 3.00e-04 20s patience 4/15
+2026-08-16 09:33:39,462 │ INFO    │   e 18 train 0.11629 val 0.09831     lr 3.00e-04 20s patience 5/15
+2026-08-16 09:33:59,585 │ INFO    │   e 19 train 0.11530 val 0.09787     lr 3.00e-04 20s patience 6/15
+2026-08-16 09:34:19,684 │ INFO    │   e 20 train 0.11469 val 0.09552  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:34:39,767 │ INFO    │   e 21 train 0.11435 val 0.09633     lr 3.00e-04 20s patience 1/15
+2026-08-16 09:34:59,831 │ INFO    │   e 22 train 0.11482 val 0.09820     lr 3.00e-04 20s patience 2/15
+2026-08-16 09:35:20,021 │ INFO    │   e 23 train 0.11439 val 0.09478  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:35:40,186 │ INFO    │   e 24 train 0.11388 val 0.09514     lr 3.00e-04 20s patience 1/15
+2026-08-16 09:36:00,414 │ INFO    │   e 25 train 0.11291 val 0.09435  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:36:20,592 │ INFO    │   e 26 train 0.11340 val 0.09594     lr 3.00e-04 20s patience 1/15
+2026-08-16 09:36:40,785 │ INFO    │   e 27 train 0.11338 val 0.09502     lr 3.00e-04 20s patience 2/15
+2026-08-16 09:37:00,987 │ INFO    │   e 28 train 0.11268 val 0.10139     lr 3.00e-04 20s patience 3/15
+2026-08-16 09:37:21,294 │ INFO    │   e 29 train 0.11239 val 0.09196  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:37:41,534 │ INFO    │   e 30 train 0.11213 val 0.09210     lr 3.00e-04 20s patience 1/15
+2026-08-16 09:38:01,744 │ INFO    │   e 31 train 0.11181 val 0.09471     lr 3.00e-04 20s patience 2/15
+2026-08-16 09:38:21,964 │ INFO    │   e 32 train 0.11238 val 0.09567     lr 3.00e-04 20s patience 3/15
+2026-08-16 09:38:42,130 │ INFO    │   e 33 train 0.11190 val 0.09391     lr 3.00e-04 20s patience 4/15
+2026-08-16 09:39:02,331 │ INFO    │   e 34 train 0.11193 val 0.09174  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:39:22,414 │ INFO    │   e 35 train 0.11086 val 0.09821     lr 3.00e-04 20s patience 1/15
+2026-08-16 09:39:42,508 │ INFO    │   e 36 train 0.11144 val 0.09843     lr 3.00e-04 20s patience 2/15
+2026-08-16 09:40:02,605 │ INFO    │   e 37 train 0.11093 val 0.09310     lr 3.00e-04 20s patience 3/15
+2026-08-16 09:40:23,277 │ INFO    │   e 38 train 0.11063 val 0.09056  ★ lr 3.00e-04 21s patience 0/15
+2026-08-16 09:40:45,736 │ INFO    │   e 39 train 0.11043 val 0.09066     lr 3.00e-04 22s patience 1/15
+2026-08-16 09:41:06,283 │ INFO    │   e 40 train 0.10993 val 0.08941  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:41:26,418 │ INFO    │   e 41 train 0.10996 val 0.09569     lr 3.00e-04 20s patience 1/15
+2026-08-16 09:41:46,604 │ INFO    │   e 42 train 0.11029 val 0.09071     lr 3.00e-04 20s patience 2/15
+2026-08-16 09:42:07,250 │ INFO    │   e 43 train 0.10946 val 0.09024     lr 3.00e-04 21s patience 3/15
+2026-08-16 09:42:27,380 │ INFO    │   e 44 train 0.10995 val 0.09519     lr 3.00e-04 20s patience 4/15
+2026-08-16 09:42:47,505 │ INFO    │   e 45 train 0.10952 val 0.08959     lr 3.00e-04 20s patience 5/15
+2026-08-16 09:43:07,709 │ INFO    │   e 46 train 0.10917 val 0.08835  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:43:27,798 │ INFO    │   e 47 train 0.10908 val 0.08840     lr 3.00e-04 20s patience 1/15
+2026-08-16 09:43:48,499 │ INFO    │   e 48 train 0.10829 val 0.08982     lr 3.00e-04 21s patience 2/15
+2026-08-16 09:44:08,727 │ INFO    │   e 49 train 0.10933 val 0.08802  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:44:28,960 │ INFO    │   e 50 train 0.10945 val 0.08980     lr 3.00e-04 20s patience 1/15
+2026-08-16 09:44:49,177 │ INFO    │   e 51 train 0.10808 val 0.08941     lr 3.00e-04 20s patience 2/15
+2026-08-16 09:45:09,390 │ INFO    │   e 52 train 0.10854 val 0.08917     lr 3.00e-04 20s patience 3/15
+2026-08-16 09:45:29,613 │ INFO    │   e 53 train 0.10851 val 0.08953     lr 3.00e-04 20s patience 4/15
+2026-08-16 09:45:49,854 │ INFO    │   e 54 train 0.10759 val 0.09035     lr 3.00e-04 20s patience 5/15
+2026-08-16 09:46:10,159 │ INFO    │   e 55 train 0.10776 val 0.08689  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:46:30,397 │ INFO    │   e 56 train 0.10740 val 0.08930     lr 3.00e-04 20s patience 1/15
+2026-08-16 09:46:50,658 │ INFO    │   e 57 train 0.10852 val 0.08918     lr 3.00e-04 20s patience 2/15
+2026-08-16 09:47:10,824 │ INFO    │   e 58 train 0.10774 val 0.09091     lr 3.00e-04 20s patience 3/15
+2026-08-16 09:47:31,043 │ INFO    │   e 59 train 0.10775 val 0.08958     lr 3.00e-04 20s patience 4/15
+2026-08-16 09:47:51,272 │ INFO    │   e 60 train 0.10698 val 0.08977     lr 3.00e-04 20s patience 5/15
+2026-08-16 09:48:11,512 │ INFO    │   e 61 train 0.10765 val 0.08889     lr 3.00e-04 20s patience 6/15
+2026-08-16 09:48:31,741 │ INFO    │   e 62 train 0.10716 val 0.08750     lr 1.50e-04 20s patience 7/15
+2026-08-16 09:48:52,007 │ INFO    │   e 63 train 0.10612 val 0.08682  ★ lr 1.50e-04 20s patience 0/15
+2026-08-16 09:49:12,237 │ INFO    │   e 64 train 0.10618 val 0.08711     lr 1.50e-04 20s patience 1/15
+2026-08-16 09:49:32,405 │ INFO    │   e 65 train 0.10592 val 0.08719     lr 1.50e-04 20s patience 2/15
+2026-08-16 09:49:52,660 │ INFO    │   e 66 train 0.10637 val 0.08791     lr 1.50e-04 20s patience 3/15
+2026-08-16 09:50:12,924 │ INFO    │   e 67 train 0.10578 val 0.08722     lr 1.50e-04 20s patience 4/15
+2026-08-16 09:50:33,216 │ INFO    │   e 68 train 0.10563 val 0.08605  ★ lr 1.50e-04 20s patience 0/15
+2026-08-16 09:50:53,385 │ INFO    │   e 69 train 0.10589 val 0.08674     lr 1.50e-04 20s patience 1/15
+2026-08-16 09:51:13,550 │ INFO    │   e 70 train 0.10560 val 0.08738     lr 1.50e-04 20s patience 2/15
+2026-08-16 09:51:33,719 │ INFO    │   e 71 train 0.10580 val 0.08858     lr 1.50e-04 20s patience 3/15
+2026-08-16 09:51:53,858 │ INFO    │   e 72 train 0.10548 val 0.08704     lr 1.50e-04 20s patience 4/15
+2026-08-16 09:52:14,074 │ INFO    │   e 73 train 0.10525 val 0.08589  ★ lr 1.50e-04 20s patience 0/15
+2026-08-16 09:52:34,211 │ INFO    │   e 74 train 0.10535 val 0.08639     lr 1.50e-04 20s patience 1/15
+2026-08-16 09:52:54,378 │ INFO    │   e 75 train 0.10546 val 0.08684     lr 1.50e-04 20s patience 2/15
+2026-08-16 09:53:14,541 │ INFO    │   e 76 train 0.10519 val 0.08639     lr 1.50e-04 20s patience 3/15
+2026-08-16 09:53:34,712 │ INFO    │   e 77 train 0.10596 val 0.08645     lr 1.50e-04 20s patience 4/15
+2026-08-16 09:53:54,888 │ INFO    │   e 78 train 0.10521 val 0.08638     lr 1.50e-04 20s patience 5/15
+2026-08-16 09:54:15,100 │ INFO    │   e 79 train 0.10512 val 0.08558  ★ lr 1.50e-04 20s patience 0/15
+2026-08-16 09:54:15,286 │ INFO    │ ✔ finished [CALM-Net [xconf fold 0]] best_val=0.08558 @ epoch 79
+2026-08-16 09:54:18,607 │ INFO    │   ▶ cross-conformal fold 2/5 — fit 2,912 / held-out 728 windows
+2026-08-16 09:54:18,646 │ INFO    │ ▶ training [CALM-Net [xconf fold 1]] — 2,912 train / 364 tune windows, 91 batches/epoch, from epoch 0
+2026-08-16 09:54:38,750 │ INFO    │   e  0 train 0.26409 val 0.17029  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:54:58,981 │ INFO    │   e  1 train 0.16327 val 0.12904  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:55:19,219 │ INFO    │   e  2 train 0.14300 val 0.11733  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:55:39,519 │ INFO    │   e  3 train 0.13426 val 0.11723  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:56:01,198 │ INFO    │   e  4 train 0.13211 val 0.11135  ★ lr 3.00e-04 22s patience 0/15
+2026-08-16 09:56:22,057 │ INFO    │   e  5 train 0.12792 val 0.10959  ★ lr 3.00e-04 21s patience 0/15
+2026-08-16 09:56:42,323 │ INFO    │   e  6 train 0.12788 val 0.10752  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:57:02,505 │ INFO    │   e  7 train 0.12462 val 0.11032     lr 3.00e-04 20s patience 1/15
+2026-08-16 09:57:22,750 │ INFO    │   e  8 train 0.12384 val 0.10331  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:57:42,905 │ INFO    │   e  9 train 0.12320 val 0.10719     lr 3.00e-04 20s patience 1/15
+2026-08-16 09:58:03,103 │ INFO    │   e 10 train 0.12146 val 0.11235     lr 3.00e-04 20s patience 2/15
+2026-08-16 09:58:23,331 │ INFO    │   e 11 train 0.12067 val 0.10501     lr 3.00e-04 20s patience 3/15
+2026-08-16 09:58:43,597 │ INFO    │   e 12 train 0.11980 val 0.10544     lr 3.00e-04 20s patience 4/15
+2026-08-16 09:59:03,909 │ INFO    │   e 13 train 0.11935 val 0.09816  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 09:59:24,176 │ INFO    │   e 14 train 0.11862 val 0.10007     lr 3.00e-04 20s patience 1/15
+2026-08-16 09:59:44,440 │ INFO    │   e 15 train 0.11867 val 0.10108     lr 3.00e-04 20s patience 2/15
+2026-08-16 10:00:04,670 │ INFO    │   e 16 train 0.11753 val 0.09933     lr 3.00e-04 20s patience 3/15
+2026-08-16 10:00:24,919 │ INFO    │   e 17 train 0.11667 val 0.09632  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 10:00:45,091 │ INFO    │   e 18 train 0.11749 val 0.09670     lr 3.00e-04 20s patience 1/15
+2026-08-16 10:01:05,249 │ INFO    │   e 19 train 0.11620 val 0.09946     lr 3.00e-04 20s patience 2/15
+2026-08-16 10:01:25,502 │ INFO    │   e 20 train 0.11584 val 0.09528  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 10:01:45,653 │ INFO    │   e 21 train 0.11558 val 0.09719     lr 3.00e-04 20s patience 1/15
+2026-08-16 10:02:05,814 │ INFO    │   e 22 train 0.11546 val 0.09547     lr 3.00e-04 20s patience 2/15
+2026-08-16 10:02:26,013 │ INFO    │   e 23 train 0.11474 val 0.09661     lr 3.00e-04 20s patience 3/15
+2026-08-16 10:02:46,201 │ INFO    │   e 24 train 0.11461 val 0.09907     lr 3.00e-04 20s patience 4/15
+2026-08-16 10:03:06,468 │ INFO    │   e 25 train 0.11422 val 0.09503  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 10:03:26,691 │ INFO    │   e 26 train 0.11469 val 0.09646     lr 3.00e-04 20s patience 1/15
+2026-08-16 10:03:46,885 │ INFO    │   e 27 train 0.11415 val 0.09793     lr 3.00e-04 20s patience 2/15
+2026-08-16 10:04:07,128 │ INFO    │   e 28 train 0.11363 val 0.10060     lr 3.00e-04 20s patience 3/15
+2026-08-16 10:04:27,386 │ INFO    │   e 29 train 0.11378 val 0.09166  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 10:04:47,635 │ INFO    │   e 30 train 0.11387 val 0.09931     lr 3.00e-04 20s patience 1/15
+2026-08-16 10:05:07,856 │ INFO    │   e 31 train 0.11309 val 0.09284     lr 3.00e-04 20s patience 2/15
+2026-08-16 10:05:28,078 │ INFO    │   e 32 train 0.11378 val 0.09543     lr 3.00e-04 20s patience 3/15
+2026-08-16 10:05:48,300 │ INFO    │   e 33 train 0.11306 val 0.09600     lr 3.00e-04 20s patience 4/15
+2026-08-16 10:06:08,565 │ INFO    │   e 34 train 0.11312 val 0.09474     lr 3.00e-04 20s patience 5/15
+2026-08-16 10:06:28,814 │ INFO    │   e 35 train 0.11260 val 0.09598     lr 3.00e-04 20s patience 6/15
+2026-08-16 10:06:49,037 │ INFO    │   e 36 train 0.11256 val 0.09842     lr 1.50e-04 20s patience 7/15
+2026-08-16 10:07:09,218 │ INFO    │   e 37 train 0.11125 val 0.09351     lr 1.50e-04 20s patience 8/15
+2026-08-16 10:07:29,470 │ INFO    │   e 38 train 0.11105 val 0.09092  ★ lr 1.50e-04 20s patience 0/15
+2026-08-16 10:07:49,608 │ INFO    │   e 39 train 0.11072 val 0.09170     lr 1.50e-04 20s patience 1/15
+2026-08-16 10:08:09,786 │ INFO    │   e 40 train 0.11129 val 0.09049  ★ lr 1.50e-04 20s patience 0/15
+2026-08-16 10:08:29,932 │ INFO    │   e 41 train 0.11046 val 0.09371     lr 1.50e-04 20s patience 1/15
+2026-08-16 10:08:50,102 │ INFO    │   e 42 train 0.11100 val 0.09041  ★ lr 1.50e-04 20s patience 0/15
+2026-08-16 10:09:10,219 │ INFO    │   e 43 train 0.11046 val 0.09045     lr 1.50e-04 20s patience 1/15
+2026-08-16 10:09:30,317 │ INFO    │   e 44 train 0.11038 val 0.09262     lr 1.50e-04 20s patience 2/15
+2026-08-16 10:09:50,394 │ INFO    │   e 45 train 0.11037 val 0.09118     lr 1.50e-04 20s patience 3/15
+2026-08-16 10:10:10,545 │ INFO    │   e 46 train 0.11016 val 0.09483     lr 1.50e-04 20s patience 4/15
+2026-08-16 10:10:30,708 │ INFO    │   e 47 train 0.10997 val 0.08935  ★ lr 1.50e-04 20s patience 0/15
+2026-08-16 10:10:50,853 │ INFO    │   e 48 train 0.10980 val 0.09017     lr 1.50e-04 20s patience 1/15
+2026-08-16 10:11:10,946 │ INFO    │   e 49 train 0.10979 val 0.08944     lr 1.50e-04 20s patience 2/15
+2026-08-16 10:11:31,052 │ INFO    │   e 50 train 0.10994 val 0.09058     lr 1.50e-04 20s patience 3/15
+2026-08-16 10:11:51,206 │ INFO    │   e 51 train 0.10960 val 0.08896  ★ lr 1.50e-04 20s patience 0/15
+2026-08-16 10:12:11,322 │ INFO    │   e 52 train 0.10950 val 0.09242     lr 1.50e-04 20s patience 1/15
+2026-08-16 10:12:31,427 │ INFO    │   e 53 train 0.10959 val 0.09036     lr 1.50e-04 20s patience 2/15
+2026-08-16 10:12:51,570 │ INFO    │   e 54 train 0.10930 val 0.08905     lr 1.50e-04 20s patience 3/15
+2026-08-16 10:13:11,706 │ INFO    │   e 55 train 0.10953 val 0.09274     lr 1.50e-04 20s patience 4/15
+2026-08-16 10:13:31,886 │ INFO    │   e 56 train 0.10919 val 0.08858  ★ lr 1.50e-04 20s patience 0/15
+2026-08-16 10:13:51,983 │ INFO    │   e 57 train 0.10928 val 0.09087     lr 1.50e-04 20s patience 1/15
+2026-08-16 10:14:12,095 │ INFO    │   e 58 train 0.10887 val 0.08990     lr 1.50e-04 20s patience 2/15
+2026-08-16 10:14:32,247 │ INFO    │   e 59 train 0.10868 val 0.08876     lr 1.50e-04 20s patience 3/15
+2026-08-16 10:14:52,364 │ INFO    │   e 60 train 0.10861 val 0.09147     lr 1.50e-04 20s patience 4/15
+2026-08-16 10:15:12,469 │ INFO    │   e 61 train 0.10869 val 0.09173     lr 1.50e-04 20s patience 5/15
+2026-08-16 10:15:32,671 │ INFO    │   e 62 train 0.10890 val 0.08800  ★ lr 1.50e-04 20s patience 0/15
+2026-08-16 10:15:52,802 │ INFO    │   e 63 train 0.10858 val 0.08911     lr 1.50e-04 20s patience 1/15
+2026-08-16 10:16:12,945 │ INFO    │   e 64 train 0.10905 val 0.08921     lr 1.50e-04 20s patience 2/15
+2026-08-16 10:16:33,064 │ INFO    │   e 65 train 0.10866 val 0.08800     lr 1.50e-04 20s patience 3/15
+2026-08-16 10:16:53,211 │ INFO    │   e 66 train 0.10878 val 0.08851     lr 1.50e-04 20s patience 4/15
+2026-08-16 10:17:13,339 │ INFO    │   e 67 train 0.10853 val 0.09009     lr 1.50e-04 20s patience 5/15
+2026-08-16 10:17:33,514 │ INFO    │   e 68 train 0.10830 val 0.08748  ★ lr 1.50e-04 20s patience 0/15
+2026-08-16 10:17:53,660 │ INFO    │   e 69 train 0.10827 val 0.08955     lr 1.50e-04 20s patience 1/15
+2026-08-16 10:18:13,791 │ INFO    │   e 70 train 0.10843 val 0.08870     lr 1.50e-04 20s patience 2/15
+2026-08-16 10:18:33,950 │ INFO    │   e 71 train 0.10806 val 0.08897     lr 1.50e-04 20s patience 3/15
+2026-08-16 10:18:54,079 │ INFO    │   e 72 train 0.10800 val 0.09093     lr 1.50e-04 20s patience 4/15
+2026-08-16 10:19:14,237 │ INFO    │   e 73 train 0.10779 val 0.08800     lr 1.50e-04 20s patience 5/15
+2026-08-16 10:19:34,349 │ INFO    │   e 74 train 0.10754 val 0.08890     lr 1.50e-04 20s patience 6/15
+2026-08-16 10:19:54,486 │ INFO    │   e 75 train 0.10773 val 0.09070     lr 7.50e-05 20s patience 7/15
+2026-08-16 10:20:14,617 │ INFO    │   e 76 train 0.10711 val 0.08845     lr 7.50e-05 20s patience 8/15
+2026-08-16 10:20:34,778 │ INFO    │   e 77 train 0.10713 val 0.08807     lr 7.50e-05 20s patience 9/15
+2026-08-16 10:20:54,907 │ INFO    │   e 78 train 0.10702 val 0.08785     lr 7.50e-05 20s patience 10/15
+2026-08-16 10:21:15,117 │ INFO    │   e 79 train 0.10687 val 0.08674  ★ lr 7.50e-05 20s patience 0/15
+2026-08-16 10:21:15,286 │ INFO    │ ✔ finished [CALM-Net [xconf fold 1]] best_val=0.08674 @ epoch 79
+2026-08-16 10:21:18,503 │ INFO    │   ▶ cross-conformal fold 3/5 — fit 2,912 / held-out 728 windows
+2026-08-16 10:21:18,540 │ INFO    │ ▶ training [CALM-Net [xconf fold 2]] — 2,912 train / 364 tune windows, 91 batches/epoch, from epoch 0
+2026-08-16 10:21:38,690 │ INFO    │   e  0 train 0.26674 val 0.16080  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 10:21:58,902 │ INFO    │   e  1 train 0.15986 val 0.13214  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 10:22:19,150 │ INFO    │   e  2 train 0.14262 val 0.11954  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 10:22:39,391 │ INFO    │   e  3 train 0.13364 val 0.11136  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 10:22:59,654 │ INFO    │   e  4 train 0.13071 val 0.10764  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 10:23:19,893 │ INFO    │   e  5 train 0.12598 val 0.10832     lr 3.00e-04 20s patience 1/15
+2026-08-16 10:23:40,142 │ INFO    │   e  6 train 0.12614 val 0.10538  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 10:24:00,350 │ INFO    │   e  7 train 0.12266 val 0.10580     lr 3.00e-04 20s patience 1/15
+2026-08-16 10:24:20,616 │ INFO    │   e  8 train 0.12141 val 0.10488  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 10:24:40,911 │ INFO    │   e  9 train 0.12012 val 0.10237  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 10:25:01,138 │ INFO    │   e 10 train 0.11934 val 0.10739     lr 3.00e-04 20s patience 1/15
+2026-08-16 10:25:21,396 │ INFO    │   e 11 train 0.11828 val 0.10140  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 10:25:41,607 │ INFO    │   e 12 train 0.11723 val 0.10371     lr 3.00e-04 20s patience 1/15
+2026-08-16 10:26:01,883 │ INFO    │   e 13 train 0.11725 val 0.09844  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 10:26:22,112 │ INFO    │   e 14 train 0.11704 val 0.09794  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 10:26:42,376 │ INFO    │   e 15 train 0.11625 val 0.09774  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 10:27:02,547 │ INFO    │   e 16 train 0.11450 val 0.09857     lr 3.00e-04 20s patience 1/15
+2026-08-16 10:27:22,810 │ INFO    │   e 17 train 0.11367 val 0.09639  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 10:27:43,020 │ INFO    │   e 18 train 0.11574 val 0.09846     lr 3.00e-04 20s patience 1/15
+2026-08-16 10:28:03,199 │ INFO    │   e 19 train 0.11374 val 0.09908     lr 3.00e-04 20s patience 2/15
+2026-08-16 10:28:23,422 │ INFO    │   e 20 train 0.11322 val 0.09584  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 10:28:43,590 │ INFO    │   e 21 train 0.11230 val 0.09748     lr 3.00e-04 20s patience 1/15
+2026-08-16 10:29:03,808 │ INFO    │   e 22 train 0.11244 val 0.09273  ★ lr 3.00e-04 20s patience 0/15
+2026-08-16 10:29:23,991 │ INFO    │   e 23 train 0.11230 val 0.09506     lr 3.00e-04 20s patience 1/15
+2026-08-16 10:29:44,135 │ INFO    │   e 24 train 0.11115 val 0.09550     lr 3.00e-04 20s patience 2/15
+2026-08-16 10:30:04,315 │ INFO    │   e 25 train 0.11136 val 0.09859     lr 3.00e-04 20s patience 3/15
+2026-08-16 10:30:24,477 │ INFO    │   e 26 train 0.11136 val 0.09612     lr 3.00e-04 20s patience 4/15
+2026-08-16 10:30:44,629 │ INFO    │   e 27 train 0.11067 val 0.09427     lr 3.00e-04 20s patience 5/15
+2026-08-16 10:31:04,817 │ INFO    │   e 28 train 0.11058 val 0.09891     lr 3.00e-04 20s patience 6/15
+2026-08-16 10:31:24,963 │ INFO    │   e 29 train 0.11040 val 0.09280     lr 1.50e-04 20s patience 7/15
+2026-08-16 10:31:45,183 │ INFO    │   e 30 train 0.10934 val 0.09215  ★ lr 1.50e-04 20s patience 0/15
+2026-08-16 10:32:05,467 │ INFO    │   e 31 train 0.10918 val 0.09124  ★ lr 1.50e-04 20s patience 0/15
+2026-08-16 10:32:25,626 │ INFO    │   e 32 train 0.10881 val 0.09237     lr 1.50e-04 20s patience 1/15
+2026-08-16 10:32:45,878 │ INFO    │   e 33 train 0.10872 val 0.09117  ★ lr 1.50e-04 20s patience 0/15
+2026-08-16 10:33:06,131 │ INFO    │   e 34 train 0.10898 val 0.09010  ★ lr 1.50e-04 20s patience 0/15
+2026-08-16 10:33:26,336 │ INFO    │   e 35 train 0.10867 val 0.09069     lr 1.50e-04 20s patience 1/15
+2026-08-16 10:33:46,517 │ INFO    │   e 36 train 0.10881 val 0.09358     lr 1.50e-04 20s patience 2/15
+2026-08-16 10:34:06,687 │ INFO    │   e 37 train 0.10867 val 0.09721     lr 1.50e-04 20s patience 3/15
+2026-08-16 10:34:26,924 │ INFO    │   e 38 train 0.10884 val 0.09106     lr 1.50e-04 20s patience 4/15
+2026-08-16 10:34:47,133 │ INFO    │   e 39 train 0.10852 val 0.09311     lr 1.50e-04 20s patience 5/15
+2026-08-16 10:35:07,328 │ INFO    │   e 40 train 0.10861 val 0.09100     lr 1.50e-04 20s patience 6/15
+2026-08-16 10:35:27,544 │ INFO    │   e 41 train 0.10816 val 0.09646     lr 7.50e-05 20s patience 7/15
+2026-08-16 10:35:47,763 │ INFO    │   e 42 train 0.10783 val 0.09130     lr 7.50e-05 20s patience 8/15
+2026-08-16 10:36:07,953 │ INFO    │   e 43 train 0.10742 val 0.09198     lr 7.50e-05 20s patience 9/15
+2026-08-16 10:36:28,150 │ INFO    │   e 44 train 0.10729 val 0.09184     lr 7.50e-05 20s patience 10/15
+2026-08-16 10:36:48,363 │ INFO    │   e 45 train 0.10737 val 0.09084     lr 7.50e-05 20s patience 11/15
+2026-08-16 10:37:08,573 │ INFO    │   e 46 train 0.10725 val 0.09241     lr 7.50e-05 20s patience 12/15
+2026-08-16 10:37:28,802 │ INFO    │   e 47 train 0.10710 val 0.09006  ★ lr 7.50e-05 20s patience 0/15
+2026-08-16 10:37:48,948 │ INFO    │   e 48 train 0.10715 val 0.09082     lr 7.50e-05 20s patience 1/15
+2026-08-16 10:38:09,102 │ INFO    │   e 49 train 0.10701 val 0.08984  ★ lr 7.50e-05 20s patience 0/15
+2026-08-16 10:38:29,259 │ INFO    │   e 50 train 0.10696 val 0.09078     lr 7.50e-05 20s patience 1/15
+2026-08-16 10:38:49,554 │ INFO    │   e 51 train 0.10702 val 0.08970  ★ lr 7.50e-05 20s patience 0/15
+2026-08-16 10:39:09,796 │ INFO    │   e 52 train 0.10687 val 0.09179     lr 7.50e-05 20s patience 1/15
+2026-08-16 10:39:30,033 │ INFO    │   e 53 train 0.10677 val 0.09042     lr 7.50e-05 20s patience 2/15

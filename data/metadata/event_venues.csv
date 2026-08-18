@@ -1,0 +1,6 @@
+venue_id,venue_name,latitude,longitude,capacity,nearest_station_ids,notes
+NJOSC,Nanjing Olympic Sports Center,32.0021,118.7301,61443,101;102;103,Major stadium for sports and concerts
+NJGYM,Nanjing Gymnasium (Wutaishan),32.0498,118.7712,20000,42;43;45,Indoor sports and entertainment arena
+NJIEC,Nanjing International Expo Center,32.0126,118.7261,30000,4;103,Exhibition center
+XINJIEKOU,Xinjiekou Central Business District,32.0438,118.7841,100000,1;15;29,Major shopping festival and holiday surge center
+NJSOUTH,Nanjing South Railway Transport Hub,31.9702,118.7974,80000,2,High-speed rail hub

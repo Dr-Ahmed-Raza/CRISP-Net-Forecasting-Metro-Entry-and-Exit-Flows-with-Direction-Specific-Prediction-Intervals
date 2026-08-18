@@ -1,0 +1,5 @@
+event,peak,bin,n_scores,q_hat,method
+False,False,normal · off-peak,307128,0.5289299488067627,Mondrian bin
+False,True,normal · peak,110016,0.3045921325683594,Mondrian bin
+True,False,event · off-peak,307128,0.750091552734375,Mondrian bin
+True,True,event · peak,110016,1.2031621932983398,Mondrian bin

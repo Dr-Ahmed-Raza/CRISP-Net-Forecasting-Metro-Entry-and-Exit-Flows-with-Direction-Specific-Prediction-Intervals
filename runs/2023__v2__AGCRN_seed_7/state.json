@@ -1,0 +1,8 @@
+{
+  "epoch": 80,
+  "batch_in_epoch": 0,
+  "best_val": 0.06676974567165087,
+  "best_epoch": 75,
+  "tag": "final",
+  "updated": "2026-08-16T08:02:02"
+}

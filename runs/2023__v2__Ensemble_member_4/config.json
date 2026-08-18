@@ -1,0 +1,123 @@
+{
+  "drive_root": "/content/drive/MyDrive",
+  "dataset_root": "/content/drive/MyDrive/Dataset/2nd SCI-T1 paper",
+  "project_root": "/content/drive/MyDrive/CALM_Net",
+  "legacy_project_root": "/content/drive/MyDrive/TDAG_Net",
+  "legacy_manifest": "/content/drive/MyDrive/afc_file_manifest.csv",
+  "reuse_legacy_agg": true,
+  "exp_version": "v2",
+  "paper": "CRISP-Net",
+  "dataset": "2023",
+  "exclude_station_ids": [
+    333
+  ],
+  "freq_minutes": 10,
+  "service_start": "06:00",
+  "service_end": "23:50",
+  "min_records_per_day": 200000,
+  "n_card_channels": 24,
+  "n_personas": 4,
+  "persona_names": [
+    "Commuter",
+    "Casual",
+    "Tourist/Visitor",
+    "Concession/Student"
+  ],
+  "seq_len": 12,
+  "horizon": 6,
+  "train_frac": 0.7,
+  "val_frac": 0.15,
+  "calib_frac": 0.5,
+  "adj_topk": 8,
+  "venue_radius_km": 3.0,
+  "corr_min": 0.3,
+  "hidden_dim": 64,
+  "tcn_channels": 64,
+  "tcn_dilations": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "gat_heads": 4,
+  "gat_dropout": 0.1,
+  "lstm_hidden": 128,
+  "dropout": 0.1,
+  "node_emb_dim": 16,
+  "quantiles": [
+    0.05,
+    0.5,
+    0.95
+  ],
+  "pinball_weight": 0.3,
+  "gate_init": 1.0,
+  "gate_l1": 0.0001,
+  "delay_lags": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "batch_size": 32,
+  "epochs": 80,
+  "lr": 0.0003,
+  "weight_decay": 0.0001,
+  "huber_delta": 1.0,
+  "grad_clip": 5.0,
+  "early_stop_patience": 15,
+  "lr_patience": 6,
+  "amp": true,
+  "aux_persona_weight": 0.05,
+  "aux_entropy_weight": 0.0,
+  "seed": 42,
+  "report_seeds": [
+    42
+  ],
+  "deterministic": false,
+  "alpha": 0.1,
+  "mondrian_bins": [
+    "event",
+    "peak"
+  ],
+  "min_bin_windows": 100,
+  "cross_conformal_k": 5,
+  "enable_cross_conformal": true,
+  "per_channel_conformal": true,
+  "peak_hours": [
+    [
+      7.0,
+      9.5
+    ],
+    [
+      17.0,
+      19.5
+    ]
+  ],
+  "mc_dropout_passes": 30,
+  "ensemble_members": 5,
+  "enable_conformal_transfer": true,
+  "transfer_models": [
+    "AGCRN",
+    "Graph WaveNet",
+    "TDAG-Net",
+    "TDAG-Net (Input-Splitter)"
+  ],
+  "ckpt_every_epochs": 1,
+  "ckpt_every_minutes": 5.0,
+  "keep_last_n_ckpts": 2,
+  "quick_test": false,
+  "force_recompute": [],
+  "preload_to_gpu": true,
+  "chunksize": 2000000,
+  "n_ingest_files": -1,
+  "event_peak_quantile": 0.9,
+  "report_stations": [
+    9,
+    44,
+    14,
+    39,
+    77,
+    152
+  ],
+  "model": "Ensemble member 4"
+}

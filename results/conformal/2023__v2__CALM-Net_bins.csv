@@ -1,0 +1,5 @@
+event,peak,bin,n_windows,n_scores,q_hat,method
+False,False,normal · off-peak,134,307128,0.016516685485839844,Mondrian bin (n_win=134)
+False,True,normal · peak,48,8342880,0.14188718795776367,cross-conformal fallback (n_win=48 < 100)
+True,False,event · off-peak,134,307128,0.3549652099609375,Mondrian bin (n_win=134)
+True,True,event · peak,48,8342880,0.14188718795776367,cross-conformal fallback (n_win=48 < 100)
