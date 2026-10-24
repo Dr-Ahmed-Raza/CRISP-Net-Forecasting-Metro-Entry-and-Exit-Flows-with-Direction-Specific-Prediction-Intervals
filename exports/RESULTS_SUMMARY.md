@@ -17,18 +17,21 @@ _Generated 2026-08-17 11:34 · device cuda · seed 42_
 | Usable days | 57 (2023-03-01 → 2023-05-31) |
 | Interval | 10 min, 06:00–23:50 |
 | Ticket channels | 25 (top 24 + OTHER, 99.58% coverage) |
-| Windows train / tune / calib / test | 3,640 / 364 / 364 / 819 |
-| Event days flagged | 24 (182 test windows) |
+| Windows train / tune / calib / test | 3,640 / 364 / 364 / 819 (chronological: train to 14 May, tune 15–18 May, calib 19–22 May, test 23–31 May) |
+| Event days flagged | 24 corpus days; exactly 2 event days in test set (27 and 28 May 2023, Saturday & Sunday; 182 test windows) |
 | Context vector | z_t ∈ ℝ^8 — ['tod_sin', 'tod_cos', 'dow_sin', 'dow_cos', 'is_weekend', 'is_peak', 'event_flag', 'event_countdown'] |
+| Station-level features | 3 features per station: transfer_ratio, venue_proximity, and retrospective event_station surge flag |
 
 ## 2. Components, and what each one measured
 
 | Component | Question it answers | Status |
 |---|---|---|
-| PRI | which personas drive the forecast | gate spread 0.116, corr with corpus share +0.74 |
+| PRI | which personas drive the forecast | gate spread 0.116, corr with corpus share +0.74; +1.49 RMSE gain |
 | Bidirectional head | exit channel discarded in Paper 3 | entry and exit predicted jointly and calibrated separately |
-| ECQ | forecasts carry no risk bound | worst-bin coverage improved +0.11 pp over raw heads |
-| Transfer | is calibration architecture-specific | 4 point baselines calibrated without retraining |
+| ECQ | forecasts carry no risk bound | worst-bin coverage improved +0.11 pp over raw heads; corrections $\le 0.33$ pass/10 min |
+| Transfer | is calibration architecture-specific | 4 point baselines calibrated without retraining; dynamic normalized baseline evaluated |
+
+**Station inputs disclosure (Item A1):** CRISP-Net, its ablations, MC-Dropout, and Deep Ensemble receive 3 node features: `transfer_ratio`, `venue_proximity`, and `event_station`. The `event_station` flag indicates whether that station's daily peak flow represents a surge ($z \ge 4$), providing an idealized/retrospective indicator on event days.
 
 **Removed after measurement (CALM-Net pilot, quoted not rerun):** context-driven dynamic graph (3.72% edge drift), learned delay kernel (r = −0.897 against measured propagation), FiLM persona conditioning (γ spread 0.045). The encoder control that attributes the pilot's regression to the encoder rather than to these modules scored RMSE 48.076 ± 2.608.
 
@@ -63,13 +66,43 @@ _Generated 2026-08-17 11:34 · device cuda · seed 42_
 
 ## 4. Uncertainty quantification
 
-| Model               |    PICP |    MPIW |   Winkler |     PCR |   PICP_uncal |   MPIW_uncal |   Coverage gap |
-|:--------------------|--------:|--------:|----------:|--------:|-------------:|-------------:|---------------:|
-| CRISP-Net           | 90.0078 | 61.4465 |   80.1885 | 90.9749 |      89.7110 |      61.2718 |         0.0078 |
-| CRISP-Net w/o gates | 90.0786 | 62.8712 |   80.0558 | 90.8985 |      90.5999 |      63.0496 |         0.0786 |
-| CRISP-Net w/o PRI   | 89.9439 | 65.5409 |   82.9770 | 91.4549 |      90.3968 |      65.6862 |        -0.0561 |
-| MC-Dropout          | 90.9747 | 58.1988 |  110.9246 | 72.0481 |      23.7856 |      12.3499 |         0.9747 |
-| Deep Ensemble       | 90.3320 | 54.5476 |  109.7487 | 70.4098 |      19.2357 |      10.0899 |         0.3320 |
+### Comprehensive Uncertainty Comparison (including Reviewer A3 Companion Metrics)
+
+| Model               |    PICP |    MPIW |   Winkler |     PCR | PCR_uncal | Clock_UB_Contain | Clock_PICP | PICP_uncal | MPIW_uncal |
+|:--------------------|--------:|--------:|----------:|--------:|----------:|-----------------:|-----------:|-----------:|-----------:|
+| CRISP-Net           | 90.0078 | 61.4465 |   80.1885 | 90.9749 |   90.9223 |          95.6697 |    88.9643 |    89.7110 |    61.2718 |
+| CRISP-Net w/o gates | 90.0786 | 62.8712 |   80.0558 | 90.8985 |   90.8722 |          95.7261 |    89.1879 |    90.5999 |    63.0496 |
+| CRISP-Net w/o PRI   | 89.9439 | 65.5409 |   82.9770 | 91.4549 |   91.4525 |          95.6425 |    88.5626 |    90.3968 |    65.6862 |
+| MC-Dropout          | 90.9747 | 58.1988 |  110.9246 | 72.0481 |   51.1464 |          95.9033 |    90.0033 |    23.7856 |    12.3499 |
+| Deep Ensemble       | 90.3320 | 54.5476 |  109.7487 | 70.4098 |   50.2054 |          94.6217 |    89.1289 |    19.2357 |    10.0899 |
+
+*Notes on Reviewer Metrics:*
+- `PCR_uncal`: Peak Containment Rate evaluated on raw, uncalibrated quantile heads. The difference between calibrated (90.975%) and uncalibrated (90.922%) is only 0.05 pp, proving that adaptive interval width is learned end-to-end rather than added by post-hoc conformal calibration.
+- `Clock_UB_Contain`: Share of observations falling at or below the upper bound in the clock-defined event-peak regime (07:00–09:30 and 17:00–19:30 on event days; 48 test windows), evaluated unconditionally without filtering by realized demand. CRISP-Net achieves 95.67%.
+
+### Post-Hoc Conformal Transfer & Lei et al. (2018) Normalized Conformal Baseline (Item A5)
+
+| Model                                            |    PICP |    MPIW |   Winkler |     PCR | Retrained |
+|:-------------------------------------------------|--------:|--------:|----------:|--------:|:---------:|
+| AGCRN + ECQ (Additive)                           | 89.5917 | 57.5729 |  133.0425 | 72.1914 |    No     |
+| Graph WaveNet + ECQ (Additive)                   | 89.2897 | 65.9734 |  158.1771 | 72.7312 |    No     |
+| TDAG-Net + ECQ (Additive)                        | 89.5403 | 60.3364 |  139.6554 | 72.7192 |    No     |
+| TDAG-Net (Input-Splitter) + ECQ (Additive)       | 89.6591 | 59.8131 |  135.2279 | 69.6169 |    No     |
+| **CRISP-Net (Point) + Lei Normalized (Pooled)**  | 90.6207 | 47.7930 |   92.9187 | 80.0702 |    No     |
+| **CRISP-Net (Point) + Lei Normalized (Per-Ch.)** | 90.6254 | 47.6267 |   92.9668 | 79.9890 |    No     |
+| **CRISP-Net (Full End-to-End)**                  | 90.0078 | 61.4465 |   80.1885 | 90.9749 |    —      |
+
+*Key Insight:* The normalized score $s_i = |y_i - \hat{y}_i| / \sqrt{\hat{y}_i + 1}$ (Lei et al., 2018) dynamically scales width with demand and lifts post-hoc PCR from ~72% to ~80%. However, CRISP-Net's end-to-end trained quantile heads maintain a decisive +11 pp advantage (91.0% PCR), with significantly lower Winkler score (80.19 vs 92.92).
+
+### Bootstrap 95% Confidence Intervals (Item A4)
+
+| Metric           | Point Estimate | 95% CI (Window Resample) | 95% CI (Day Block Resample) |
+|:-----------------|---------------:|:------------------------:|:---------------------------:|
+| RMSE (All Days)  |        30.8963 |     [29.898, 31.886]     |      [29.826, 32.228]       |
+| RMSE (Normal)    |        30.8041 |     [29.537, 32.044]     |      [29.410, 32.612]       |
+| RMSE (Event)     |        31.2167 |     [30.164, 32.294]     |      [30.936, 31.495]       |
+| PCR (Calibrated) |        90.9749 |     [90.375, 91.597]     |      [90.475, 91.615]       |
+| PCR (Uncal.)     |        90.9223 |     [90.317, 91.554]     |      [90.422, 91.563]       |
 
 ### Conditional coverage per Mondrian bin
 

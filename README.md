@@ -23,11 +23,11 @@ Unlike existing models that output a single number, CRISP-Net provides **directi
 
 | | |
 |:---|:---|
-| 🎯 **Point Accuracy** | RMSE **30.90** — matches the best baselines while uniquely providing calibrated ranges |
-| 🛡️ **Event Resilience** | Error rises only **+1.0%** on event days (vs. **+10.9%** for the strongest competitor) |
-| 📏 **Peak Coverage** | **91.0% PCR** — upper bounds contain actual demand during critical peaks (baselines: ~70%) |
-| 🔀 **Bidirectional** | Separate calibration for entry vs. exit flows (exit margins are **4.2× wider** than entry) |
-| 📊 **Uncertainty** | Three methods compared: native quantile heads, MC-Dropout, Deep Ensemble + conformal transfer |
+| 🎯 **Point Accuracy** | RMSE **30.90** — matches the best baseline (AGCRN: 30.86) within seed variation |
+| 🛡️ **Event Resilience** | Error rises only **+1.0%** on event days (two weekend event days in test set: 27–28 May 2023) |
+| 📏 **Peak Coverage** | **91.0% PCR** on realized event surges (uncalibrated: 90.9%); **95.7%** clock-defined peak containment |
+| 🔀 **Bidirectional** | Separate calibration per direction; corrections are $\le 0.33$ pass/10 min (width is learned end-to-end) |
+| 📊 **Uncertainty** | Compared against MC-Dropout, Deep Ensemble, and Lei et al. (2018) normalized conformal baselines |
 | ⚡ **Efficiency** | **257K parameters** · 80 training epochs · full pipeline in a single notebook |
 
 ---
@@ -35,16 +35,16 @@ Unlike existing models that output a single number, CRISP-Net provides **directi
 ## 🌟 Key Contributions
 
 ### 1. Direction-Specific Prediction Intervals
-Entry and exit flows require fundamentally different uncertainty margins. Exit ranges need corrections **~4.2× wider** than entry ranges during quiet periods, and they adjust in **opposite directions** during event-day peaks. CRISP-Net learns these asymmetries end-to-end.
+Entry flows exhibit higher variability than exit flows (test RMSE 33.30 vs. 28.30). CRISP-Net's native quantile heads learn asymmetric, instance-adaptive interval widths during training, achieving 89.7% PICP before calibration. Post-hoc conformal corrections are modest ($\le 0.33$ passengers per 10-min interval), confirming that interval width is learned end-to-end rather than artificially inflated.
 
-### 2. Peak Containment Rate (PCR) — A New Evaluation Metric
-Standard coverage metrics (PICP) show that many methods achieve 90% overall hit rates. However, they conceal catastrophic failures during the moments that matter most. Our proposed **PCR** reveals that baseline methods differ by up to **20 percentage points** in coverage during critical event peaks — exactly when operators need reliable bounds.
+### 2. Peak Containment Rate (PCR) — A Decision-Aligned Evaluation Metric
+Standard coverage metrics (PICP) show that conventional uncertainty baselines achieve ~90% overall coverage. However, when evaluating the top decile of observed demand on event days (PCR), baseline methods drop to 70–72% containment. CRISP-Net maintains **91.0% PCR** (90.9% uncalibrated). In the clock-defined event-peak regime without conditioning on realized outcomes, CRISP-Net achieves **95.7% upper bound containment**.
 
-### 3. Conformal Transfer Across Architectures
-We demonstrate that CRISP-Net's conformal calibration can be **transferred to any existing point-forecast model** (AGCRN, Graph WaveNet, TDAG-Net, TGALSTM) without retraining, achieving valid 90% coverage. However, only CRISP-Net maintains high **peak** coverage because it learns station- and time-specific uncertainty during training.
+### 3. Conformal Transfer Across Architectures & Normalized Baselines
+We demonstrate that conformal calibration can be transferred to existing point forecasters (AGCRN, Graph WaveNet, TDAG-Net) without retraining. While additive margins achieve 70–73% PCR, dynamic normalization (Lei et al., 2018; $|y - \hat{y}| / \sqrt{\hat{y} + 1}$) lifts baseline PCR to **80.1%**, demonstrating that the remaining 11 pp gap to CRISP-Net's 91.0% PCR stems from native end-to-end quantile training.
 
-### 4. Persona-Aware Encoding (PRI Module)
-Separating passengers into distinct behavioral types (commuters, casual riders, tourists, students) and standardizing each channel independently yields a **1.49 RMSE improvement** — demonstrating that who rides matters as much as how many ride.
+### 4. Persona-Aware Encoding (PRI Module) & Station-Level Inputs
+Decomposing passenger demand into 4 behavioral personas ($k$-means clustering on 11 fare features with Hungarian matching) with per-channel standardization improves accuracy by **1.49 RMSE**. The model also incorporates station transfer ratios, venue proximity, and event indicators.
 
 ---
 
@@ -272,7 +272,7 @@ Seaborn      ≥ 0.12
 
 ```bash
 # Clone the repository
-git clone https://github.com/usshamsuddeen/CRISP-Net-Forecasting-Metro-Entry-and-Exit-Flows-with-Direction-Specific-Prediction-Intervals.git
+git clone https://github.com/Dr-Ahmed-Raza/CRISP-Net-Forecasting-Metro-Entry-and-Exit-Flows-with-Direction-Specific-Prediction-Intervals.git
 cd CRISP-Net-Forecasting-Metro-Entry-and-Exit-Flows-with-Direction-Specific-Prediction-Intervals
 
 # Launch the notebook
@@ -325,7 +325,8 @@ If you use this code, data, or methodology in your research, please cite:
 @article{crispnet2026,
   title     = {CRISP-Net: Forecasting Metro Entry and Exit Flows with
                Direction-Specific Prediction Intervals},
-  author    = {Shamsuddeen, Usman},
+  author    = {Raza, Ahmed and Liu, Guangjie and Cheng, Jie and Din, Ghulam Muhayyu and Bashir, Umer},
+  journal   = {IEEE Transactions on Intelligent Transportation Systems},
   year      = {2026},
   note      = {Under review}
 }
